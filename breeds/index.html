@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Breeds — The Bark Facts</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #FAF0DC;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #3D2B1F;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #5C3D11;
+      color: #FAF0DC;
+      text-align: center;
+      padding: 18px 24px 14px;
+    }
+    header h1 {
+      font-size: 4rem;
+      letter-spacing: 0.04em;
+      font-weight: normal;
+    }
+    header .subtitle {
+      font-size: 0.85rem;
+      color: #D4B483;
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    .site-nav {
+      background: #4A2E0A;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 0 12px;
+    }
+    .site-nav a {
+      color: #C8A87A;
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.82rem;
+      padding: 9px 20px;
+      display: inline-block;
+      letter-spacing: 0.03em;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: #FAF0DC;
+      border-bottom-color: #C05621;
+    }
+
+    .main {
+      flex: 1;
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 36px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .page-heading {
+      text-align: center;
+    }
+    .page-heading h2 {
+      font-size: 1.9rem;
+      font-weight: normal;
+      color: #5C3D11;
+    }
+    .page-heading p {
+      font-size: 0.9rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 6px;
+    }
+
+    .breed-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .breed-card {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 20px 24px;
+      text-decoration: none;
+      color: #3D2B1F;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .breed-card:hover {
+      border-color: #C05621;
+      box-shadow: 0 3px 12px rgba(192,86,33,0.18);
+    }
+    .breed-card-name {
+      font-size: 1.2rem;
+      color: #5C3D11;
+    }
+    .breed-card-meta {
+      font-size: 0.8rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 3px;
+    }
+    .breed-card-arrow {
+      color: #C05621;
+      font-size: 1.1rem;
+    }
+
+    .breadcrumb {
+      font-size: 0.82rem;
+    }
+    .breadcrumb a {
+      color: #C05621;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #5C3D11;
+      color: #A07840;
+      text-align: center;
+      font-size: 0.78rem;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Bark Facts</h1>
+  <div class="subtitle">one fact, one dog, one day at a time</div>
+</header>
+<nav class="site-nav">
+  <a href="../index.html">Home</a>
+  <a href="../index.html">Browse Facts</a>
+  <a href="index.html" class="active">Breeds</a>
+</nav>
+
+<div class="main">
+
+  <div class="page-heading">
+    <h2>Breed Pages</h2>
+    <p>Deep dives into the dogs we love most.</p>
+  </div>
+
+  <div class="breed-grid">
+    <a class="breed-card" href="greyhound.html">
+      <div>
+        <div class="breed-card-name">Greyhound</div>
+        <div class="breed-card-meta">8 facts &mdash; 7 photos</div>
+      </div>
+      <span class="breed-card-arrow">&#8594;</span>
+    </a>
+    <a class="breed-card" href="corgi.html">
+      <div>
+        <div class="breed-card-name">Corgi</div>
+        <div class="breed-card-meta">5 facts &mdash; 6 photos</div>
+      </div>
+      <span class="breed-card-arrow">&#8594;</span>
+    </a>
+  </div>
+
+  <div class="breadcrumb"><a href="../index.html">&#8592; Back to Home</a></div>
+
+</div>
+
+<footer>Dog Facts &mdash; a fun project</footer>
+
+</body>
+</html>

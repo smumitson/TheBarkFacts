@@ -1,0 +1,142 @@
+THE BARK FACTS -- SITE AUDIT REPORT
+=====================================
+
+
+1. FACTS DATA
+-------------
+Each fact in dog_facts.json has four fields:
+
+  fact_number  : 1-365
+  category     : Sensory, Biology, Anatomy, Behavior, Intelligence, History, Breeds
+  fact         : The fact text
+  breed        : An explicit string tag (e.g. "greyhound") or null
+
+Breed association is an EXPLICIT FIELD, not text-scanned -- the breed key is set
+directly in the data. 132 of 365 facts have a breed; 233 have null.
+
+
+2. PHOTOS
+---------
+images/photo_tags.json gives each photo: file, breeds[] (array, always one entry
+currently), tags[], and caption.
+
+At runtime, JS indexes all photos into a photosByBreed dictionary. Photo selection
+is deterministic: pool[factNum % pool.length] -- it rotates through the breed's
+photos based on fact number, with a fallback to 15 generic photos when there is
+no breed match.
+
+Photo counts per breed (non-generic):
+
+  greyhound             12 photos
+  rottweiler             8 photos
+  beagle                 7 photos
+  bloodhound             7 photos
+  bulldog                7 photos
+  chihuahua              7 photos
+  dachshund              7 photos
+  siberian husky         7 photos
+  akita                  6 photos
+  australian shepherd    6 photos
+  border collie          6 photos
+  boxer                  6 photos
+  corgi                  6 photos
+  dalmatian              6 photos
+  german shepherd        6 photos
+  jack russell terrier   6 photos
+  papillon               6 photos
+  poodle                 6 photos
+  saluki                 6 photos
+  samoyed                6 photos
+  basset hound           5 photos
+  chow chow              5 photos
+  great dane             5 photos
+  mastiff                5 photos
+  newfoundland           5 photos
+  pug                    5 photos
+  saint bernard          5 photos
+  whippet                5 photos
+  great pyrenees         2 photos
+  pekingese              2 photos
+  shiba inu              2 photos
+  (30+ breeds)           1 photo each
+  generic (fallback)    15 photos
+
+
+3. PAGE STRUCTURE & NAVIGATION
+-------------------------------
+There are THREE HTML files: index.html, browse.html, daily.html
+There are ZERO links between them. No <a href> navigation exists; the pages are
+isolated islands.
+
+  index.html   -- One fact at a time, back/next navigation, loads today's fact
+  browse.html  -- 3 facts per page, 67 pages total, same day-of-year landing
+  daily.html   -- Fact-of-the-day only view
+
+All data (the full 365-fact array and the full photo array) is INLINED AS JSON
+BLOBS directly in each file's <script> block -- there is no fetch() call to the
+.json files at runtime.
+
+Where new pages link in: A <nav> bar needs to be added to the header of every
+page (none exists yet) and breed pages linked from there.
+
+
+4. STYLING
+----------
+CSS is EMBEDDED in a <style> block in each file's <head> -- no external
+stylesheet. The same rules are duplicated across all three files.
+
+Palette:
+  Page background    #FAF0DC  (warm cream)
+  Header / footer    #5C3D11  (dark walnut)
+  Accent             #C05621  (burnt orange -- buttons, tags)
+  Fact card bg       #FFF8EC
+  Fact card border   #E0C090
+  Body text          #3D2B1F  (dark brown)
+  Secondary text     #D4B483, #9A6B3A
+
+Caption style: punchy 3-7 word fragments with dry wit.
+Example: "Greyhound. 45mph. Also napping. Mostly napping."
+
+
+BREED PAGES -- PROPOSED PLAN
+==============================
+
+Architecture
+------------
+Follow the existing pattern: static HTML files with the breed's filtered facts
+and photos inlined in the <script> block. No build step, no server, fully
+consistent with the current site.
+
+URL Structure
+-------------
+  breeds/greyhound.html
+  breeds/corgi.html
+  breeds/great-dane.html
+  breeds/index.html    (future directory page -- good for SEO)
+
+What Goes on Each Breed Page
+-----------------------------
+  - Same header/footer/CSS palette
+  - Hero photo section rotating through the breed's photos
+  - All breed-specific facts listed as fact-card cards
+  - A witty breed intro line in the header subtitle slot
+  - Breadcrumb / back link to home
+
+Navigation Change Needed First
+-------------------------------
+Add a minimal <nav> to the header across all existing pages before building breed
+pages, so they are linked on day one.
+Suggested: "Home | Browse All | Breeds"
+
+Which 3 Breeds to Build First
+------------------------------
+Ranked by facts x photos (both needed for a full page):
+
+  Rank  Breed            Facts  Photos  Score
+  ----  ---------------  -----  ------  -----
+  1     Greyhound          8      12      96   <-- clear winner
+  2     Corgi              5       6      30
+  3     Great Dane         5       5      25
+
+German Shepherd (4 facts, 6 photos, score 24) is an honorable mention --
+slightly behind Great Dane on score but likely higher search volume.
