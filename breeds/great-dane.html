@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Greyhound Facts — The Bark Facts</title>
+  <title>Great Dane Facts — The Bark Facts</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -223,8 +223,8 @@
 <div class="main">
 
   <div class="breed-hero">
-    <h2>Greyhound</h2>
-    <p class="breed-tagline">45 mph. Naps included. No brakes.</p>
+    <h2>Great Dane</h2>
+    <p class="breed-tagline">Apartment-sized dog. Lap-sized self-image.</p>
   </div>
 
   <div class="photo-section">
@@ -232,14 +232,14 @@
     <div id="photo-caption" class="photo-caption"></div>
     <div class="photo-nav">
       <button onclick="prevPhoto()">&#8592; Prev</button>
-      <span id="photo-counter" class="photo-counter">1 / 7</span>
+      <span id="photo-counter" class="photo-counter">1 / 6</span>
       <button onclick="nextPhoto()">Next &#8594;</button>
     </div>
   </div>
 
   <div class="breadcrumb"><a href="../index.html">&#8592; Back to Home</a> &nbsp;&middot;&nbsp; <a href="index.html">&#8592; Back to Breeds</a></div>
 
-  <div class="facts-heading">8 facts about the Greyhound</div>
+  <div class="facts-heading">5 facts about the Great Dane</div>
 
   <div id="facts-section"></div>
 
@@ -248,9 +248,9 @@
 <footer>Dog Facts &mdash; a fun project</footer>
 
 <script>
-const PHOTOS = [{"file": "grey_hound_1.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Greyhound. 45mph. Also napping. Mostly napping."}, {"file": "greyhound_7.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Greyhound. Fastest dog on Earth. Napping competitively."}, {"file": "greyhound_8.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Lean machine. Off duty. Do not disturb."}, {"file": "greyhound_9.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Born to run. Currently declining."}, {"file": "greyhound_10.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "45mph potential. 0mph current speed. Balance achieved."}, {"file": "greyhound_11.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Retired racer. Professional lounge expert."}, {"file": "greyhound_12.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Greyhound. Sees the treat. Will absolutely sprint for it."}];
+const PHOTOS = [{"file": "great_dane_1.jpg", "breeds": ["great-dane"], "tags": ["giant breed", "gentle giant", "working dog", "tall dog"], "caption": "Great Dane. A horse that thinks it's a puppy."}, {"file": "great_dane_2.jpg", "breeds": ["great-dane"], "tags": ["giant breed", "gentle giant", "working dog", "tall dog"], "caption": "Lap dog. Citation needed."}, {"file": "great_dane_3.jpg", "breeds": ["great-dane"], "tags": ["giant breed", "gentle giant", "working dog", "tall dog"], "caption": "Eye level with the kitchen counter. Concerning."}, {"file": "great_dane_4.jpg", "breeds": ["great-dane"], "tags": ["giant breed", "gentle giant", "working dog", "tall dog"], "caption": "Gentle giant. Emphasis on giant."}, {"file": "great_dane_5.jpg", "breeds": ["great-dane"], "tags": ["giant breed", "gentle giant", "working dog", "tall dog"], "caption": "Built like a doorway. Acts like a throw pillow."}, {"file": "great_dane_6.jpg", "breeds": ["great-dane"], "tags": ["giant breed", "gentle giant", "working dog", "tall dog"], "caption": "Standing on hind legs: taller than you. Knows it."}];
 
-const FACTS = [{"fact_number": 9, "category": "Breeds", "fact": "The Greyhound is the fastest dog breed, capable of reaching speeds up to 45 mph.", "breed": "greyhound"}, {"fact_number": 52, "category": "History", "fact": "The Greyhound is the only dog breed mentioned by name in the Bible.", "breed": "greyhound"}, {"fact_number": 150, "category": "Anatomy", "fact": "The Greyhound’s slender build is designed for aerodynamic efficiency.", "breed": "greyhound"}, {"fact_number": 168, "category": "Anatomy", "fact": "The Scottish Deerhound is built similarly to a Greyhound but is much larger and shaggier.", "breed": "greyhound"}, {"fact_number": 232, "category": "Biology", "fact": "The fastest recorded dog speed belongs to a Greyhound clocked at 45 mph (72 km/h), making it the fastest land animal over short distances after the cheetah.", "breed": "greyhound"}, {"fact_number": 252, "category": "Sensory", "fact": "Greyhounds have a nearly 270-degree field of vision — wider than almost any other dog breed — designed for tracking fast-moving prey across open terrain.", "breed": "greyhound"}, {"fact_number": 292, "category": "Records", "fact": "The highest jump by a dog is 75.5 inches (191.7 cm), set by a Greyhound mix named Feather in Frederick, Maryland in 2017.", "breed": "greyhound"}, {"fact_number": 342, "category": "History", "fact": "Greyhounds are the only breed specifically mentioned in the Bible (Proverbs 30:31 in certain translations), described among things that are ‘stately in their stride.’", "breed": "greyhound"}];
+const FACTS = [{"fact_number": 88, "category": "Breeds", "fact": "Despite their towering size, Great Danes are known as \"gentle giants\" and were bred to be even-tempered companion dogs.", "breed": "great-dane"}, {"fact_number": 121, "category": "Anatomy", "fact": "Standing on their hind legs, a Great Dane can reach over 7 feet tall, making them one of the tallest dog breeds in the world.", "breed": "great-dane"}, {"fact_number": 199, "category": "History", "fact": "Despite the name, the Great Dane was developed in Germany, not Denmark, where it was bred to hunt wild boar.", "breed": "great-dane"}, {"fact_number": 247, "category": "Records", "fact": "A Great Dane named Zeus held the record for the world's tallest dog, measuring 44 inches at the shoulder.", "breed": "great-dane"}, {"fact_number": 301, "category": "Health", "fact": "Like many giant breeds, Great Danes have shorter average lifespans of 7 to 10 years, a tradeoff that often comes with very large body size.", "breed": "great-dane"}];
 
 let currentPhoto = 0;
 
@@ -280,7 +280,7 @@ FACTS.forEach(function(fact) {
     '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
     '<div class="fact-category">' + fact.category + '</div>' +
     '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">greyhound</span></div>';
+    '<div class="fact-footer"><span class="fact-breed-tag">great dane</span></div>';
   section.appendChild(card);
 });
 

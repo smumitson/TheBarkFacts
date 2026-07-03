@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Greyhound Facts — The Bark Facts</title>
+  <title>Boxer Facts — The Bark Facts</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -223,8 +223,8 @@
 <div class="main">
 
   <div class="breed-hero">
-    <h2>Greyhound</h2>
-    <p class="breed-tagline">45 mph. Naps included. No brakes.</p>
+    <h2>Boxer</h2>
+    <p class="breed-tagline">Wiggles first. Questions later. No off switch.</p>
   </div>
 
   <div class="photo-section">
@@ -232,14 +232,14 @@
     <div id="photo-caption" class="photo-caption"></div>
     <div class="photo-nav">
       <button onclick="prevPhoto()">&#8592; Prev</button>
-      <span id="photo-counter" class="photo-counter">1 / 7</span>
+      <span id="photo-counter" class="photo-counter">1 / 6</span>
       <button onclick="nextPhoto()">Next &#8594;</button>
     </div>
   </div>
 
   <div class="breadcrumb"><a href="../index.html">&#8592; Back to Home</a> &nbsp;&middot;&nbsp; <a href="index.html">&#8592; Back to Breeds</a></div>
 
-  <div class="facts-heading">8 facts about the Greyhound</div>
+  <div class="facts-heading">3 facts about the Boxer</div>
 
   <div id="facts-section"></div>
 
@@ -248,9 +248,9 @@
 <footer>Dog Facts &mdash; a fun project</footer>
 
 <script>
-const PHOTOS = [{"file": "grey_hound_1.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Greyhound. 45mph. Also napping. Mostly napping."}, {"file": "greyhound_7.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Greyhound. Fastest dog on Earth. Napping competitively."}, {"file": "greyhound_8.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Lean machine. Off duty. Do not disturb."}, {"file": "greyhound_9.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Born to run. Currently declining."}, {"file": "greyhound_10.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "45mph potential. 0mph current speed. Balance achieved."}, {"file": "greyhound_11.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Retired racer. Professional lounge expert."}, {"file": "greyhound_12.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Greyhound. Sees the treat. Will absolutely sprint for it."}];
+const PHOTOS = [{"file": "boxer_dog_1.jpg", "breeds": ["boxer"], "tags": ["working dog", "playful", "medium breed", "energetic"], "caption": "Boxer. Wiggles. Constantly."}, {"file": "boxer_dog_2.jpg", "breeds": ["boxer"], "tags": ["working dog", "playful", "medium breed", "energetic"], "caption": "Perpetual puppy face. Permanent wiggle mode."}, {"file": "boxer_dog_3.jpg", "breeds": ["boxer"], "tags": ["working dog", "playful", "medium breed", "energetic"], "caption": "Zero chill. Maximum love."}, {"file": "boxer_dog_4.jpg", "breeds": ["boxer"], "tags": ["working dog", "playful", "medium breed", "energetic"], "caption": "Boxers don't walk. They bounce."}, {"file": "boxer_dog_5.jpg", "breeds": ["boxer"], "tags": ["working dog", "playful", "medium breed", "energetic"], "caption": "Underbite of joy. Heart of gold."}, {"file": "boxer_dog_6.jpg", "breeds": ["boxer"], "tags": ["working dog", "playful", "medium breed", "energetic"], "caption": "Boxer: professionally excitable since forever."}];
 
-const FACTS = [{"fact_number": 9, "category": "Breeds", "fact": "The Greyhound is the fastest dog breed, capable of reaching speeds up to 45 mph.", "breed": "greyhound"}, {"fact_number": 52, "category": "History", "fact": "The Greyhound is the only dog breed mentioned by name in the Bible.", "breed": "greyhound"}, {"fact_number": 150, "category": "Anatomy", "fact": "The Greyhound’s slender build is designed for aerodynamic efficiency.", "breed": "greyhound"}, {"fact_number": 168, "category": "Anatomy", "fact": "The Scottish Deerhound is built similarly to a Greyhound but is much larger and shaggier.", "breed": "greyhound"}, {"fact_number": 232, "category": "Biology", "fact": "The fastest recorded dog speed belongs to a Greyhound clocked at 45 mph (72 km/h), making it the fastest land animal over short distances after the cheetah.", "breed": "greyhound"}, {"fact_number": 252, "category": "Sensory", "fact": "Greyhounds have a nearly 270-degree field of vision — wider than almost any other dog breed — designed for tracking fast-moving prey across open terrain.", "breed": "greyhound"}, {"fact_number": 292, "category": "Records", "fact": "The highest jump by a dog is 75.5 inches (191.7 cm), set by a Greyhound mix named Feather in Frederick, Maryland in 2017.", "breed": "greyhound"}, {"fact_number": 342, "category": "History", "fact": "Greyhounds are the only breed specifically mentioned in the Bible (Proverbs 30:31 in certain translations), described among things that are ‘stately in their stride.’", "breed": "greyhound"}];
+const FACTS = [{"fact_number": 94, "category": "Anatomy", "fact": "The Boxer was named because it uses its front paws to 'box' when playing.", "breed": "boxer"}, {"fact_number": 239, "category": "Biology", "fact": "The dog genome was fully sequenced in 2005, using DNA from a Boxer named Tasha — it was a landmark in both veterinary and human medicine.", "breed": "boxer"}, {"fact_number": 309, "category": "Breeds", "fact": "The Boxer breed gets its name from its distinctive habit of standing on its hind legs and sparring with its front paws — a behavior seen during play.", "breed": "boxer"}];
 
 let currentPhoto = 0;
 
@@ -280,7 +280,7 @@ FACTS.forEach(function(fact) {
     '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
     '<div class="fact-category">' + fact.category + '</div>' +
     '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">greyhound</span></div>';
+    '<div class="fact-footer"><span class="fact-breed-tag">boxer</span></div>';
   section.appendChild(card);
 });
 
