@@ -2,2193 +2,2271 @@
   "facts": [
     {
       "fact_number": 1,
-      "category": "Sensory",
-      "fact": "Dogs can hear a frequency as high as 45-67 kHz, while humans max out around 20 kHz.",
-      "breed": null
+      "category": "General",
+      "fact": "The Affenpinscher is often called the 'monkey dog' due to its face and personality.",
+      "breed": "affenpinscher"
     },
     {
       "fact_number": 2,
-      "category": "Biology",
-      "fact": "A dog's sense of smell is roughly 10,000 to 100,000 times more acute than a human's.",
-      "breed": null
+      "category": "General",
+      "fact": "This breed never met an audience it didn't like. Walking on hind legs, working through a whole catalog of goofy party tricks — if someone's watching, they're on. At home, they're all affection and playful energy with the family. Just don't expect them to be gentle enough for a house full of kids.",
+      "breed": "affenpinscher"
     },
     {
       "fact_number": 3,
-      "category": "Anatomy",
-      "fact": "The Basset Hound's wrinkles help trap scent particles, keeping them near the dog's nose.",
-      "breed": "basset hound"
+      "category": "General",
+      "fact": "Long before they were anyone's lap dog, Affenpinschers earned their keep in 17th-century German households and stables hunting down rats and mice — proof that today's fluffy little clown had actual blue-collar origins.",
+      "breed": "affenpinscher"
     },
     {
       "fact_number": 4,
-      "category": "Breeds",
-      "fact": "The Bloodhound is the only animal whose testimony is admissible in a U.S. court of law.",
-      "breed": "bloodhound"
-    },
-    {
-      "fact_number": 5,
-      "category": "History",
-      "fact": "The first seeing-eye dog in the U.S. was a German Shepherd named Buddy, in 1928.",
-      "breed": "german shepherd"
-    },
-    {
-      "fact_number": 6,
-      "category": "Behavior",
-      "fact": "Dogs kick back after pooping not to cover the waste, but to mark territory using scent glands in their paws.",
-      "breed": null
-    },
-    {
-      "fact_number": 7,
-      "category": "Anatomy",
-      "fact": "Chow Chows are born with pink tongues; they turn blue-black as they grow older.",
-      "breed": null
-    },
-    {
-      "fact_number": 8,
-      "category": "Intelligence",
-      "fact": "Dogs can count and are able to notice when a simple addition like 1+1 equals 3.",
-      "breed": null
-    },
-    {
-      "fact_number": 9,
-      "category": "Breeds",
-      "fact": "The Greyhound is the fastest dog breed, capable of reaching speeds up to 45 mph.",
-      "breed": "greyhound"
-    },
-    {
-      "fact_number": 10,
-      "category": "Sensory",
-      "fact": "A dog's wet nose acts as a magnet for scent particles in the air.",
-      "breed": null
-    },
-    {
-      "fact_number": 11,
-      "category": "Biology",
-      "fact": "Dogs have three eyelids, including a nictitating membrane that keeps the eye lubricated.",
-      "breed": null
-    },
-    {
-      "fact_number": 12,
-      "category": "History",
-      "fact": "Ancient Greeks used to believe that dogs could cure illnesses by licking the afflicted area.",
-      "breed": null
-    },
-    {
-      "fact_number": 13,
-      "category": "Behavior",
-      "fact": "When dogs roll in stinky things, it's an instinctual way to hide their scent from predators.",
-      "breed": null
-    },
-    {
-      "fact_number": 14,
-      "category": "Anatomy",
-      "fact": "A dog's whiskers are so sensitive they can detect subtle changes in air currents.",
-      "breed": null
-    },
-    {
-      "fact_number": 15,
-      "category": "Intelligence",
-      "fact": "The average dog is about as smart as a 2-year-old human child.",
-      "breed": null
-    },
-    {
-      "fact_number": 16,
-      "category": "Breeds",
-      "fact": "The Chihuahua is the smallest dog breed in the world, named after the Mexican state.",
-      "breed": "chihuahua"
-    },
-    {
-      "fact_number": 17,
-      "category": "History",
-      "fact": "Dalmatians were used as carriage dogs to protect horses from stray dogs and predators.",
-      "breed": null
-    },
-    {
-      "fact_number": 18,
-      "category": "Biology",
-      "fact": "Puppies are born deaf, and their hearing is the last of their senses to fully develop.",
-      "breed": null
-    },
-    {
-      "fact_number": 19,
-      "category": "Behavior",
-      "fact": "Yawning can be a sign of stress or anxiety in dogs, not just sleepiness.",
-      "breed": null
-    },
-    {
-      "fact_number": 20,
-      "category": "Anatomy",
-      "fact": "Newfoundlands have webbed feet and water-resistant coats, making them excellent swimmers.",
-      "breed": null
-    },
-    {
-      "fact_number": 21,
-      "category": "Breeds",
-      "fact": "The Border Collie is widely considered the most intelligent dog breed.",
-      "breed": "border collie"
-    },
-    {
-      "fact_number": 22,
-      "category": "Sensory",
-      "fact": "Dogs can sense a drop in barometric pressure, allowing them to predict storms.",
-      "breed": null
-    },
-    {
-      "fact_number": 23,
-      "category": "History",
-      "fact": "The oldest dog on record was an Australian Cattle Dog named Bluey, who lived to be 29 years and 5 months old.",
-      "breed": null
-    },
-    {
-      "fact_number": 24,
-      "category": "Biology",
-      "fact": "A dog's heart beats 70 to 120 times per minute, much faster than a human heart.",
-      "breed": null
-    },
-    {
-      "fact_number": 25,
-      "category": "Behavior",
-      "fact": "The 'play bow' is a universal signal among dogs that everything following is a game.",
-      "breed": null
-    },
-    {
-      "fact_number": 26,
-      "category": "Anatomy",
-      "fact": "Dogs only have sweat glands in their paw pads.",
-      "breed": null
-    },
-    {
-      "fact_number": 27,
-      "category": "Intelligence",
-      "fact": "Dogs can learn to understand over 150 words and gestures.",
-      "breed": null
-    },
-    {
-      "fact_number": 28,
-      "category": "Breeds",
-      "fact": "The Great Dane is the tallest dog breed, often reaching 30-32 inches at the shoulder.",
-      "breed": "great dane"
-    },
-    {
-      "fact_number": 29,
-      "category": "History",
-      "fact": "Kublai Khan was said to have kept 5,000 Mastiffs for hunting and protection.",
-      "breed": null
-    },
-    {
-      "fact_number": 30,
-      "category": "Biology",
-      "fact": "A dog's average body temperature is between 101 and 102.5 degrees Fahrenheit.",
-      "breed": null
-    },
-    {
-      "fact_number": 31,
-      "category": "Behavior",
-      "fact": "Dogs often walk in circles before lying down to flatten the 'grass' and check for snakes.",
-      "breed": null
-    },
-    {
-      "fact_number": 32,
-      "category": "Anatomy",
-      "fact": "The Saluki is one of the oldest dog breeds, with origins dating back to Ancient Egypt.",
-      "breed": "saluki"
-    },
-    {
-      "fact_number": 33,
-      "category": "Breeds",
-      "fact": "The Basenji is the only dog that cannot bark; they 'yodel' instead.",
-      "breed": "basenji"
-    },
-    {
-      "fact_number": 34,
-      "category": "Sensory",
-      "fact": "A dog's sense of smell is so strong they can detect a teaspoon of sugar in two Olympic-sized swimming pools.",
-      "breed": null
-    },
-    {
-      "fact_number": 35,
-      "category": "History",
-      "fact": "Three dogs survived the sinking of the Titanic: two Pomeranians and a Pekingese.",
-      "breed": "pekingese"
-    },
-    {
-      "fact_number": 36,
-      "category": "Biology",
-      "fact": "Dogs are not colorblind; they can see shades of blue and yellow.",
-      "breed": null
-    },
-    {
-      "fact_number": 37,
-      "category": "Behavior",
-      "fact": "Tail wagging isn't always a sign of happiness; it can also indicate agitation or tension.",
-      "breed": null
-    },
-    {
-      "fact_number": 38,
-      "category": "Anatomy",
-      "fact": "A dog's shoulder blades are not attached to the rest of the skeleton, allowing for more flexibility.",
-      "breed": null
-    },
-    {
-      "fact_number": 39,
-      "category": "Intelligence",
-      "fact": "Dogs can feel envy when they see another dog getting a better treat for the same task.",
-      "breed": null
-    },
-    {
-      "fact_number": 40,
-      "category": "Breeds",
-      "fact": "The Pug's name comes from the Latin word 'pugnus,' which means fist.",
-      "breed": "pug"
-    },
-    {
-      "fact_number": 41,
-      "category": "History",
-      "fact": "Rin Tin Tin, the movie star German Shepherd, was rescued from a WWI battlefield.",
-      "breed": "german shepherd"
-    },
-    {
-      "fact_number": 42,
-      "category": "Biology",
-      "fact": "Dogs reach maturity at different ages; smaller breeds mature faster than large ones.",
-      "breed": null
-    },
-    {
-      "fact_number": 43,
-      "category": "Behavior",
-      "fact": "Mouth-licking is a submissive behavior dogs use to show respect to a pack leader.",
-      "breed": null
-    },
-    {
-      "fact_number": 44,
-      "category": "Anatomy",
-      "fact": "The Dachshund's long body and short legs were bred specifically for hunting badgers in burrows.",
-      "breed": "dachshund"
-    },
-    {
-      "fact_number": 45,
-      "category": "Breeds",
-      "fact": "The Siberian Husky is known for its incredible endurance over long distances.",
-      "breed": "siberian husky"
-    },
-    {
-      "fact_number": 46,
-      "category": "Sensory",
-      "fact": "Dogs can detect certain human diseases, including some types of cancer and diabetes.",
-      "breed": null
-    },
-    {
-      "fact_number": 47,
-      "category": "History",
-      "fact": "The Saint Bernard was bred by monks in the Swiss Alps for rescue missions.",
-      "breed": "saint bernard"
-    },
-    {
-      "fact_number": 48,
-      "category": "Biology",
-      "fact": "A dog's nose print is as unique as a human's fingerprint.",
-      "breed": null
-    },
-    {
-      "fact_number": 49,
-      "category": "Behavior",
-      "fact": "Dogs often lean on their owners to show affection or seek security.",
-      "breed": null
-    },
-    {
-      "fact_number": 50,
-      "category": "Anatomy",
-      "fact": "The Irish Wolfhound is the tallest dog breed, even taller than the Great Dane on average.",
-      "breed": "great dane"
-    },
-    {
-      "fact_number": 51,
-      "category": "Breeds",
+      "category": "General",
       "fact": "The Akita is a symbol of health, happiness, and longevity in Japan.",
       "breed": "akita"
     },
     {
-      "fact_number": 52,
-      "category": "History",
-      "fact": "The Greyhound is the only dog breed mentioned by name in the Bible.",
-      "breed": "greyhound"
+      "fact_number": 5,
+      "category": "General",
+      "fact": "Yep, webbed toes. Turns out that's not a design flaw — it's how the Akita earned the nickname \"Snow Country Dog,\" built to run across snow and climb out of icy water like it's nothing. Pair that with a serious front dewclaw and you've got an animal engineered for one job: hunting down prey several times its size in conditions that would end most dogs early.",
+      "breed": "akita"
     },
     {
-      "fact_number": 53,
-      "category": "Biology",
-      "fact": "Dogs dream just like humans, often twitching their paws as they sleep.",
-      "breed": null
+      "fact_number": 6,
+      "category": "General",
+      "fact": "Helen Keller is credited with bringing the first Akita to the U.S. in 1937, gifted a puppy named Kamikaze-go on a visit to Japan; when he died young of distemper, the Japanese government sent her his brother, Kenzan-go, to carry on the line.",
+      "breed": "akita"
     },
     {
-      "fact_number": 54,
-      "category": "Behavior",
-      "fact": "Sighing with half-closed eyes usually means a dog is content and relaxed.",
-      "breed": null
+      "fact_number": 7,
+      "category": "General",
+      "fact": "The Alaskan Husky is not a purebred breed but a category of highly efficient sled dogs.",
+      "breed": "alaskan husky"
     },
     {
-      "fact_number": 55,
-      "category": "Anatomy",
-      "fact": "A dog's ear has 18 muscles that allow it to move and rotate toward sounds.",
-      "breed": null
+      "fact_number": 8,
+      "category": "General",
+      "fact": "Watch a sled team work and the intelligence is obvious — these dogs pick up commands fast and won't tolerate the \"dumb jock\" label. But smart doesn't mean easy: that same sharp mind comes with a stubborn streak, so training only sticks if you start early and keep their brain busy with puzzles and new challenges along the way",
+      "breed": "alaskan husky"
     },
     {
-      "fact_number": 56,
-      "category": "Breeds",
-      "fact": "The Portuguese Water Dog was bred to herd fish into nets and deliver messages between ships.",
-      "breed": "portuguese water dog"
+      "fact_number": 9,
+      "category": "General",
+      "fact": "There's no breed standard here, and that's the point — mushers freely mix in Pointer, Greyhound, and even Saluki bloodlines chasing raw speed and endurance, which is how a 'mutt' ended up dominating the Iditarod.",
+      "breed": "alaskan husky"
     },
     {
-      "fact_number": 57,
-      "category": "Sensory",
-      "fact": "Dogs can smell 'fear' because they can detect the hormones humans release when stressed.",
-      "breed": null
+      "fact_number": 10,
+      "category": "General",
+      "fact": "They possess a dense double coat with an oily woolly undercoat that protects them against freezing temperatures up to 70 degrees below zero.",
+      "breed": "alaskan malamute"
     },
     {
-      "fact_number": 58,
-      "category": "History",
-      "fact": "Ancient Egyptians worshipped dogs and often mummified them with their owners.",
-      "breed": null
+      "fact_number": 11,
+      "category": "General",
+      "fact": "Unlike many domestic dogs Malamutes do not typically bark; instead they communicate through a characteristic 'woo-woo' vocalization and howling.",
+      "breed": "alaskan malamute"
     },
     {
-      "fact_number": 59,
-      "category": "Biology",
-      "fact": "The gestation period for a dog is approximately 63 days.",
-      "breed": null
-    },
-    {
-      "fact_number": 60,
-      "category": "Behavior",
-      "fact": "Dogs may 'protect' their food even if they aren't hungry, an instinct known as resource guarding.",
-      "breed": null
-    },
-    {
-      "fact_number": 61,
-      "category": "Anatomy",
+      "fact_number": 12,
+      "category": "General",
       "fact": "The Alaskan Malamute was bred to pull heavy loads, not for speed.",
       "breed": "alaskan malamute"
     },
     {
-      "fact_number": 62,
-      "category": "Breeds",
-      "fact": "The Corgi is a cattle-herding dog; their short stature helps them avoid being kicked.",
-      "breed": "corgi"
+      "fact_number": 13,
+      "category": "General",
+      "fact": "The American Foxhound was one of the first breeds developed in the United States.",
+      "breed": "american foxhound"
     },
     {
-      "fact_number": 63,
-      "category": "History",
-      "fact": "The Teddy Roosevelt Terriers were named after the president who kept them in the White House.",
-      "breed": null
+      "fact_number": 14,
+      "category": "General",
+      "fact": "American Foxhounds don't bark so much as perform. That signature howl is an inheritance from their English bloodline, and it made enough of an impression on George Washington that he compared it to the bells of Moscow. Not bad for a dog.",
+      "breed": "american foxhound"
     },
     {
-      "fact_number": 64,
-      "category": "Biology",
-      "fact": "Puppies have 28 baby teeth, which they lose to make room for 42 permanent teeth.",
-      "breed": null
+      "fact_number": 15,
+      "category": "General",
+      "fact": "Before the Civil War, fox hunting was the sport, and this breed was the engine behind it — speed, endurance, and the stamina to run for hours without quitting. That history didn't go anywhere: they still need 1-2 hours of exercise a day, and without a job to do, they'll find one themselves, usually something you won't like. Give them a trail instead and you've got the best running or hiking partner you'll ever own. Bonus: they're gentle enough to handle whatever chaos your kids or other pets throw at them.",
+      "breed": "american foxhound"
     },
     {
-      "fact_number": 65,
-      "category": "Behavior",
-      "fact": "Digging at a bed before lying down is a nesting instinct from the wild.",
-      "breed": null
+      "fact_number": 16,
+      "category": "General",
+      "fact": "The oldest dog on record was an Australian Cattle Dog named Bluey, who lived to be 29 years and 5 months old.",
+      "breed": "australian cattle dog"
     },
     {
-      "fact_number": 66,
-      "category": "Anatomy",
-      "fact": "The Great Pyrenees was once the official 'Royal Dog of France' under Louis XIV.",
-      "breed": "great pyrenees"
+      "fact_number": 17,
+      "category": "General",
+      "fact": "The breed's blotchy blue or red coat isn't there at birth — Cattle Dog puppies are actually born solid white and only develop their signature speckling as they mature.",
+      "breed": "australian cattle dog"
     },
     {
-      "fact_number": 67,
-      "category": "Breeds",
-      "fact": "The Shiba Inu is the smallest of the six original Japanese spitz breeds.",
-      "breed": "shiba inu"
+      "fact_number": 18,
+      "category": "General",
+      "fact": "The \"Blue Heeler\" name comes straight from the job description: these dogs move stubborn cattle by darting in low and nipping at their heels, then dropping flat to dodge the kick that follows.",
+      "breed": "australian cattle dog"
     },
     {
-      "fact_number": 68,
-      "category": "Sensory",
-      "fact": "Dogs use their sense of smell to track time as scent levels change throughout the day.",
-      "breed": null
+      "fact_number": 19,
+      "category": "General",
+      "fact": "Despite their name the breed actually originated in the western United States during the Gold Rush where they were bred to herd sheep.",
+      "breed": "australian shepherd"
     },
     {
-      "fact_number": 69,
-      "category": "History",
-      "fact": "The Bull Terrier was once known as the 'White Cavalier' because of its courage and breeding.",
-      "breed": "bull terrier"
+      "fact_number": 20,
+      "category": "General",
+      "fact": "They are highly prone to heterochromia a condition where individual dogs can have two different colored eyes or even multiple colors within the same eye.",
+      "breed": "australian shepherd"
     },
     {
-      "fact_number": 70,
-      "category": "Biology",
-      "fact": "A dog's digestive system is designed to handle a variety of foods, but they are primarily carnivores.",
-      "breed": null
-    },
-    {
-      "fact_number": 71,
-      "category": "Behavior",
-      "fact": "Panting is a dog's primary way of cooling down since they don't sweat like humans.",
-      "breed": null
-    },
-    {
-      "fact_number": 72,
-      "category": "Anatomy",
-      "fact": "The Ridgeback's characteristic hair stripe grows in the opposite direction of the rest of the coat.",
-      "breed": null
-    },
-    {
-      "fact_number": 73,
-      "category": "Breeds",
-      "fact": "The Samoyed's white coat was bred to help them blend into the snow of Siberia.",
-      "breed": "samoyed"
-    },
-    {
-      "fact_number": 74,
-      "category": "History",
-      "fact": "The first dog show took place in the UK in 1859.",
-      "breed": null
-    },
-    {
-      "fact_number": 75,
-      "category": "Biology",
-      "fact": "A dog's brain size varies greatly between breeds, but the olfactory bulb is always large.",
-      "breed": null
-    },
-    {
-      "fact_number": 76,
-      "category": "Behavior",
-      "fact": "Dogs often tilt their heads to better localize the source of a sound.",
-      "breed": null
-    },
-    {
-      "fact_number": 77,
-      "category": "Anatomy",
-      "fact": "The Poodle's 'pompoms' were originally meant to protect their joints from cold water.",
-      "breed": "poodle"
-    },
-    {
-      "fact_number": 78,
-      "category": "Breeds",
-      "fact": "The Whippet is often called the 'poor man's racehorse' due to its speed.",
-      "breed": "whippet"
-    },
-    {
-      "fact_number": 79,
-      "category": "Sensory",
-      "fact": "Dogs can hear the high-frequency vibration of a digital clock or a TV.",
-      "breed": null
-    },
-    {
-      "fact_number": 80,
-      "category": "History",
-      "fact": "The Doberman Pinscher was created by a German tax collector for personal protection.",
-      "breed": "doberman"
-    },
-    {
-      "fact_number": 81,
-      "category": "Biology",
-      "fact": "Dogs can be left-pawed or right-pawed, just like humans.",
-      "breed": null
-    },
-    {
-      "fact_number": 82,
-      "category": "Behavior",
-      "fact": "Whining is a way for dogs to communicate stress, pain, or excitement.",
-      "breed": null
-    },
-    {
-      "fact_number": 83,
-      "category": "Anatomy",
-      "fact": "The English Mastiff is the heaviest dog breed, sometimes exceeding 200 pounds.",
-      "breed": "mastiff"
-    },
-    {
-      "fact_number": 84,
-      "category": "Breeds",
+      "fact_number": 21,
+      "category": "General",
       "fact": "The Australian Shepherd actually originated in the western United States, not Australia.",
       "breed": "australian shepherd"
     },
     {
-      "fact_number": 85,
-      "category": "History",
-      "fact": "The phrase 'dog days of summer' refers to the rising of the star Sirius.",
-      "breed": null
+      "fact_number": 22,
+      "category": "General",
+      "fact": "Known as Africa's 'barkless dog,' they produce an unusual sound resembling a yodel or chortle due to their unusually shaped larynx.",
+      "breed": "basenji"
     },
     {
-      "fact_number": 86,
-      "category": "Biology",
-      "fact": "Dogs can suffer from seasonal allergies, just like humans.",
-      "breed": null
+      "fact_number": 23,
+      "category": "General",
+      "fact": "They groom themselves using their paws in a manner very similar to cats which keeps their short coats exceptionally clean and virtually odor-free.",
+      "breed": "basenji"
     },
     {
-      "fact_number": 87,
-      "category": "Behavior",
-      "fact": "Staring into a dog's eyes can trigger the release of oxytocin, the bonding hormone.",
-      "breed": null
+      "fact_number": 24,
+      "category": "General",
+      "fact": "The Basenji is the only dog that cannot bark; they 'yodel' instead.",
+      "breed": "basenji"
     },
     {
-      "fact_number": 88,
-      "category": "Anatomy",
-      "fact": "The Finnish Spitz is known for its bark, which is often called a 'yodel.'",
-      "breed": null
+      "fact_number": 25,
+      "category": "General",
+      "fact": "The Basenji: Known as the \"barkless dog,\" they make a sound more like a yodel due to the shape of their larynx.",
+      "breed": "basenji"
     },
     {
-      "fact_number": 89,
-      "category": "Breeds",
-      "fact": "The Vizsla is known as the 'Velcro dog' because it stays so close to its owner.",
-      "breed": "vizsla"
+      "fact_number": 26,
+      "category": "General",
+      "fact": "Their long droopy ears drag along the ground to stir up scent particles sweeping the smells directly toward their highly sensitive noses.",
+      "breed": "basset hound"
     },
     {
-      "fact_number": 90,
-      "category": "Sensory",
-      "fact": "A dog's whiskers are deeply embedded in their skin and connected to the brain's sensory center.",
-      "breed": null
+      "fact_number": 27,
+      "category": "General",
+      "fact": "They have more loose skin around their face and neck than almost any other breed which helps trap and hold scents while tracking.",
+      "breed": "basset hound"
     },
     {
-      "fact_number": 91,
-      "category": "History",
+      "fact_number": 28,
+      "category": "General",
+      "fact": "The Basset Hound's wrinkles help trap scent particles, keeping them near the dog's nose.",
+      "breed": "basset hound"
+    },
+    {
+      "fact_number": 29,
+      "category": "General",
+      "fact": "Their distinct white-tipped tails were intentionally bred so that hunters could easily spot the dogs while they tracked game through tall grass.",
+      "breed": "beagle"
+    },
+    {
+      "fact_number": 30,
+      "category": "General",
+      "fact": "The United States government employs a special team called the 'Beagle Brigade' to sniff out illegal agricultural products at international airports.",
+      "breed": "beagle"
+    },
+    {
+      "fact_number": 31,
+      "category": "General",
       "fact": "The Beagle's name is thought to come from the French word 'begueule,' meaning 'loudmouth.'",
       "breed": "beagle"
     },
     {
-      "fact_number": 92,
-      "category": "Biology",
-      "fact": "Dogs don't have a collarbone, which allows them to take longer running strides.",
-      "breed": null
-    },
-    {
-      "fact_number": 93,
-      "category": "Behavior",
-      "fact": "If a dog 'huffs' at you, it's often a sign of mild annoyance or a request for attention.",
-      "breed": null
-    },
-    {
-      "fact_number": 94,
-      "category": "Anatomy",
-      "fact": "The Boxer was named because it uses its front paws to 'box' when playing.",
-      "breed": "boxer"
-    },
-    {
-      "fact_number": 95,
-      "category": "Breeds",
-      "fact": "The Jack Russell Terrier was bred specifically for fox hunting.",
-      "breed": "jack russell terrier"
-    },
-    {
-      "fact_number": 96,
-      "category": "History",
-      "fact": "The Lhasa Apso was bred as an indoor sentinel in Tibetan monasteries.",
-      "breed": "lhasa apso"
-    },
-    {
-      "fact_number": 97,
-      "category": "Biology",
-      "fact": "Dogs can detect changes in the Earth's magnetic field.",
-      "breed": null
-    },
-    {
-      "fact_number": 98,
-      "category": "Behavior",
-      "fact": "The 'zoomies' are technically known as Frenetic Random Activity Periods (FRAPs).",
-      "breed": null
-    },
-    {
-      "fact_number": 99,
-      "category": "Anatomy",
-      "fact": "The Komondor's corded coat helps it blend in with the sheep it protects.",
-      "breed": null
-    },
-    {
-      "fact_number": 100,
-      "category": "Breeds",
-      "fact": "The Newfoundland is famous for its natural life-saving instincts in water.",
-      "breed": "newfoundland"
-    },
-    {
-      "fact_number": 101,
-      "category": "Sensory",
-      "fact": "Dogs can hear the ultrasonic pulses emitted by mice and other small rodents.",
-      "breed": null
-    },
-    {
-      "fact_number": 102,
-      "category": "Biology",
-      "fact": "A dog's whiskers are roughly twice as thick as its normal hair.",
-      "breed": null
-    },
-    {
-      "fact_number": 103,
-      "category": "Anatomy",
-      "fact": "The Cavalier King Charles Spaniel was named after King Charles II of Great Britain.",
-      "breed": null
-    },
-    {
-      "fact_number": 104,
-      "category": "Breeds",
-      "fact": "The Affenpinscher is often called the 'monkey dog' due to its face and personality.",
-      "breed": null
-    },
-    {
-      "fact_number": 105,
-      "category": "History",
-      "fact": "Dogs were used as messengers and scouts during both World War I and World War II.",
-      "breed": null
-    },
-    {
-      "fact_number": 106,
-      "category": "Behavior",
-      "fact": "When a dog nudges you with its nose, it's often a request for your attention.",
-      "breed": null
-    },
-    {
-      "fact_number": 107,
-      "category": "Anatomy",
-      "fact": "The Borzoi was originally known as the Russian Wolfhound.",
-      "breed": "borzoi"
-    },
-    {
-      "fact_number": 108,
-      "category": "Intelligence",
-      "fact": "Dogs can learn to navigate complex obstacle courses through observation.",
-      "breed": null
-    },
-    {
-      "fact_number": 109,
-      "category": "Breeds",
-      "fact": "The Pekingese was once so small it could be carried in the sleeve of a Chinese emperor's robe.",
-      "breed": "pekingese"
-    },
-    {
-      "fact_number": 110,
-      "category": "Sensory",
-      "fact": "Dogs can detect the heat of a human body through their noses.",
-      "breed": null
-    },
-    {
-      "fact_number": 111,
-      "category": "Biology",
-      "fact": "A dog's stomach can expand significantly to hold a large meal, a trait from its wild ancestors.",
-      "breed": null
-    },
-    {
-      "fact_number": 112,
-      "category": "History",
-      "fact": "The Chihuahua was considered a sacred guide for souls in the afterlife by the Toltecs.",
-      "breed": "chihuahua"
-    },
-    {
-      "fact_number": 113,
-      "category": "Behavior",
-      "fact": "Dogs often lick their paws to clean themselves or as a way to self-soothe.",
-      "breed": null
-    },
-    {
-      "fact_number": 114,
-      "category": "Anatomy",
-      "fact": "The Leonberger was bred to resemble the lion on the town crest of Leonberg, Germany.",
-      "breed": "leonberger"
-    },
-    {
-      "fact_number": 115,
-      "category": "Breeds",
+      "fact_number": 32,
+      "category": "General",
       "fact": "The Belgian Tervuren is one of the four varieties of Belgian Shepherd.",
-      "breed": null
+      "breed": "belgian tervuren"
     },
     {
-      "fact_number": 116,
-      "category": "Intelligence",
-      "fact": "Dogs can understand the concept of 'more' versus 'less' when it comes to treats.",
-      "breed": null
+      "fact_number": 33,
+      "category": "General",
+      "fact": "The Belgian Tervuren is one of four Belgian Shepherd varieties, named for the region it hails from, and originally bred to herd livestock and stand between the flock and anything that meant it harm. Depending who's keeping score, it's either its own breed or just a coat-color variant of a bigger family — the AKC split it off in 1959, the FCI still lumps all four Belgian Shepherds together, and the UK splits the difference by grouping them under one name while distinguishing by coat",
+      "breed": "belgian tervuren"
     },
     {
-      "fact_number": 117,
-      "category": "History",
-      "fact": "The Scottish Terrier was the first breed to have its own national club in the U.S.",
-      "breed": null
+      "fact_number": 34,
+      "category": "General",
+      "fact": "Smart, loyal, and useful enough to outgrow the pasture, the Tervuren picked up side jobs in police work, search and rescue, and wartime messenger duty. Both World Wars nearly wiped the breed out, but a handful of dedicated breeders rebuilt it from the ground up in the mid-1900s — and today it's just as comfortable owning a conformation ring as it once was working a field.",
+      "breed": "belgian tervuren"
     },
     {
-      "fact_number": 118,
-      "category": "Biology",
-      "fact": "A dog's heart rate drops when they are petted by someone they trust.",
-      "breed": null
+      "fact_number": 35,
+      "category": "General",
+      "fact": "Sailors frequently used these small dogs as items of barter during Mediterranean trading voyages throughout the 14th century.",
+      "breed": "bichon frise"
     },
     {
-      "fact_number": 119,
-      "category": "Behavior",
-      "fact": "Leaning against your legs is a dog's way of showing they trust you completely.",
-      "breed": null
+      "fact_number": 36,
+      "category": "General",
+      "fact": "Their hair grows continuously rather than shedding out making regular professional grooming essential to prevent painful matting.",
+      "breed": "bichon frise"
     },
     {
-      "fact_number": 120,
-      "category": "Anatomy",
-      "fact": "The Papillon's name means 'butterfly' in French, referring to its wing-like ears.",
-      "breed": "papillon"
+      "fact_number": 37,
+      "category": "General",
+      "fact": "King Henry III of France loved his Bichons so much that he famously carried them everywhere in a small basket suspended from his neck.",
+      "breed": "bichon frise"
     },
     {
-      "fact_number": 121,
-      "category": "Breeds",
-      "fact": "The Otterhound is a rare breed that was originally used to hunt otters in England.",
-      "breed": "otterhound"
-    },
-    {
-      "fact_number": 122,
-      "category": "Sensory",
-      "fact": "Dogs can hear the sound of their owner's heartbeat from a short distance.",
-      "breed": null
-    },
-    {
-      "fact_number": 123,
-      "category": "History",
-      "fact": "The Great Pyrenees was used by the French military to carry messages over mountains.",
-      "breed": "great pyrenees"
-    },
-    {
-      "fact_number": 124,
-      "category": "Biology",
-      "fact": "Dogs produce a specific sound when they 'laugh' while playing.",
-      "breed": null
-    },
-    {
-      "fact_number": 125,
-      "category": "Behavior",
-      "fact": "If a dog puts its head on your lap, it's a sign of deep affection and trust.",
-      "breed": null
-    },
-    {
-      "fact_number": 126,
-      "category": "Anatomy",
-      "fact": "The Shiba Inu has a 'fox-like' appearance due to its pointed ears and snout.",
-      "breed": "shiba inu"
-    },
-    {
-      "fact_number": 127,
-      "category": "Breeds",
-      "fact": "The Gordon Setter is the largest of the setter breeds, originating in Scotland.",
-      "breed": null
-    },
-    {
-      "fact_number": 128,
-      "category": "Intelligence",
-      "fact": "Dogs can distinguish between different types of human laughter.",
-      "breed": null
-    },
-    {
-      "fact_number": 129,
-      "category": "History",
-      "fact": "The first dog to win a Best in Show at Westminster was a Smooth Fox Terrier named Ch. Warren Remedy.",
-      "breed": null
-    },
-    {
-      "fact_number": 130,
-      "category": "Biology",
-      "fact": "A dog's paws have a specialized blood circulation system to prevent heat loss in winter.",
-      "breed": null
-    },
-    {
-      "fact_number": 131,
-      "category": "Behavior",
-      "fact": "Dogs often sleep in a 'donut' shape to preserve body heat and protect their stomach.",
-      "breed": null
-    },
-    {
-      "fact_number": 132,
-      "category": "Anatomy",
-      "fact": "The Brittany Spaniel is actually more closely related to a pointer than a spaniel.",
-      "breed": "pointer"
-    },
-    {
-      "fact_number": 133,
-      "category": "Breeds",
-      "fact": "The Wire Fox Terrier was a favorite of King Edward VII.",
-      "breed": null
-    },
-    {
-      "fact_number": 134,
-      "category": "Sensory",
-      "fact": "Dogs can detect a drop in blood sugar levels in people with diabetes.",
-      "breed": null
-    },
-    {
-      "fact_number": 135,
-      "category": "History",
-      "fact": "The Dalmatian is the traditional mascot of fire departments because of its history with horse-drawn fire engines.",
-      "breed": "dalmatian"
-    },
-    {
-      "fact_number": 136,
-      "category": "Biology",
-      "fact": "Dogs have a unique vocal structure that allows them to make a wide range of sounds.",
-      "breed": null
-    },
-    {
-      "fact_number": 137,
-      "category": "Behavior",
-      "fact": "Wagging the tail low and slowly usually means the dog is feeling insecure.",
-      "breed": null
-    },
-    {
-      "fact_number": 138,
-      "category": "Anatomy",
-      "fact": "The Irish Red and White Setter is the older of the two Irish Setter breeds.",
-      "breed": null
-    },
-    {
-      "fact_number": 139,
-      "category": "Breeds",
-      "fact": "The Lowchen is also known as the 'Little Lion Dog.'",
-      "breed": null
-    },
-    {
-      "fact_number": 140,
-      "category": "Intelligence",
-      "fact": "Dogs can learn to associate specific words with physical objects, like toys or household items.",
-      "breed": null
-    },
-    {
-      "fact_number": 141,
-      "category": "History",
-      "fact": "The American Foxhound was one of the first breeds developed in the United States.",
-      "breed": null
-    },
-    {
-      "fact_number": 142,
-      "category": "Biology",
-      "fact": "Dogs have a tapetum lucidum, which helps them see clearly in low light.",
-      "breed": null
-    },
-    {
-      "fact_number": 143,
-      "category": "Behavior",
-      "fact": "Sniffing another dog's rear is like a human handshake; it provides vital information about the other dog.",
-      "breed": null
-    },
-    {
-      "fact_number": 144,
-      "category": "Anatomy",
-      "fact": "The Clumber Spaniel is the heaviest of the spaniel breeds.",
-      "breed": null
-    },
-    {
-      "fact_number": 145,
-      "category": "Breeds",
-      "fact": "The Canaan Dog is the national dog of Israel.",
-      "breed": null
-    },
-    {
-      "fact_number": 146,
-      "category": "Sensory",
-      "fact": "Dogs can detect the presence of mold in houses through their sense of smell.",
-      "breed": null
-    },
-    {
-      "fact_number": 147,
-      "category": "History",
-      "fact": "The Alaskan Husky is not a purebred breed but a category of highly efficient sled dogs.",
-      "breed": null
-    },
-    {
-      "fact_number": 148,
-      "category": "Biology",
-      "fact": "Dogs have a specialized organ in their nose called the Jacobson's organ for pheromone detection.",
-      "breed": null
-    },
-    {
-      "fact_number": 149,
-      "category": "Behavior",
-      "fact": "When a dog brings you a toy, it's often an invitation for shared interaction.",
-      "breed": null
-    },
-    {
-      "fact_number": 150,
-      "category": "Anatomy",
-      "fact": "The Greyhound's slender build is designed for aerodynamic efficiency.",
-      "breed": "greyhound"
-    },
-    {
-      "fact_number": 151,
-      "category": "Breeds",
-      "fact": "The English Setter is known for its unique 'belton' coat patterns.",
-      "breed": null
-    },
-    {
-      "fact_number": 152,
-      "category": "Intelligence",
-      "fact": "Dogs can learn to solve simple puzzles to earn food rewards.",
-      "breed": null
-    },
-    {
-      "fact_number": 153,
-      "category": "History",
-      "fact": "The Welsh Corgi Pembroke was a favorite of the British Royal Family for decades.",
-      "breed": "corgi"
-    },
-    {
-      "fact_number": 154,
-      "category": "Biology",
-      "fact": "A dog's sense of smell is crucial for their social interaction and understanding of their environment.",
-      "breed": null
-    },
-    {
-      "fact_number": 155,
-      "category": "Behavior",
-      "fact": "Pacing can be a sign that a dog is feeling bored or anxious.",
-      "breed": null
-    },
-    {
-      "fact_number": 156,
-      "category": "Anatomy",
-      "fact": "The Tibetan Terrier was originally bred as a companion and good luck charm.",
-      "breed": null
-    },
-    {
-      "fact_number": 157,
-      "category": "Breeds",
-      "fact": "The Weimaraner is often called the 'Gray Ghost' because of its sleek, silvery coat.",
-      "breed": "weimaraner"
-    },
-    {
-      "fact_number": 158,
-      "category": "Sensory",
-      "fact": "Dogs can hear sounds up to four times further away than humans can.",
-      "breed": null
-    },
-    {
-      "fact_number": 159,
-      "category": "History",
-      "fact": "The Newfoundland dog was often used to help pull heavy carts in its native land.",
-      "breed": "newfoundland"
-    },
-    {
-      "fact_number": 160,
-      "category": "Biology",
-      "fact": "Dogs have a very fast metabolic rate compared to humans.",
-      "breed": null
-    },
-    {
-      "fact_number": 161,
-      "category": "Behavior",
-      "fact": "Nipping during play is a common puppy behavior that mimics pack interaction.",
-      "breed": null
-    },
-    {
-      "fact_number": 162,
-      "category": "Anatomy",
-      "fact": "The Bulldog's flat face was originally bred to allow it to breathe while holding onto a bull.",
-      "breed": "bulldog"
-    },
-    {
-      "fact_number": 163,
-      "category": "Breeds",
-      "fact": "The Black and Tan Coonhound is the only coonhound breed recognized by some major kennel clubs for years.",
-      "breed": null
-    },
-    {
-      "fact_number": 164,
-      "category": "Intelligence",
-      "fact": "Dogs can remember specific events for long periods, similar to human episodic memory.",
-      "breed": null
-    },
-    {
-      "fact_number": 165,
-      "category": "History",
-      "fact": "The Tibetan Mastiff was used to guard nomadic camps in the Himalayas.",
-      "breed": "mastiff"
-    },
-    {
-      "fact_number": 166,
-      "category": "Biology",
-      "fact": "A dog's skin is thinner than human skin, making it more sensitive to heat and cold.",
-      "breed": null
-    },
-    {
-      "fact_number": 167,
-      "category": "Behavior",
-      "fact": "A dog's 'sigh' of relief often occurs when they finally feel safe and at rest.",
-      "breed": null
-    },
-    {
-      "fact_number": 168,
-      "category": "Anatomy",
-      "fact": "The Scottish Deerhound is built similarly to a Greyhound but is much larger and shaggier.",
-      "breed": "greyhound"
-    },
-    {
-      "fact_number": 169,
-      "category": "Breeds",
-      "fact": "The Skye Terrier was once the favorite breed of Mary, Queen of Scots.",
-      "breed": "skye terrier"
-    },
-    {
-      "fact_number": 170,
-      "category": "Sensory",
-      "fact": "Dogs can sense the emotions of their owners by 'reading' their facial expressions.",
-      "breed": null
-    },
-    {
-      "fact_number": 171,
-      "category": "History",
-      "fact": "The Rottweiler was originally used as a herding dog and to pull carts for butchers.",
-      "breed": "rottweiler"
-    },
-    {
-      "fact_number": 172,
-      "category": "Biology",
-      "fact": "Dogs don't have a gallbladder issues as frequently as humans, but they do have one.",
-      "breed": null
-    },
-    {
-      "fact_number": 173,
-      "category": "Behavior",
-      "fact": "When a dog sleeps with its head on its paws, it's often in a state of light dozing.",
-      "breed": null
-    },
-    {
-      "fact_number": 174,
-      "category": "Anatomy",
-      "fact": "The Cardigan Welsh Corgi has a tail, while the Pembroke version often does not.",
-      "breed": "corgi"
-    },
-    {
-      "fact_number": 175,
-      "category": "Breeds",
-      "fact": "The Norwegian Elkhound was used by Vikings for hunting elk and bear.",
-      "breed": "norwegian elkhound"
-    },
-    {
-      "fact_number": 176,
-      "category": "Intelligence",
-      "fact": "Dogs can learn to identify hundreds of different toys by name.",
-      "breed": null
-    },
-    {
-      "fact_number": 177,
-      "category": "History",
-      "fact": "The Toy Poodle was bred as a smaller version of the Standard Poodle for urban companionship.",
-      "breed": "poodle"
-    },
-    {
-      "fact_number": 178,
-      "category": "Biology",
-      "fact": "A dog's whiskers are used to sense the size and shape of objects in total darkness.",
-      "breed": null
-    },
-    {
-      "fact_number": 179,
-      "category": "Behavior",
-      "fact": "If a dog 'freezes' when being petted, it's often a sign that they are uncomfortable.",
-      "breed": null
-    },
-    {
-      "fact_number": 180,
-      "category": "Anatomy",
-      "fact": "The Brussels Griffon was originally bred to hunt rats in stables.",
-      "breed": "brussels griffon"
-    },
-    {
-      "fact_number": 181,
-      "category": "Breeds",
-      "fact": "The Finnish Lapphund was bred to herd reindeer in the Arctic.",
-      "breed": "finnish lapphund"
-    },
-    {
-      "fact_number": 182,
-      "category": "Sensory",
-      "fact": "Dogs can hear the sound of your car arriving long before you pull into the driveway.",
-      "breed": null
-    },
-    {
-      "fact_number": 183,
-      "category": "History",
-      "fact": "The Boxer's ancestors are thought to be the Bullenbeisser and the English Bulldog.",
-      "breed": "bulldog"
-    },
-    {
-      "fact_number": 184,
-      "category": "Biology",
-      "fact": "Dogs have a specialized structure in their ears to help them filter out background noise.",
-      "breed": null
-    },
-    {
-      "fact_number": 185,
-      "category": "Behavior",
-      "fact": "The 'happy dance' dogs do when their owner comes home is a sign of extreme excitement.",
-      "breed": null
-    },
-    {
-      "fact_number": 186,
-      "category": "Anatomy",
-      "fact": "The Bloodhound's ears are so long they can touch the ground when the dog is sniffing.",
-      "breed": "bloodhound"
-    },
-    {
-      "fact_number": 187,
-      "category": "Breeds",
-      "fact": "The Pointer is named for its instinct to 'point' toward game.",
-      "breed": "pointer"
-    },
-    {
-      "fact_number": 188,
-      "category": "History",
-      "fact": "The Japanese Chin was a favorite of the Japanese nobility for centuries.",
-      "breed": "japanese chin"
-    },
-    {
-      "fact_number": 189,
-      "category": "Biology",
-      "fact": "Dogs have a unique way of drinking by curling their tongue backward to scoop up water.",
-      "breed": null
-    },
-    {
-      "fact_number": 190,
-      "category": "Behavior",
-      "fact": "Licking another dog's ears is a sign of social bonding and grooming.",
-      "breed": null
-    },
-    {
-      "fact_number": 191,
-      "category": "Anatomy",
-      "fact": "The Great Dane's coat can come in a pattern called 'harlequin,' which is white with black patches.",
-      "breed": "great dane"
-    },
-    {
-      "fact_number": 192,
-      "category": "Breeds",
-      "fact": "The Irish Terrier is often called the 'Daredevil' because of its fiery personality.",
-      "breed": "irish terrier"
-    },
-    {
-      "fact_number": 193,
-      "category": "Sensory",
-      "fact": "Dogs can smell a human's emotional state through chemical changes in their sweat.",
-      "breed": null
-    },
-    {
-      "fact_number": 194,
-      "category": "History",
-      "fact": "The Saint Bernard's barrel of brandy is a myth created by a painter named Edwin Landseer.",
-      "breed": "saint bernard"
-    },
-    {
-      "fact_number": 195,
-      "category": "Biology",
-      "fact": "Dogs can experience 'phantom' smells, where they react to a scent that is no longer there.",
-      "breed": null
-    },
-    {
-      "fact_number": 196,
-      "category": "Behavior",
-      "fact": "A dog's tail position can tell you how confident or submissive they are feeling.",
-      "breed": null
-    },
-    {
-      "fact_number": 197,
-      "category": "Anatomy",
+      "fact_number": 38,
+      "category": "General",
       "fact": "The Bichon Frise's name means 'curly lap dog' in French.",
       "breed": "bichon frise"
     },
     {
+      "fact_number": 39,
+      "category": "General",
+      "fact": "The Black and Tan Coonhound is the only coonhound breed recognized by some major kennel clubs for years.",
+      "breed": "black and tan coonhound"
+    },
+    {
+      "fact_number": 40,
+      "category": "General",
+      "fact": "Black and Tans are social dogs that don't love being alone, and they'll let you know it with a howl that sounds like a full-blown lament. The same howl shows up on the job, too — it's how they tell hunters they've found game, so that mournful sound is doing double duty as a work signal.",
+      "breed": "black and tan coonhound"
+    },
+    {
+      "fact_number": 41,
+      "category": "General",
+      "fact": "Long ears are practically the breed's calling card, but one B&T named Lou took it to another level — nearly 14 inches, enough to land him in the 2022 Guinness Book of World Records for longest ears on a dog. And it turns out the breed itself has presidential roots: George Washington's postwar search for the ultimate hunting dog produced the \"Virginia hounds,\" early ancestors of the B&T we know today.",
+      "breed": "black and tan coonhound"
+    },
+    {
+      "fact_number": 42,
+      "category": "General",
+      "fact": "Their tracking ability is so trusted that their scent-trail identifications are legally admissible as evidence in American courts of law.",
+      "breed": "bloodhound"
+    },
+    {
+      "fact_number": 43,
+      "category": "General",
+      "fact": "They can follow a scent trail that is more than 300 hours old which is a testament to their 300 million olfactory receptors.",
+      "breed": "bloodhound"
+    },
+    {
+      "fact_number": 44,
+      "category": "General",
+      "fact": "The Bloodhound is the only animal whose testimony is admissible in a U.S. court of law.",
+      "breed": "bloodhound"
+    },
+    {
+      "fact_number": 45,
+      "category": "General",
+      "fact": "The Bloodhound's ears are so long they can touch the ground when the dog is sniffing.",
+      "breed": "bloodhound"
+    },
+    {
+      "fact_number": 46,
+      "category": "General",
+      "fact": "Bloodhound Tracking: A Bloodhound's sense of smell is so accurate it can be admitted as evidence in a court of law.",
+      "breed": "bloodhound"
+    },
+    {
+      "fact_number": 47,
+      "category": "General",
+      "fact": "The Border Collie is widely considered the most intelligent dog breed.",
+      "breed": "border collie"
+    },
+    {
+      "fact_number": 48,
+      "category": "General",
+      "fact": "Bred to work the England-Scotland border, Border Collies control sheep using a hypnotic stalking crouch called 'the eye' — essentially predatory wolf behavior repurposed for herding instead of the kill.",
+      "breed": "border collie"
+    },
+    {
+      "fact_number": 49,
+      "category": "General",
+      "fact": "A Border Collie named Chaser learned the names of over 1,000 individual objects and could sort them by category, making her the reigning record holder for the largest tested vocabulary of any dog.",
+      "breed": "border collie"
+    },
+    {
+      "fact_number": 50,
+      "category": "General",
+      "fact": "The Borzoi were selectively bred by the Russian aristocracy to pursue wolves across wide open landscapes.",
+      "breed": "borzoi"
+    },
+    {
+      "fact_number": 51,
+      "category": "General",
+      "fact": "The Borzoi was originally known as the Russian Wolfhound.",
+      "breed": "borzoi"
+    },
+    {
+      "fact_number": 52,
+      "category": "General",
+      "fact": "The Borzoi was once so tied to Russian aristocracy that hundreds were slaughtered during the 1917 Revolution simply for their association with the Tsars. the breed survived largely because dogs gifted to European royalty, including Queen Victoria, had already scattered the bloodline abroad.",
+      "breed": "borzoi"
+    },
+    {
+      "fact_number": 53,
+      "category": "General",
+      "fact": "The Boxer was named because it uses its front paws to 'box' when playing.",
+      "breed": "boxer"
+    },
+    {
+      "fact_number": 54,
+      "category": "General",
+      "fact": "Boxers were one of the first breeds recruited for German police work, and during both World Wars they served as messengers, pack carriers, and guard dogs — a far cry from the goofy family clown most people know today.",
+      "breed": "boxer"
+    },
+    {
+      "fact_number": 55,
+      "category": "General",
+      "fact": "The Boxer's ancestors are thought to be the Bullenbeisser and the English Bulldog.",
+      "breed": "boxer"
+    },
+    {
+      "fact_number": 56,
+      "category": "General",
+      "fact": "The Brittany Spaniel is actually more closely related to a pointer than a spaniel.",
+      "breed": "brittany spaniel"
+    },
+    {
+      "fact_number": 57,
+      "category": "General",
+      "fact": "Brittanys are the smallest of the traditional pointing breeds, bred small and compact so a hunter could carry an exhausted dog home in a rucksack if needed.",
+      "breed": "brittany spaniel"
+    },
+    {
+      "fact_number": 58,
+      "category": "General",
+      "fact": "Brittanys are famous for finishing the hunting day exhausted and then flipping a switch straight to velcro-dog mode on the couch — high-octane in the field, needy on the sofa.",
+      "breed": "brittany spaniel"
+    },
+    {
+      "fact_number": 59,
+      "category": "General",
+      "fact": "They were originally kept by coachmen in 19th-century Belgium to keep stables clear of rats and mice.",
+      "breed": "brussels griffon"
+    },
+    {
+      "fact_number": 60,
+      "category": "General",
+      "fact": "The breed gained massive international popularity after a Brussels Griffon named Verdell starred alongside Jack Nicholson in the 1997 movie As Good as It Gets.",
+      "breed": "brussels griffon"
+    },
+    {
+      "fact_number": 61,
+      "category": "General",
+      "fact": "The Brussels Griffon was originally bred to hunt rats in stables.",
+      "breed": "brussels griffon"
+    },
+    {
+      "fact_number": 62,
+      "category": "General",
+      "fact": "They are the only recognized breed to feature distinct triangularly shaped eyes which give them a uniquely piercing gaze.",
+      "breed": "bull terrier"
+    },
+    {
+      "fact_number": 63,
+      "category": "General",
+      "fact": "James Hinks first refined the modern breed in the 1860s earning them the nickname 'The White Cavalier' for their polite yet courageous demeanor.",
+      "breed": "bull terrier"
+    },
+    {
+      "fact_number": 64,
+      "category": "General",
+      "fact": "The Bull Terrier was once known as the 'White Cavalier' because of its courage and breeding.",
+      "breed": "bull terrier"
+    },
+    {
+      "fact_number": 65,
+      "category": "General",
+      "fact": "The Bulldog's flat face was originally bred to allow it to breathe while holding onto a bull.",
+      "breed": "bulldog"
+    },
+    {
+      "fact_number": 66,
+      "category": "General",
+      "fact": "Bulldogs have a surprisingly solid presidential resume. Warren Harding's, named \"Oh Boy,\" held the official title of First Dog, and Calvin Coolidge kept one too, called \"Boston Beans.\" Churchill apparently wasn't a fan, but he was outvoted.",
+      "breed": "bulldog"
+    },
+    {
+      "fact_number": 67,
+      "category": "General",
+      "fact": "Between the Beckhams, Michael Phelps, and Shemar Moore, the Bulldog's celebrity fanbase runs deep — which tracks, since it's one of the most popular breeds in the country. It's also the mascot of choice for over 40 U.S. universities, Georgetown and Yale included, which says everything about the tough, no-nonsense reputation this breed has built.",
+      "breed": "bulldog"
+    },
+    {
+      "fact_number": 68,
+      "category": "General",
+      "fact": "The Canaan Dog is the national dog of Israel.",
+      "breed": "canaan dog"
+    },
+    {
+      "fact_number": 69,
+      "category": "General",
+      "fact": "Every Canaan Dog alive today descends from feral pariah dogs that Israeli zoologist Rudolphina Menzel captured out of the Negev Desert in the 1930s, essentially domesticating a breed from scratch within a single human lifetime.",
+      "breed": "canaan dog"
+    },
+    {
+      "fact_number": 70,
+      "category": "General",
+      "fact": "During WWII, Canaan Dogs served as mine detectors and Red Cross search dogs — work considered so demanding that Menzel later found them too independent-minded for the calmer job of guiding the blind.",
+      "breed": "canaan dog"
+    },
+    {
+      "fact_number": 71,
+      "category": "General",
+      "fact": "The Cardigan Welsh Corgi has a tail, while the Pembroke version often does not.",
+      "breed": "cardigan welsh corgi"
+    },
+    {
+      "fact_number": 72,
+      "category": "General",
+      "fact": "Cardigans have been herding cattle in Wales for an estimated 3,000 years, arriving with Celtic tribes long before their cousin the Pembroke ever showed up on the scene.",
+      "breed": "cardigan welsh corgi"
+    },
+    {
+      "fact_number": 73,
+      "category": "General",
+      "fact": "That long tail everyone points to for telling Cardigans and Pembrokes apart once served as a rudder and counterbalance, letting the dog pivot fast enough to dodge a kick from an unhappy cow.",
+      "breed": "cardigan welsh corgi"
+    },
+    {
+      "fact_number": 74,
+      "category": "General",
+      "fact": "The Cavalier King Charles Spaniel was named after King Charles II of Great Britain.",
+      "breed": "cavalier king charles spaniel"
+    },
+    {
+      "fact_number": 75,
+      "category": "General",
+      "fact": "The breed nearly disappeared after Victorian breeders favored a flatter-faced version, the King Charles Spaniel; it survived only because a wealthy American, Roswell Eldridge, began offering cash prizes in the 1920s to breeders who could revive the older, longer-nosed look.",
+      "breed": "cavalier king charles spaniel"
+    },
+    {
+      "fact_number": 76,
+      "category": "General",
+      "fact": "Cavaliers consistently rank among the most affectionate dog breeds in behavioral studies, largely because centuries of breeding selected almost entirely for companionship rather than any working job.",
+      "breed": "cavalier king charles spaniel"
+    },
+    {
+      "fact_number": 77,
+      "category": "General",
+      "fact": "The Chihuahua is the smallest dog breed in the world, named after the Mexican state.",
+      "breed": "chihuahua"
+    },
+    {
+      "fact_number": 78,
+      "category": "General",
+      "fact": "Chihuahuas have the largest brain-to-body size ratio of any dog breed — proportionally bigger than a Great Dane's, even though the whole thing could fit in a teaspoon.",
+      "breed": "chihuahua"
+    },
+    {
+      "fact_number": 79,
+      "category": "General",
+      "fact": "The Guinness World Record for shortest living dog has gone to a Chihuahua more than once; the most recent record holder, Pearl of Florida, stood just 3.59 inches tall",
+      "breed": "chihuahua"
+    },
+    {
+      "fact_number": 80,
+      "category": "General",
+      "fact": "The Chihuahua was considered a sacred guide for souls in the afterlife by the Toltecs.",
+      "breed": "chihuahua"
+    },
+    {
+      "fact_number": 81,
+      "category": "General",
+      "fact": "Chow Chows are born with standard pink tongues which gradually transition to a distinctive blue-black shade by the time they reach six months of age.",
+      "breed": "chow chow"
+    },
+    {
+      "fact_number": 82,
+      "category": "General",
+      "fact": "They possess 44 teeth instead of the 42 teeth found in standard canine jaws a trait they share with bears.",
+      "breed": "chow chow"
+    },
+    {
+      "fact_number": 83,
+      "category": "General",
+      "fact": "Chow Chows are born with pink tongues; they turn blue-black as they grow older.",
+      "breed": "chow chow"
+    },
+    {
+      "fact_number": 84,
+      "category": "General",
+      "fact": "The Clumber Spaniel is the heaviest of the spaniel breeds.",
+      "breed": "clumber spaniel"
+    },
+    {
+      "fact_number": 85,
+      "category": "General",
+      "fact": "Clumbers take their name from Clumber Park, the Duke of Newcastle's Nottinghamshire estate, where the breed was developed as a slow, methodical 'retired gentleman's shooting dog' built for stamina over speed.",
+      "breed": "clumber spaniel"
+    },
+    {
+      "fact_number": 86,
+      "category": "General",
+      "fact": "King Edward VII kept a large team of Clumbers at Sandringham, and the breed has such a well-earned reputation for counter-surfing that owners nicknamed it the 'Scavenger Spaniel.'",
+      "breed": "clumber spaniel"
+    },
+    {
+      "fact_number": 87,
+      "category": "General",
+      "fact": "The Corgi is a cattle-herding dog; their short stature helps them avoid being kicked.",
+      "breed": "corgi"
+    },
+    {
+      "fact_number": 88,
+      "category": "General",
+      "fact": "'Corgi' is widely believed to come from the Welsh 'cor gi,' roughly 'dwarf dog' — a fitting name for a breed built low to the ground specifically to duck under a kicking cow's hooves.",
+      "breed": "corgi"
+    },
+    {
+      "fact_number": 89,
+      "category": "General",
+      "fact": "Corgis are herding dogs at heart, which means a Corgi with nothing to herd will sometimes nip at ankles or try to round up the kids — the job instinct doesn't just switch off because there's no cattle around.",
+      "breed": "corgi"
+    },
+    {
+      "fact_number": 90,
+      "category": "General",
+      "fact": "Their long low-slung bodies and short legs were specifically engineered to let them flush out badgers from narrow underground burrows.",
+      "breed": "dachshund"
+    },
+    {
+      "fact_number": 91,
+      "category": "General",
+      "fact": "Queen Victoria is credited with popularizing the breed in Great Britain famously stating that 'marvellous intelligence' belonged to Dachshunds.",
+      "breed": "dachshund"
+    },
+    {
+      "fact_number": 92,
+      "category": "General",
+      "fact": "The Dachshund's long body and short legs were bred specifically for hunting badgers in burrows.",
+      "breed": "dachshund"
+    },
+    {
+      "fact_number": 93,
+      "category": "General",
+      "fact": "Dalmatians were used as carriage dogs to protect horses from stray dogs and predators.",
+      "breed": "dalmatian"
+    },
+    {
+      "fact_number": 94,
+      "category": "General",
+      "fact": "The Dalmatian is the traditional mascot of fire departments because of its history with horse-drawn fire engines.",
+      "breed": "dalmatian"
+    },
+    {
+      "fact_number": 95,
+      "category": "General",
+      "fact": "Dalmatians are born pure white and don't develop their signature spots until about two to three weeks of age, so every litter starts out looking like a box of plain marshmallows.",
+      "breed": "dalmatian"
+    },
+    {
+      "fact_number": 96,
+      "category": "General",
+      "fact": "Louis Dobermann a German tax collector intentionally crossbred several fierce canine lines to create a loyal protective companion for his dangerous daily rounds.",
+      "breed": "doberman"
+    },
+    {
+      "fact_number": 97,
+      "category": "General",
+      "fact": "During World War II the United States Marine Corps officially adopted them as combat assistants giving them the title of 'Devil Dogs.'",
+      "breed": "doberman"
+    },
+    {
+      "fact_number": 98,
+      "category": "General",
+      "fact": "The Doberman Pinscher was created by a German tax collector for personal protection.",
+      "breed": "doberman"
+    },
+    {
+      "fact_number": 99,
+      "category": "General",
+      "fact": "Dogs can hear a frequency as high as 45-67 kHz, while humans max out around 20 kHz.",
+      "breed": null
+    },
+    {
+      "fact_number": 100,
+      "category": "General",
+      "fact": "A dog's sense of smell is roughly 10,000 to 100,000 times more acute than a human's.",
+      "breed": null
+    },
+    {
+      "fact_number": 101,
+      "category": "General",
+      "fact": "Dogs kick back after pooping not to cover the waste, but to mark territory using scent glands in their paws.",
+      "breed": null
+    },
+    {
+      "fact_number": 102,
+      "category": "General",
+      "fact": "Dogs can count and are able to notice when a simple addition like 1+1 equals 3.",
+      "breed": null
+    },
+    {
+      "fact_number": 103,
+      "category": "General",
+      "fact": "A dog's wet nose acts as a magnet for scent particles in the air.",
+      "breed": null
+    },
+    {
+      "fact_number": 104,
+      "category": "General",
+      "fact": "Dogs have three eyelids, including a nictitating membrane that keeps the eye lubricated.",
+      "breed": null
+    },
+    {
+      "fact_number": 105,
+      "category": "General",
+      "fact": "Ancient Greeks used to believe that dogs could cure illnesses by licking the afflicted area.",
+      "breed": null
+    },
+    {
+      "fact_number": 106,
+      "category": "General",
+      "fact": "When dogs roll in stinky things, it's an instinctual way to hide their scent from predators.",
+      "breed": null
+    },
+    {
+      "fact_number": 107,
+      "category": "General",
+      "fact": "A dog's whiskers are so sensitive they can detect subtle changes in air currents.",
+      "breed": null
+    },
+    {
+      "fact_number": 108,
+      "category": "General",
+      "fact": "The average dog is about as smart as a 2-year-old human child.",
+      "breed": null
+    },
+    {
+      "fact_number": 109,
+      "category": "General",
+      "fact": "Puppies are born deaf, and their hearing is the last of their senses to fully develop.",
+      "breed": null
+    },
+    {
+      "fact_number": 110,
+      "category": "General",
+      "fact": "Yawning can be a sign of stress or anxiety in dogs, not just sleepiness.",
+      "breed": null
+    },
+    {
+      "fact_number": 111,
+      "category": "General",
+      "fact": "Dogs can sense a drop in barometric pressure, allowing them to predict storms.",
+      "breed": null
+    },
+    {
+      "fact_number": 112,
+      "category": "General",
+      "fact": "A dog's heart beats 70 to 120 times per minute, much faster than a human heart.",
+      "breed": null
+    },
+    {
+      "fact_number": 113,
+      "category": "General",
+      "fact": "The 'play bow' is a universal signal among dogs that everything following is a game.",
+      "breed": null
+    },
+    {
+      "fact_number": 114,
+      "category": "General",
+      "fact": "Dogs only have sweat glands in their paw pads.",
+      "breed": null
+    },
+    {
+      "fact_number": 115,
+      "category": "General",
+      "fact": "Dogs can learn to understand over 150 words and gestures.",
+      "breed": null
+    },
+    {
+      "fact_number": 116,
+      "category": "General",
+      "fact": "A dog's average body temperature is between 101 and 102.5 degrees Fahrenheit.",
+      "breed": null
+    },
+    {
+      "fact_number": 117,
+      "category": "General",
+      "fact": "Dogs often walk in circles before lying down to flatten the 'grass' and check for snakes.",
+      "breed": null
+    },
+    {
+      "fact_number": 118,
+      "category": "General",
+      "fact": "A dog's sense of smell is so strong they can detect a teaspoon of sugar in two Olympic-sized swimming pools.",
+      "breed": null
+    },
+    {
+      "fact_number": 119,
+      "category": "General",
+      "fact": "Three dogs survived the sinking of the Titanic: two Pomeranians and a Pekingese.",
+      "breed": null
+    },
+    {
+      "fact_number": 120,
+      "category": "General",
+      "fact": "Dogs are not colorblind; they can see shades of blue and yellow.",
+      "breed": null
+    },
+    {
+      "fact_number": 121,
+      "category": "General",
+      "fact": "Tail wagging isn't always a sign of happiness; it can also indicate agitation or tension.",
+      "breed": null
+    },
+    {
+      "fact_number": 122,
+      "category": "General",
+      "fact": "A dog's shoulder blades are not attached to the rest of the skeleton, allowing for more flexibility.",
+      "breed": null
+    },
+    {
+      "fact_number": 123,
+      "category": "General",
+      "fact": "Dogs can feel envy when they see another dog getting a better treat for the same task.",
+      "breed": null
+    },
+    {
+      "fact_number": 124,
+      "category": "General",
+      "fact": "Dogs reach maturity at different ages; smaller breeds mature faster than large ones.",
+      "breed": null
+    },
+    {
+      "fact_number": 125,
+      "category": "General",
+      "fact": "Mouth-licking is a submissive behavior dogs use to show respect to a pack leader.",
+      "breed": null
+    },
+    {
+      "fact_number": 126,
+      "category": "General",
+      "fact": "Dogs can detect certain human diseases, including some types of cancer and diabetes.",
+      "breed": null
+    },
+    {
+      "fact_number": 127,
+      "category": "General",
+      "fact": "A dog's nose print is as unique as a human's fingerprint.",
+      "breed": null
+    },
+    {
+      "fact_number": 128,
+      "category": "General",
+      "fact": "Dogs often lean on their owners to show affection or seek security.",
+      "breed": null
+    },
+    {
+      "fact_number": 129,
+      "category": "General",
+      "fact": "Dogs dream just like humans, often twitching their paws as they sleep.",
+      "breed": null
+    },
+    {
+      "fact_number": 130,
+      "category": "General",
+      "fact": "Sighing with half-closed eyes usually means a dog is content and relaxed.",
+      "breed": null
+    },
+    {
+      "fact_number": 131,
+      "category": "General",
+      "fact": "A dog's ear has 18 muscles that allow it to move and rotate toward sounds.",
+      "breed": null
+    },
+    {
+      "fact_number": 132,
+      "category": "General",
+      "fact": "Dogs can smell 'fear' because they can detect the hormones humans release when stressed.",
+      "breed": null
+    },
+    {
+      "fact_number": 133,
+      "category": "General",
+      "fact": "Ancient Egyptians worshipped dogs and often mummified them with their owners.",
+      "breed": null
+    },
+    {
+      "fact_number": 134,
+      "category": "General",
+      "fact": "The gestation period for a dog is approximately 63 days.",
+      "breed": null
+    },
+    {
+      "fact_number": 135,
+      "category": "General",
+      "fact": "Dogs may 'protect' their food even if they aren't hungry, an instinct known as resource guarding.",
+      "breed": null
+    },
+    {
+      "fact_number": 136,
+      "category": "General",
+      "fact": "Puppies have 28 baby teeth, which they lose to make room for 42 permanent teeth.",
+      "breed": null
+    },
+    {
+      "fact_number": 137,
+      "category": "General",
+      "fact": "Digging at a bed before lying down is a nesting instinct from the wild.",
+      "breed": null
+    },
+    {
+      "fact_number": 138,
+      "category": "General",
+      "fact": "Dogs use their sense of smell to track time as scent levels change throughout the day.",
+      "breed": null
+    },
+    {
+      "fact_number": 139,
+      "category": "General",
+      "fact": "A dog's digestive system is designed to handle a variety of foods, but they are primarily carnivores.",
+      "breed": null
+    },
+    {
+      "fact_number": 140,
+      "category": "General",
+      "fact": "Panting is a dog's primary way of cooling down since they don't sweat like humans.",
+      "breed": null
+    },
+    {
+      "fact_number": 141,
+      "category": "General",
+      "fact": "The first dog show took place in the UK in 1859.",
+      "breed": null
+    },
+    {
+      "fact_number": 142,
+      "category": "General",
+      "fact": "A dog's brain size varies greatly between breeds, but the olfactory bulb is always large.",
+      "breed": null
+    },
+    {
+      "fact_number": 143,
+      "category": "General",
+      "fact": "Dogs often tilt their heads to better localize the source of a sound.",
+      "breed": null
+    },
+    {
+      "fact_number": 144,
+      "category": "General",
+      "fact": "Dogs can hear the high-frequency vibration of a digital clock or a TV.",
+      "breed": null
+    },
+    {
+      "fact_number": 145,
+      "category": "General",
+      "fact": "Dogs can be left-pawed or right-pawed, just like humans.",
+      "breed": null
+    },
+    {
+      "fact_number": 146,
+      "category": "General",
+      "fact": "Whining is a way for dogs to communicate stress, pain, or excitement.",
+      "breed": null
+    },
+    {
+      "fact_number": 147,
+      "category": "General",
+      "fact": "The phrase 'dog days of summer' refers to the rising of the star Sirius.",
+      "breed": null
+    },
+    {
+      "fact_number": 148,
+      "category": "General",
+      "fact": "Dogs can suffer from seasonal allergies, just like humans.",
+      "breed": null
+    },
+    {
+      "fact_number": 149,
+      "category": "General",
+      "fact": "Staring into a dog's eyes can trigger the release of oxytocin, the bonding hormone.",
+      "breed": null
+    },
+    {
+      "fact_number": 150,
+      "category": "General",
+      "fact": "A dog's whiskers are deeply embedded in their skin and connected to the brain's sensory center.",
+      "breed": null
+    },
+    {
+      "fact_number": 151,
+      "category": "General",
+      "fact": "Dogs don't have a collarbone, which allows them to take longer running strides.",
+      "breed": null
+    },
+    {
+      "fact_number": 152,
+      "category": "General",
+      "fact": "If a dog 'huffs' at you, it's often a sign of mild annoyance or a request for attention.",
+      "breed": null
+    },
+    {
+      "fact_number": 153,
+      "category": "General",
+      "fact": "Dogs can detect changes in the Earth's magnetic field.",
+      "breed": null
+    },
+    {
+      "fact_number": 154,
+      "category": "General",
+      "fact": "The 'zoomies' are technically known as Frenetic Random Activity Periods (FRAPs).",
+      "breed": null
+    },
+    {
+      "fact_number": 155,
+      "category": "General",
+      "fact": "Dogs can hear the ultrasonic pulses emitted by mice and other small rodents.",
+      "breed": null
+    },
+    {
+      "fact_number": 156,
+      "category": "General",
+      "fact": "A dog's whiskers are roughly twice as thick as its normal hair.",
+      "breed": null
+    },
+    {
+      "fact_number": 157,
+      "category": "General",
+      "fact": "Dogs were used as messengers and scouts during both World War I and World War II.",
+      "breed": null
+    },
+    {
+      "fact_number": 158,
+      "category": "General",
+      "fact": "When a dog nudges you with its nose, it's often a request for your attention.",
+      "breed": null
+    },
+    {
+      "fact_number": 159,
+      "category": "General",
+      "fact": "Dogs can learn to navigate complex obstacle courses through observation.",
+      "breed": null
+    },
+    {
+      "fact_number": 160,
+      "category": "General",
+      "fact": "Dogs can detect the heat of a human body through their noses.",
+      "breed": null
+    },
+    {
+      "fact_number": 161,
+      "category": "General",
+      "fact": "A dog's stomach can expand significantly to hold a large meal, a trait from its wild ancestors.",
+      "breed": null
+    },
+    {
+      "fact_number": 162,
+      "category": "General",
+      "fact": "Dogs often lick their paws to clean themselves or as a way to self-soothe.",
+      "breed": null
+    },
+    {
+      "fact_number": 163,
+      "category": "General",
+      "fact": "Dogs can understand the concept of 'more' versus 'less' when it comes to treats.",
+      "breed": null
+    },
+    {
+      "fact_number": 164,
+      "category": "General",
+      "fact": "A dog's heart rate drops when they are petted by someone they trust.",
+      "breed": null
+    },
+    {
+      "fact_number": 165,
+      "category": "General",
+      "fact": "Leaning against your legs is a dog's way of showing they trust you completely.",
+      "breed": null
+    },
+    {
+      "fact_number": 166,
+      "category": "General",
+      "fact": "Dogs can hear the sound of their owner's heartbeat from a short distance.",
+      "breed": null
+    },
+    {
+      "fact_number": 167,
+      "category": "General",
+      "fact": "Dogs produce a specific sound when they 'laugh' while playing.",
+      "breed": null
+    },
+    {
+      "fact_number": 168,
+      "category": "General",
+      "fact": "If a dog puts its head on your lap, it's a sign of deep affection and trust.",
+      "breed": null
+    },
+    {
+      "fact_number": 169,
+      "category": "General",
+      "fact": "Dogs can distinguish between different types of human laughter.",
+      "breed": null
+    },
+    {
+      "fact_number": 170,
+      "category": "General",
+      "fact": "A dog's paws have a specialized blood circulation system to prevent heat loss in winter.",
+      "breed": null
+    },
+    {
+      "fact_number": 171,
+      "category": "General",
+      "fact": "Dogs often sleep in a 'donut' shape to preserve body heat and protect their stomach.",
+      "breed": null
+    },
+    {
+      "fact_number": 172,
+      "category": "General",
+      "fact": "Dogs can detect a drop in blood sugar levels in people with diabetes.",
+      "breed": null
+    },
+    {
+      "fact_number": 173,
+      "category": "General",
+      "fact": "Dogs have a unique vocal structure that allows them to make a wide range of sounds.",
+      "breed": null
+    },
+    {
+      "fact_number": 174,
+      "category": "General",
+      "fact": "Wagging the tail low and slowly usually means the dog is feeling insecure.",
+      "breed": null
+    },
+    {
+      "fact_number": 175,
+      "category": "General",
+      "fact": "Dogs can learn to associate specific words with physical objects, like toys or household items.",
+      "breed": null
+    },
+    {
+      "fact_number": 176,
+      "category": "General",
+      "fact": "Dogs have a tapetum lucidum, which helps them see clearly in low light.",
+      "breed": null
+    },
+    {
+      "fact_number": 177,
+      "category": "General",
+      "fact": "Sniffing another dog's rear is like a human handshake; it provides vital information about the other dog.",
+      "breed": null
+    },
+    {
+      "fact_number": 178,
+      "category": "General",
+      "fact": "Dogs can detect the presence of mold in houses through their sense of smell.",
+      "breed": null
+    },
+    {
+      "fact_number": 179,
+      "category": "General",
+      "fact": "Dogs have a specialized organ in their nose called the Jacobson's organ for pheromone detection.",
+      "breed": null
+    },
+    {
+      "fact_number": 180,
+      "category": "General",
+      "fact": "When a dog brings you a toy, it's often an invitation for shared interaction.",
+      "breed": null
+    },
+    {
+      "fact_number": 181,
+      "category": "General",
+      "fact": "Dogs can learn to solve simple puzzles to earn food rewards.",
+      "breed": null
+    },
+    {
+      "fact_number": 182,
+      "category": "General",
+      "fact": "A dog's sense of smell is crucial for their social interaction and understanding of their environment.",
+      "breed": null
+    },
+    {
+      "fact_number": 183,
+      "category": "General",
+      "fact": "Pacing can be a sign that a dog is feeling bored or anxious.",
+      "breed": null
+    },
+    {
+      "fact_number": 184,
+      "category": "General",
+      "fact": "Dogs can hear sounds up to four times further away than humans can.",
+      "breed": null
+    },
+    {
+      "fact_number": 185,
+      "category": "General",
+      "fact": "Dogs have a very fast metabolic rate compared to humans.",
+      "breed": null
+    },
+    {
+      "fact_number": 186,
+      "category": "General",
+      "fact": "Nipping during play is a common puppy behavior that mimics pack interaction.",
+      "breed": null
+    },
+    {
+      "fact_number": 187,
+      "category": "General",
+      "fact": "Dogs can remember specific events for long periods, similar to human episodic memory.",
+      "breed": null
+    },
+    {
+      "fact_number": 188,
+      "category": "General",
+      "fact": "A dog's skin is thinner than human skin, making it more sensitive to heat and cold.",
+      "breed": null
+    },
+    {
+      "fact_number": 189,
+      "category": "General",
+      "fact": "A dog's 'sigh' of relief often occurs when they finally feel safe and at rest.",
+      "breed": null
+    },
+    {
+      "fact_number": 190,
+      "category": "General",
+      "fact": "Dogs can sense the emotions of their owners by 'reading' their facial expressions.",
+      "breed": null
+    },
+    {
+      "fact_number": 191,
+      "category": "General",
+      "fact": "Dogs don't have a gallbladder issues as frequently as humans, but they do have one.",
+      "breed": null
+    },
+    {
+      "fact_number": 192,
+      "category": "General",
+      "fact": "When a dog sleeps with its head on its paws, it's often in a state of light dozing.",
+      "breed": null
+    },
+    {
+      "fact_number": 193,
+      "category": "General",
+      "fact": "Dogs can learn to identify hundreds of different toys by name.",
+      "breed": null
+    },
+    {
+      "fact_number": 194,
+      "category": "General",
+      "fact": "A dog's whiskers are used to sense the size and shape of objects in total darkness.",
+      "breed": null
+    },
+    {
+      "fact_number": 195,
+      "category": "General",
+      "fact": "If a dog 'freezes' when being petted, it's often a sign that they are uncomfortable.",
+      "breed": null
+    },
+    {
+      "fact_number": 196,
+      "category": "General",
+      "fact": "Dogs can hear the sound of your car arriving long before you pull into the driveway.",
+      "breed": null
+    },
+    {
+      "fact_number": 197,
+      "category": "General",
+      "fact": "Dogs have a specialized structure in their ears to help them filter out background noise.",
+      "breed": null
+    },
+    {
       "fact_number": 198,
-      "category": "Breeds",
-      "fact": "The Kerry Blue Terrier is the national dog of Ireland.",
-      "breed": "kerry blue terrier"
+      "category": "General",
+      "fact": "The 'happy dance' dogs do when their owner comes home is a sign of extreme excitement.",
+      "breed": null
     },
     {
       "fact_number": 199,
-      "category": "History",
-      "fact": "The English Toy Spaniel was a favorite of the Tudor monarchs.",
-      "breed": "english toy spaniel"
+      "category": "General",
+      "fact": "Dogs have a unique way of drinking by curling their tongue backward to scoop up water.",
+      "breed": null
     },
     {
       "fact_number": 200,
-      "category": "Biology",
-      "fact": "Dogs have a very strong immune system that allows them to handle many bacteria.",
+      "category": "General",
+      "fact": "Licking another dog's ears is a sign of social bonding and grooming.",
       "breed": null
     },
     {
       "fact_number": 201,
-      "category": "History",
-      "fact": "Dogs were domesticated from gray wolves between 20,000 and 32,000 years ago, making them the first domesticated animal.",
+      "category": "General",
+      "fact": "Dogs can smell a human's emotional state through chemical changes in their sweat.",
       "breed": null
     },
     {
       "fact_number": 202,
-      "category": "History",
-      "fact": "The oldest known dog burial dates to roughly 12,000 BCE — an elderly human was found interred with a puppy at Ein Mallaha, Israel.",
+      "category": "General",
+      "fact": "Dogs can experience 'phantom' smells, where they react to a scent that is no longer there.",
       "breed": null
     },
     {
       "fact_number": 203,
-      "category": "History",
-      "fact": "Ancient Egyptians considered dogs so sacred that when a family dog died, the owners would shave their eyebrows as a sign of mourning.",
+      "category": "General",
+      "fact": "A dog's tail position can tell you how confident or submissive they are feeling.",
       "breed": null
     },
     {
       "fact_number": 204,
-      "category": "History",
-      "fact": "Cerberus, the three-headed dog of Greek mythology, guarded the gates of the underworld and prevented the dead from escaping.",
+      "category": "General",
+      "fact": "Dogs have a very strong immune system that allows them to handle many bacteria.",
       "breed": null
     },
     {
       "fact_number": 205,
-      "category": "History",
-      "fact": "Anubis, the Egyptian god of the afterlife, was depicted as a man with the head of a dog and was believed to weigh the souls of the dead.",
+      "category": "General",
+      "fact": "The Nose Print: A dog’s nose print is as unique as a human fingerprint and can be used to identify them.",
       "breed": null
     },
     {
       "fact_number": 206,
-      "category": "History",
-      "fact": "In 456 BC, a dog named Soter saved the city of Corinth by alerting citizens to an incoming Persian attack — 49 of the 50 guard dogs were killed in the battle.",
+      "category": "General",
+      "fact": "Dreaming: Dogs have the same brain wave patterns as humans while asleep, meaning they likely dream about familiar activities like playing or chasing.",
       "breed": null
     },
     {
       "fact_number": 207,
-      "category": "History",
-      "fact": "The Saluki is depicted in ancient Egyptian art as far back as 2100 BCE, making it one of the oldest identifiable dog breeds in history.",
-      "breed": "saluki"
+      "category": "General",
+      "fact": "Ear Muscles: Dogs have around 18 muscles responsible for moving their ears, allowing for incredible directional hearing.",
+      "breed": null
     },
     {
       "fact_number": 208,
-      "category": "History",
-      "fact": "The word 'canine' comes from the Latin 'canis,' meaning dog.",
+      "category": "General",
+      "fact": "Sweat Glands: Dogs only sweat through their paw pads; their primary cooling mechanism is panting.",
       "breed": null
     },
     {
       "fact_number": 209,
-      "category": "History",
-      "fact": "Dogs were the first animals ever domesticated by humans, predating cattle, sheep, and pigs by thousands of years.",
+      "category": "General",
+      "fact": "Night Vision: They have a special membrane called the tapetum lucidum that reflects light back through the retina, helping them see in the dark.",
       "breed": null
     },
     {
       "fact_number": 210,
-      "category": "History",
-      "fact": "In ancient Rome, 'Cave Canem' — meaning 'Beware of Dog' — signs were placed at house entrances. A famous mosaic example was found preserved at Pompeii.",
+      "category": "General",
+      "fact": "Whiskers: These are not just hair; they are \"vibrissae\" that pick up subtle changes in air currents to help navigate tight spaces.",
       "breed": null
     },
     {
       "fact_number": 211,
-      "category": "History",
-      "fact": "The Dandie Dinmont Terrier is the only dog breed named after a fictional character — a farmer in Sir Walter Scott's 1815 novel 'Guy Mannering.'",
+      "category": "General",
+      "fact": "Vocabulary: The average dog can learn about 165 words, while \"super dogs\" in the top 20% can learn up to 250.",
       "breed": null
     },
     {
       "fact_number": 212,
-      "category": "History",
-      "fact": "Dogs served as messengers in World War I, carrying dispatches through enemy fire when radio communication failed.",
+      "category": "General",
+      "fact": "Mathematical Skills: Research suggests dogs can count to five and notice when simple additions (1+1=3) are incorrect.",
       "breed": null
     },
     {
       "fact_number": 213,
-      "category": "History",
-      "fact": "During World War II, a 4-pound Yorkshire Terrier named Smoky served 12 combat missions and was awarded 8 battle stars.",
+      "category": "General",
+      "fact": "Left or Right Pawed: Just like humans, dogs often have a \"dominant\" paw they prefer to use first.",
       "breed": null
     },
     {
       "fact_number": 214,
-      "category": "History",
-      "fact": "Rin Tin Tin, a German Shepherd rescued from a WWI battlefield, starred in 27 Hollywood films and is credited with saving Warner Bros. from bankruptcy.",
-      "breed": "german shepherd"
+      "category": "General",
+      "fact": "The \"Guilty\" Look: That sad expression isn't actually guilt; it is a learned response to human body language and tone of voice.",
+      "breed": null
     },
     {
       "fact_number": 215,
-      "category": "History",
-      "fact": "Laika, a Soviet stray dog, became the first animal to orbit Earth aboard Sputnik 2 in November 1957.",
+      "category": "General",
+      "fact": "Tail Wagging Directions: Wagging to the right usually signifies happiness, while wagging to the left can indicate anxiety or caution.",
       "breed": null
     },
     {
       "fact_number": 216,
-      "category": "Anatomy",
-      "fact": "Dogs have 42 permanent teeth as adults, compared to humans' 32.",
+      "category": "General",
+      "fact": "Ancient Bonds: Evidence of domesticated dogs dates back over 14,000 years, with some theories suggesting up to 30,000 years.",
       "breed": null
     },
     {
       "fact_number": 217,
-      "category": "Anatomy",
-      "fact": "A dog's heart beats between 60 and 140 times per minute — smaller dogs have faster resting heart rates than larger ones.",
+      "category": "General",
+      "fact": "The Titanic: Three dogs actually survived the sinking of the Titanic: two Pomeranians and one Pekingese.",
       "breed": null
     },
     {
       "fact_number": 218,
-      "category": "Anatomy",
-      "fact": "Dogs have approximately 1,700 taste buds, compared to humans' roughly 9,000, which is why they are far less picky about flavor than we are.",
+      "category": "General",
+      "fact": "Space Pioneer: Laika, a Soviet stray, became the first living creature to orbit the Earth in 1957.",
       "breed": null
     },
     {
       "fact_number": 219,
-      "category": "Anatomy",
-      "fact": "A dog's normal body temperature ranges from 101 to 102.5°F (38.3–39.2°C) — higher than a human's 98.6°F.",
-      "breed": null
+      "category": "General",
+      "fact": "An English Mastiff named Zorba holds the Guinness World Record for heaviest dog ever recorded, weighing in at a staggering 343 pounds.",
+      "breed": "english mastiff"
     },
     {
       "fact_number": 220,
-      "category": "Anatomy",
-      "fact": "Dogs have 18 muscles in each ear, allowing them to rotate and tilt each ear independently to pinpoint sounds.",
-      "breed": null
+      "category": "General",
+      "fact": "When Julius Caesar invaded Britain in 55 BC, he was reportedly so impressed by the local Mastiffs' size and courage that he shipped some back to Rome to fight in the arenas.",
+      "breed": "english mastiff"
     },
     {
       "fact_number": 221,
-      "category": "Anatomy",
-      "fact": "A dog's whiskers — called vibrissae — are deeply rooted touch-sensitive hairs that detect subtle changes in air currents.",
-      "breed": null
+      "category": "General",
+      "fact": "The English Mastiff is the heaviest dog breed, sometimes exceeding 200 pounds.",
+      "breed": "english mastiff"
     },
     {
       "fact_number": 222,
-      "category": "Anatomy",
-      "fact": "Dogs sweat primarily through their paw pads, not through the skin the way humans do.",
-      "breed": null
+      "category": "General",
+      "fact": "The English Setter is known for its unique 'belton' coat patterns.",
+      "breed": "english setter"
     },
     {
       "fact_number": 223,
-      "category": "Anatomy",
-      "fact": "Dogs have a third eyelid called the nictitating membrane that sweeps across the eye to keep it moist and protected.",
-      "breed": null
+      "category": "General",
+      "fact": "English Setters are one of the oldest gundog breeds, with roots tracing back over 400 years to spaniel-type dogs bred in England specifically to 'set,' or freeze, in the direction of hidden game birds.",
+      "breed": "english setter"
     },
     {
       "fact_number": 224,
-      "category": "Anatomy",
-      "fact": "A dog's field of vision spans roughly 250 degrees, compared to a human's 180 degrees — giving them a much wider view of their surroundings.",
-      "breed": null
+      "category": "General",
+      "fact": "English Setters were among the first breeds recognized by the AKC in 1878, and despite their elegant show-ring looks, they're still worked hard as serious upland bird dogs today.",
+      "breed": "english setter"
     },
     {
       "fact_number": 225,
-      "category": "Anatomy",
-      "fact": "Dogs have approximately 50 vertebrae — considerably more than a human's 33 — giving their spines more flexibility.",
-      "breed": null
+      "category": "General",
+      "fact": "They were a favorite companion of King Charles II who passed a law stating they could not be banned from any public place including Parliament.",
+      "breed": "english toy spaniel"
     },
     {
       "fact_number": 226,
-      "category": "Anatomy",
-      "fact": "Every dog's nose print is unique, like a human fingerprint — some kennel clubs and registries accept nose prints as a form of identification.",
-      "breed": null
+      "category": "General",
+      "fact": "They are distinctly separate from the Cavalier King Charles Spaniel recognizable by their much shorter muzzles and rounder domed heads.",
+      "breed": "english toy spaniel"
     },
     {
       "fact_number": 227,
-      "category": "Anatomy",
-      "fact": "A dog's nose secretes a thin layer of mucus that helps absorb scent chemicals, which the dog then licks off to further analyze with taste receptors.",
-      "breed": null
+      "category": "General",
+      "fact": "The breed is believed to have inherited its short face from crossbreeding with Asian lapdogs like the Pug and Japanese Chin in the 17th century.",
+      "breed": "english toy spaniel"
     },
     {
       "fact_number": 228,
-      "category": "Anatomy",
-      "fact": "A dog's paw pads contain sweat glands — this is why dogs sometimes leave damp footprints on smooth floors during hot weather.",
-      "breed": null
+      "category": "General",
+      "fact": "The English Toy Spaniel was a favorite of the Tudor monarchs.",
+      "breed": "english toy spaniel"
     },
     {
       "fact_number": 229,
-      "category": "Biology",
-      "fact": "A dog's nose contains up to 300 million scent receptors, compared to about 5 million in the human nose.",
-      "breed": null
-    },
-    {
-      "fact_number": 230,
-      "category": "Biology",
-      "fact": "The area of a dog's brain devoted to analyzing scent is proportionally 40 times larger than the equivalent area in the human brain.",
-      "breed": null
-    },
-    {
-      "fact_number": 231,
-      "category": "Biology",
-      "fact": "Dogs can hear sounds four times farther away than humans can, and can detect frequencies up to 65,000 Hz.",
-      "breed": null
-    },
-    {
-      "fact_number": 232,
-      "category": "Biology",
-      "fact": "The fastest recorded dog speed belongs to a Greyhound clocked at 45 mph (72 km/h), making it the fastest land animal over short distances after the cheetah.",
-      "breed": "greyhound"
-    },
-    {
-      "fact_number": 233,
-      "category": "Biology",
-      "fact": "Dogs can get sunburned — particularly on their nose, ear tips, and belly — if exposed to intense sunlight for extended periods.",
-      "breed": null
-    },
-    {
-      "fact_number": 234,
-      "category": "Biology",
-      "fact": "Puppies are born blind, deaf, and without teeth. Their eyes and ear canals open between 10 and 14 days after birth.",
-      "breed": null
-    },
-    {
-      "fact_number": 235,
-      "category": "Biology",
-      "fact": "Large breeds age faster and have shorter lifespans than small breeds — a Great Dane may live only 7–8 years while a Chihuahua can reach 15–17 years.",
-      "breed": null
-    },
-    {
-      "fact_number": 236,
-      "category": "Biology",
-      "fact": "Dogs have a specialized organ in their nose called the Jacobson's organ — also known as the vomeronasal organ — that detects pheromones.",
-      "breed": null
-    },
-    {
-      "fact_number": 237,
-      "category": "Biology",
-      "fact": "Female dogs can experience false pregnancies, displaying physical and behavioral signs of pregnancy — including nesting and milk production — without actually being pregnant.",
-      "breed": null
-    },
-    {
-      "fact_number": 238,
-      "category": "Biology",
-      "fact": "Dogs are susceptible to many of the same diseases as humans, including diabetes, cancer, epilepsy, and heart disease, making them valuable models in medical research.",
-      "breed": null
-    },
-    {
-      "fact_number": 239,
-      "category": "Biology",
-      "fact": "The dog genome was fully sequenced in 2005, using DNA from a Boxer named Tasha — it was a landmark in both veterinary and human medicine.",
-      "breed": "boxer"
-    },
-    {
-      "fact_number": 240,
-      "category": "Sensory",
-      "fact": "Dogs can detect certain types of cancer through smell alone, with trained dogs achieving over 90% accuracy in some clinical studies.",
-      "breed": null
-    },
-    {
-      "fact_number": 241,
-      "category": "Sensory",
-      "fact": "Some dogs can predict epileptic seizures minutes before they occur, giving their owners time to get to safety.",
-      "breed": null
-    },
-    {
-      "fact_number": 242,
-      "category": "Sensory",
-      "fact": "Dogs can sense changes in atmospheric pressure and static electricity — which is why many seem anxious before thunderstorms.",
-      "breed": null
-    },
-    {
-      "fact_number": 243,
-      "category": "Sensory",
-      "fact": "A dog's nose is so sensitive it can detect the equivalent of a teaspoon of sugar dissolved in a million gallons of water.",
-      "breed": null
-    },
-    {
-      "fact_number": 244,
-      "category": "Sensory",
-      "fact": "Dogs can distinguish the smell of identical twins even when the twins share the same home and diet.",
-      "breed": null
-    },
-    {
-      "fact_number": 245,
-      "category": "Sensory",
-      "fact": "Dogs see the world primarily in shades of blue and yellow and cannot distinguish red from green — similar to human red-green colorblindness.",
-      "breed": null
-    },
-    {
-      "fact_number": 246,
-      "category": "Sensory",
-      "fact": "A dog can locate the exact source of a sound in 1/600th of a second by independently adjusting each ear.",
-      "breed": null
-    },
-    {
-      "fact_number": 247,
-      "category": "Sensory",
-      "fact": "Dogs have been trained to detect COVID-19 through scent with up to 94% accuracy, according to studies conducted during the pandemic.",
-      "breed": null
-    },
-    {
-      "fact_number": 248,
-      "category": "Sensory",
-      "fact": "Some dogs can detect dangerously low blood sugar in diabetic owners before the owner themselves notices any symptoms.",
-      "breed": null
-    },
-    {
-      "fact_number": 249,
-      "category": "Sensory",
-      "fact": "Dogs can detect human emotions through smell — they can literally smell fear, stress, and even happiness through subtle chemical changes in human sweat.",
-      "breed": null
-    },
-    {
-      "fact_number": 250,
-      "category": "Sensory",
-      "fact": "Dogs have been trained to sniff out malaria in children from the scent of their socks with approximately 70% accuracy.",
-      "breed": null
-    },
-    {
-      "fact_number": 251,
-      "category": "Sensory",
-      "fact": "Sniffer dogs at airports can detect over 50 types of controlled substances, various explosives, and even contraband electronics.",
-      "breed": null
-    },
-    {
-      "fact_number": 252,
-      "category": "Sensory",
-      "fact": "Greyhounds have a nearly 270-degree field of vision — wider than almost any other dog breed — designed for tracking fast-moving prey across open terrain.",
-      "breed": "greyhound"
-    },
-    {
-      "fact_number": 253,
-      "category": "Behavior",
-      "fact": "Dogs dream during REM sleep — often twitching, paddling their legs, or whimpering — and are believed to replay the events of their day.",
-      "breed": null
-    },
-    {
-      "fact_number": 254,
-      "category": "Behavior",
-      "fact": "Puppies can sleep up to 20 hours a day; adult dogs typically sleep 12 to 14 hours, far more than humans.",
-      "breed": null
-    },
-    {
-      "fact_number": 255,
-      "category": "Behavior",
-      "fact": "Dogs are one of the few non-human animals shown to display voluntary, unselfish kindness toward others without expecting any reward.",
-      "breed": null
-    },
-    {
-      "fact_number": 256,
-      "category": "Behavior",
-      "fact": "When a dog wags its tail to the right, it typically signals positive emotions; a left-leaning wag can indicate anxiety or uncertainty.",
-      "breed": null
-    },
-    {
-      "fact_number": 257,
-      "category": "Behavior",
-      "fact": "Dogs are naturally pack animals and instinctively look to their human family as their social group, seeking structure and companionship.",
-      "breed": null
-    },
-    {
-      "fact_number": 258,
-      "category": "Behavior",
-      "fact": "A dog yawning in your presence is not always tiredness — it can be a 'calming signal' used to communicate peaceful intentions.",
-      "breed": null
-    },
-    {
-      "fact_number": 259,
-      "category": "Behavior",
-      "fact": "Dogs curl into a ball while sleeping as an instinct to protect vital organs from predators — a behavior retained from their wild wolf ancestors.",
-      "breed": null
-    },
-    {
-      "fact_number": 260,
-      "category": "Behavior",
-      "fact": "Dogs have a 'guilty look,' but research suggests this expression is a response to a human's tone and body language rather than actual guilt.",
-      "breed": null
-    },
-    {
-      "fact_number": 261,
-      "category": "Behavior",
-      "fact": "Dogs can be left-pawed or right-pawed, and roughly 50% favor their right paw — studies suggest this may correlate with differences in personality.",
-      "breed": null
-    },
-    {
-      "fact_number": 262,
-      "category": "Behavior",
-      "fact": "Male dogs typically lift their leg to urinate against vertical surfaces to make their scent appear to come from a larger, taller dog.",
-      "breed": null
-    },
-    {
-      "fact_number": 263,
-      "category": "Behavior",
-      "fact": "Dogs mark territory not just with urine but also through scent glands located in their cheeks, paws, and the base of their tail.",
-      "breed": null
-    },
-    {
-      "fact_number": 264,
-      "category": "Behavior",
-      "fact": "Dogs have been shown to yawn contagiously in response to a human yawn — especially when the yawning human is someone they know and trust.",
-      "breed": null
-    },
-    {
-      "fact_number": 265,
-      "category": "Behavior",
-      "fact": "Dogs have a rudimentary sense of time and can estimate how long their owner has been away — possibly by detecting the fading strength of their scent.",
-      "breed": null
-    },
-    {
-      "fact_number": 266,
-      "category": "Behavior",
-      "fact": "Service dogs can be trained to turn on light switches, open doors, retrieve dropped objects, and dial specially adapted emergency phones.",
-      "breed": null
-    },
-    {
-      "fact_number": 267,
-      "category": "Intelligence",
-      "fact": "The average dog can learn around 165 words and gestures, with highly trained dogs learning 250 or more.",
-      "breed": null
-    },
-    {
-      "fact_number": 268,
-      "category": "Intelligence",
-      "fact": "Dogs are capable of basic counting — they can tell that one object plus one object equals two, and notice when an arithmetic result seems wrong.",
-      "breed": null
-    },
-    {
-      "fact_number": 269,
-      "category": "Intelligence",
-      "fact": "Dogs follow human pointing gestures better than any other animal — including chimpanzees — and can do so without any training.",
-      "breed": null
-    },
-    {
-      "fact_number": 270,
-      "category": "Intelligence",
-      "fact": "Dogs learn fastest through positive reinforcement. Rewarding desired behavior consistently produces faster, more reliable results than punishment.",
-      "breed": null
-    },
-    {
-      "fact_number": 271,
-      "category": "Intelligence",
-      "fact": "Dogs have episodic memory — they can recall specific past events and experiences, not just trained responses.",
-      "breed": null
-    },
-    {
-      "fact_number": 272,
-      "category": "Intelligence",
-      "fact": "Dogs can recognize their owner's car by the sound of the engine from a distance, even among many vehicles with similar sounds.",
-      "breed": null
-    },
-    {
-      "fact_number": 273,
-      "category": "Intelligence",
-      "fact": "A Border Collie named Chaser learned the individual names of over 1,022 separate objects — the largest tested vocabulary of any non-human animal.",
-      "breed": "border collie"
-    },
-    {
-      "fact_number": 274,
-      "category": "Intelligence",
-      "fact": "Border Collies are widely considered the most intelligent dog breed — they can learn a new command in under five seconds and obey it 95% of the time.",
-      "breed": "border collie"
-    },
-    {
-      "fact_number": 275,
-      "category": "Intelligence",
-      "fact": "Dogs can read human facial expressions, preferring to look at happy faces, and can distinguish between positive and negative emotional states.",
-      "breed": null
-    },
-    {
-      "fact_number": 276,
-      "category": "Intelligence",
-      "fact": "Dogs have been shown to understand the concept of fairness: they become visibly upset if another dog receives a better reward for performing the same task.",
-      "breed": null
-    },
-    {
-      "fact_number": 277,
-      "category": "Intelligence",
-      "fact": "A dog named Rico demonstrated 'fast mapping' in 2009 — the same word-learning shortcut used by human children — to rapidly associate names with new objects.",
-      "breed": null
-    },
-    {
-      "fact_number": 278,
-      "category": "Intelligence",
-      "fact": "Dogs can recognize their owner's voice on a recording and show a measurably stronger response to it than to a stranger's voice.",
-      "breed": null
-    },
-    {
-      "fact_number": 279,
-      "category": "Intelligence",
-      "fact": "The dog is the only animal known to have a natural, untrained ability to understand human communicative intent — including pointing, gaze, and tone of voice.",
-      "breed": null
-    },
-    {
-      "fact_number": 280,
-      "category": "Intelligence",
-      "fact": "Dogs possess a form of 'theory of mind' — they can track what another individual knows or has seen and adjust their behavior accordingly.",
-      "breed": null
-    },
-    {
-      "fact_number": 281,
-      "category": "Health",
-      "fact": "Petting a dog for just 15 minutes triggers the release of oxytocin, serotonin, and prolactin in the human brain — the same hormones involved in social bonding.",
-      "breed": null
-    },
-    {
-      "fact_number": 282,
-      "category": "Health",
-      "fact": "When you gaze into your dog's eyes, both your and your dog's oxytocin levels rise — the same bonding mechanism found between human parents and their infants.",
-      "breed": null
-    },
-    {
-      "fact_number": 283,
-      "category": "Health",
-      "fact": "Therapy dogs have been shown to lower blood pressure, reduce cortisol levels, and speed recovery from surgery in hospital patients.",
-      "breed": null
-    },
-    {
-      "fact_number": 284,
-      "category": "Health",
-      "fact": "Dogs have been found to significantly reduce feelings of loneliness and depression — their presence alone lowers cortisol (the stress hormone) in humans.",
-      "breed": null
-    },
-    {
-      "fact_number": 285,
-      "category": "Health",
-      "fact": "Dogs can develop Canine Cognitive Dysfunction (CCD) — an Alzheimer's-like condition that affects up to 28% of dogs aged 11–12 and 68% of dogs aged 15–16.",
-      "breed": null
-    },
-    {
-      "fact_number": 286,
-      "category": "Health",
-      "fact": "Dogs' mouths are not cleaner than humans' mouths — this is a common myth. They simply harbor different bacteria, most of which don't affect humans.",
-      "breed": null
-    },
-    {
-      "fact_number": 287,
-      "category": "Health",
-      "fact": "Obese dogs live on average 1.5 fewer years than dogs at a healthy weight, according to long-term studies of dog lifespan and body condition.",
-      "breed": null
-    },
-    {
-      "fact_number": 288,
-      "category": "Health",
-      "fact": "Dogs age more rapidly in their early years — by age 1, a dog is biologically equivalent to a 30-year-old human in terms of cellular aging markers.",
-      "breed": null
-    },
-    {
-      "fact_number": 289,
-      "category": "Records",
-      "fact": "The world's oldest dog on record was an Australian Cattle Dog named Bluey, who lived to 29 years and 5 months — nearly double the average canine lifespan.",
-      "breed": null
-    },
-    {
-      "fact_number": 290,
-      "category": "Records",
-      "fact": "The tallest dog ever recorded was a Great Dane named Zeus, who stood 44 inches (112 cm) at the shoulder and could look over a countertop while standing on all fours.",
-      "breed": "great dane"
-    },
-    {
-      "fact_number": 291,
-      "category": "Records",
-      "fact": "The smallest dog ever recorded was a Chihuahua named Miracle Milly, who measured just 3.8 inches (9.65 cm) tall and weighed under a pound.",
-      "breed": "chihuahua"
-    },
-    {
-      "fact_number": 292,
-      "category": "Records",
-      "fact": "The highest jump by a dog is 75.5 inches (191.7 cm), set by a Greyhound mix named Feather in Frederick, Maryland in 2017.",
-      "breed": "greyhound"
-    },
-    {
-      "fact_number": 293,
-      "category": "Records",
-      "fact": "A Labrador Retriever named Endal could operate an ATM, shop in stores, and summon help in emergencies — widely considered the most decorated service dog in history.",
-      "breed": null
-    },
-    {
-      "fact_number": 294,
-      "category": "Breeds",
-      "fact": "The Australian Shepherd was developed in the western United States, not Australia — it was bred by Basque shepherds who had passed through Australia before emigrating to America.",
-      "breed": "australian shepherd"
-    },
-    {
-      "fact_number": 295,
-      "category": "Breeds",
-      "fact": "The Poodle's distinctive haircut was originally designed to improve its swimming ability as a waterfowl retriever — pompoms were left to protect the joints from cold water.",
-      "breed": "poodle"
-    },
-    {
-      "fact_number": 296,
-      "category": "Breeds",
-      "fact": "Dalmatian puppies are born completely white — their distinctive spots begin to appear within the first three to four weeks of life.",
-      "breed": "dalmatian"
-    },
-    {
-      "fact_number": 297,
-      "category": "Breeds",
-      "fact": "The Basenji is the only domestic dog that cannot bark. Instead of barking, it produces a distinctive yodeling sound known as a 'barroo.'",
-      "breed": "basenji"
-    },
-    {
-      "fact_number": 298,
-      "category": "Breeds",
-      "fact": "The Norwegian Lundehund has six fully functional toes on each foot and can bend its head all the way back to touch its spine — adaptations developed for puffin hunting on steep cliffs.",
-      "breed": null
-    },
-    {
-      "fact_number": 299,
-      "category": "Breeds",
-      "fact": "The Chow Chow is among the oldest dog breeds, with fossils resembling the breed found in China dating back more than 2,000 years.",
-      "breed": "chow chow"
-    },
-    {
-      "fact_number": 300,
-      "category": "Breeds",
-      "fact": "The Irish Wolfhound is the tallest dog breed by average height — when standing on its hind legs, it can reach over 7 feet tall.",
-      "breed": "irish wolfhound"
-    },
-    {
-      "fact_number": 301,
-      "category": "Breeds",
-      "fact": "The Dachshund was originally bred to hunt badgers — its name literally translates to 'badger dog' in German, and its long body was perfect for following prey into burrows.",
-      "breed": "dachshund"
-    },
-    {
-      "fact_number": 302,
-      "category": "Breeds",
-      "fact": "The Labrador Retriever was the most popular dog breed in the United States for more than 30 consecutive years before recently being overtaken by the French Bulldog.",
-      "breed": null
-    },
-    {
-      "fact_number": 303,
-      "category": "Breeds",
-      "fact": "The St. Bernard was developed by monks at the Great St. Bernard Hospice in the Swiss Alps specifically to rescue travelers stranded in avalanches.",
-      "breed": "saint bernard"
-    },
-    {
-      "fact_number": 304,
-      "category": "Breeds",
-      "fact": "The Siberian Husky can run up to 100 miles a day at sustained speeds of 10–15 mph, burning far fewer calories per mile than scientists initially predicted.",
-      "breed": "siberian husky"
-    },
-    {
-      "fact_number": 305,
-      "category": "Breeds",
-      "fact": "The Alaskan Malamute is the official state dog of Alaska, recognized for its historical role in sled transport and its deep ties to indigenous Alaskan culture.",
-      "breed": "alaskan malamute"
-    },
-    {
-      "fact_number": 306,
-      "category": "Breeds",
-      "fact": "The Great Dane was once known as the 'Deutsche Dogge' and was the official dog of Germany, bred to hunt wild boar alongside German nobility.",
-      "breed": "great dane"
-    },
-    {
-      "fact_number": 307,
-      "category": "Breeds",
-      "fact": "Pugs were bred as lap dogs for Chinese emperors during the Han dynasty and were kept in luxury accommodations with soldiers assigned to guard them.",
-      "breed": "pug"
-    },
-    {
-      "fact_number": 308,
-      "category": "Breeds",
-      "fact": "Bulldogs were originally bred for bull-baiting, a sport banned in England in 1835 — after the ban, breeders selectively developed the gentle, affectionate temperament Bulldogs are known for today.",
-      "breed": "bulldog"
-    },
-    {
-      "fact_number": 309,
-      "category": "Breeds",
-      "fact": "The Boxer breed gets its name from its distinctive habit of standing on its hind legs and sparring with its front paws — a behavior seen during play.",
-      "breed": "boxer"
-    },
-    {
-      "fact_number": 310,
-      "category": "Breeds",
-      "fact": "The Weimaraner was developed in early 19th-century Germany for hunting large game such as deer, boar, and bear — it was originally called the 'Weimar Pointer.'",
-      "breed": "weimaraner"
-    },
-    {
-      "fact_number": 311,
-      "category": "Breeds",
-      "fact": "The Vizsla is the only breed that is uniformly golden-rust in color — its nose, eyes, nails, and coat all match, making it one of the most visually consistent breeds.",
-      "breed": "vizsla"
-    },
-    {
-      "fact_number": 312,
-      "category": "Breeds",
-      "fact": "The Borzoi can reportedly see objects nearly a mile away, thanks to its wide-angle vision and deep chest that supports long, sustained running in open terrain.",
-      "breed": "borzoi"
-    },
-    {
-      "fact_number": 313,
-      "category": "Breeds",
-      "fact": "The Pembroke Welsh Corgi is one of the breeds most closely associated with British royalty — Queen Elizabeth II owned more than 30 Corgis over the course of her reign.",
-      "breed": "corgi"
-    },
-    {
-      "fact_number": 314,
-      "category": "Breeds",
-      "fact": "The Beagle's white-tipped tail was selectively bred so hunters could spot the dog in tall grass during a hunt, even when the rest of its body was hidden.",
-      "breed": "beagle"
-    },
-    {
-      "fact_number": 315,
-      "category": "Breeds",
-      "fact": "The Dalmatian's strong association with firehouses dates back to the era of horse-drawn fire carriages — Dalmatians ran alongside to clear paths and calm the horses.",
-      "breed": "dalmatian"
-    },
-    {
-      "fact_number": 316,
-      "category": "Breeds",
-      "fact": "The Rottweiler descended from the Roman Molossus, a massive war dog that accompanied Roman legions through Europe to herd cattle and guard camps.",
-      "breed": "rottweiler"
-    },
-    {
-      "fact_number": 317,
-      "category": "Breeds",
-      "fact": "The German Shepherd breed was formally established in 1899 by cavalry captain Max von Stephanitz, who sought to create the ultimate working dog.",
-      "breed": "german shepherd"
-    },
-    {
-      "fact_number": 318,
-      "category": "Breeds",
-      "fact": "The Doberman Pinscher was created in the 1880s by a German tax collector named Karl Friedrich Louis Dobermann, who wanted a loyal and intimidating companion for his rounds.",
-      "breed": "doberman"
-    },
-    {
-      "fact_number": 319,
-      "category": "Breeds",
-      "fact": "The Samoyed's permanently upturned mouth corners — the famous 'Samoyed smile' — prevent drooling in freezing temperatures, which could cause ice to form on the dog's face.",
-      "breed": "samoyed"
-    },
-    {
-      "fact_number": 320,
-      "category": "Breeds",
-      "fact": "The Shiba Inu was nearly wiped out during World War II. Only three surviving breeding lines were combined after the war to restore the breed.",
-      "breed": "shiba inu"
-    },
-    {
-      "fact_number": 321,
-      "category": "Breeds",
-      "fact": "The Akita is considered a symbol of good health and happiness in Japan. Small Akita figurines are traditionally given to sick patients as a wish for swift recovery.",
-      "breed": "akita"
-    },
-    {
-      "fact_number": 322,
-      "category": "Breeds",
-      "fact": "Jack Russell Terriers were bred by Reverend John Russell in the 1800s specifically to bolt foxes from their dens during hunts without injuring them.",
-      "breed": "jack russell terrier"
-    },
-    {
-      "fact_number": 323,
-      "category": "Breeds",
-      "fact": "The Pointer's signature 'point' — freezing with nose, body, and raised paw aimed directly at game — is an instinctive behavior nearly unique in the animal kingdom.",
-      "breed": "pointer"
-    },
-    {
-      "fact_number": 324,
-      "category": "Breeds",
-      "fact": "The Pembroke and Cardigan Welsh Corgis are two entirely separate breeds. The Cardigan is the older of the two and has a long tail; the Pembroke typically does not.",
-      "breed": "corgi"
-    },
-    {
-      "fact_number": 325,
-      "category": "Breeds",
-      "fact": "The Finnish Lapphund was used by the Sámi people of northern Scandinavia for thousands of years to herd reindeer across the Arctic tundra.",
+      "category": "General",
+      "fact": "They were originally bred by the Sami people of Lapland to herd reindeer across cold rugged Arctic tundras.",
       "breed": "finnish lapphund"
     },
     {
-      "fact_number": 326,
-      "category": "Breeds",
-      "fact": "The Papillon gets its name from the French word for 'butterfly,' referring to the shape of its large, fringed, wing-like ears.",
-      "breed": "papillon"
+      "fact_number": 230,
+      "category": "General",
+      "fact": "They possess a highly developed 'startle reflex' that allows them to quickly dodge sudden kicks from irritated reindeer while working.",
+      "breed": "finnish lapphund"
     },
     {
-      "fact_number": 327,
-      "category": "Breeds",
-      "fact": "The Bull Terrier is the only dog breed with distinctly triangular eyes — it is the only breed in the world with non-oval eyes.",
-      "breed": "bull terrier"
+      "fact_number": 231,
+      "category": "General",
+      "fact": "The Finnish Lapphund was bred to herd reindeer in the Arctic.",
+      "breed": "finnish lapphund"
     },
     {
-      "fact_number": 328,
-      "category": "Breeds",
-      "fact": "The Basset Hound's long, velvety ears serve a functional purpose: they sweep scent particles from the ground upward toward the nose while the dog tracks a trail.",
-      "breed": "basset hound"
+      "fact_number": 232,
+      "category": "General",
+      "fact": "Finland's national dog was bred to hunt birds and small game by treeing them and barking rapidly to hold their attention, its rust-red coat working as near-perfect camouflage against pine forest bark.",
+      "breed": "finnish spitz"
     },
     {
-      "fact_number": 329,
-      "category": "Breeds",
-      "fact": "The Great Pyrenees has double dewclaws — two extra toes — on each hind foot, an evolutionary adaptation that provides better grip on snowy mountain terrain.",
+      "fact_number": 233,
+      "category": "General",
+      "fact": "Finnish hunters actually score working dogs on bark quality, and national bark-scoring competitions still exist today to crown the country's most musically persistent Finnish Spitz.",
+      "breed": "finnish spitz"
+    },
+    {
+      "fact_number": 234,
+      "category": "General",
+      "fact": "The Finnish Spitz is known for its bark, which is often called a 'yodel.'",
+      "breed": "finnish spitz"
+    },
+    {
+      "fact_number": 235,
+      "category": "General",
+      "fact": "The first seeing-eye dog in the U.S. was a German Shepherd named Buddy, in 1928.",
+      "breed": "german shepherd"
+    },
+    {
+      "fact_number": 236,
+      "category": "General",
+      "fact": "Rin Tin Tin, the movie star German Shepherd, was rescued from a WWI battlefield.",
+      "breed": "german shepherd"
+    },
+    {
+      "fact_number": 237,
+      "category": "General",
+      "fact": "German Shepherd Strongheart was one of Hollywood's first canine movie stars, headlining silent films throughout the 1920s and helping pave the way for Rin Tin Tin's fame just a few years later.",
+      "breed": "german shepherd"
+    },
+    {
+      "fact_number": 238,
+      "category": "General",
+      "fact": "Gordon Setters were originally called 'Black and Tan Setters' and only took the Gordon name officially in 1924, decades after the Duke of Gordon who popularized the breed at his Scottish estate.",
+      "breed": "gordon setter"
+    },
+    {
+      "fact_number": 239,
+      "category": "General",
+      "fact": "Gordons are famously slow to mature — the Duke reportedly refused to hunt over his own dogs until they turned five years old, believing they needed that long to develop both body and brains.",
+      "breed": "gordon setter"
+    },
+    {
+      "fact_number": 240,
+      "category": "General",
+      "fact": "The Gordon Setter is the largest of the setter breeds, originating in Scotland.",
+      "breed": "gordon setter"
+    },
+    {
+      "fact_number": 241,
+      "category": "General",
+      "fact": "The Great Dane is the tallest dog breed, often reaching 30-32 inches at the shoulder.",
+      "breed": "great dane"
+    },
+    {
+      "fact_number": 242,
+      "category": "General",
+      "fact": "Despite the name, Great Danes have no real connection to Denmark — the breed was actually developed in Germany, where it's still known as the Deutsche Dogge, to hunt wild boar.",
+      "breed": "great dane"
+    },
+    {
+      "fact_number": 243,
+      "category": "General",
+      "fact": "The Great Dane's coat can come in a pattern called 'harlequin,' which is white with black patches.",
+      "breed": "great dane"
+    },
+    {
+      "fact_number": 244,
+      "category": "General",
+      "fact": "They are nocturnal by nature an evolutionary trait developed so they could stay fully awake to protect livestock from wolves at night.",
       "breed": "great pyrenees"
     },
     {
-      "fact_number": 330,
-      "category": "Breeds",
-      "fact": "The Portuguese Water Dog has webbed feet, a waterproof coat, and a thick tail used as a rudder — all natural adaptations for herding fish and retrieving gear at sea.",
-      "breed": "portuguese water dog"
+      "fact_number": 245,
+      "category": "General",
+      "fact": "The Great Pyrenees was once the official 'Royal Dog of France' under Louis XIV.",
+      "breed": "great pyrenees"
     },
     {
-      "fact_number": 331,
-      "category": "History",
-      "fact": "A dog named Hachiko, an Akita, waited loyally at Shibuya Station in Tokyo every day for nine years after his owner died in 1925. A bronze statue of Hachiko stands at the station today.",
-      "breed": "akita"
+      "fact_number": 246,
+      "category": "General",
+      "fact": "The Great Pyrenees was used by the French military to carry messages over mountains.",
+      "breed": "great pyrenees"
     },
     {
-      "fact_number": 332,
-      "category": "History",
-      "fact": "A Newfoundland named Seaman accompanied Meriwether Lewis on the Lewis and Clark Expedition of 1804–1806, trekking thousands of miles across North America.",
-      "breed": "newfoundland"
-    },
-    {
-      "fact_number": 333,
-      "category": "History",
-      "fact": "Barry, a legendary St. Bernard rescue dog who worked in the Swiss Alps in the early 1800s, is credited with saving more than 40 lives.",
-      "breed": "saint bernard"
-    },
-    {
-      "fact_number": 334,
-      "category": "History",
-      "fact": "The Shiba Inu is one of Japan's six native breeds and has been designated a Natural Monument of Japan, protected by the government since 1936.",
-      "breed": "shiba inu"
-    },
-    {
-      "fact_number": 335,
-      "category": "History",
-      "fact": "In Aztec culture, the Xoloitzcuintli — the Mexican Hairless Dog — was believed to guide the souls of the deceased safely through the underworld after death.",
-      "breed": null
-    },
-    {
-      "fact_number": 336,
-      "category": "History",
-      "fact": "Dogs were used by the ancient Egyptians as hunting companions over 4,000 years ago, with depictions of sighthound-type dogs appearing in tomb paintings across the Nile Valley.",
-      "breed": null
-    },
-    {
-      "fact_number": 337,
-      "category": "History",
-      "fact": "The Pomeranian was originally a much larger sled-pulling dog from the Pomerania region of Europe — Queen Victoria is credited with popularizing the miniature version after returning from a trip to Florence in 1888.",
-      "breed": null
-    },
-    {
-      "fact_number": 338,
-      "category": "History",
-      "fact": "Dogs and wolves living today both descend from an ancient wolf population that lived alongside woolly mammoths, according to genetic studies published in 2022.",
-      "breed": null
-    },
-    {
-      "fact_number": 339,
-      "category": "History",
-      "fact": "Belka and Strelka became the first dogs to survive orbital spaceflight, returning safely to Earth after a day in space on August 20, 1960.",
-      "breed": null
-    },
-    {
-      "fact_number": 340,
-      "category": "History",
-      "fact": "Paul McCartney recorded a high-frequency whistle at the end of the Beatles song 'A Day in the Life' specifically so that only dogs could hear it.",
-      "breed": null
-    },
-    {
-      "fact_number": 341,
-      "category": "History",
-      "fact": "The term 'dog days of summer' comes from Roman astronomy — the sweltering heat was believed to occur when Sirius, the Dog Star, rose alongside the sun.",
-      "breed": null
-    },
-    {
-      "fact_number": 342,
-      "category": "History",
-      "fact": "Greyhounds are the only breed specifically mentioned in the Bible (Proverbs 30:31 in certain translations), described among things that are 'stately in their stride.'",
+      "fact_number": 247,
+      "category": "General",
+      "fact": "The Greyhound is the fastest dog breed, capable of reaching speeds up to 45 mph.",
       "breed": "greyhound"
     },
     {
-      "fact_number": 343,
-      "category": "Culture",
-      "fact": "The United States has the highest dog population in the world, with an estimated 90 million pet dogs — roughly one dog for every four households.",
-      "breed": null
+      "fact_number": 248,
+      "category": "General",
+      "fact": "The Greyhound is the only dog breed mentioned by name in the Bible.",
+      "breed": "greyhound"
     },
     {
-      "fact_number": 344,
-      "category": "Culture",
-      "fact": "The most popular dog names in the United States are 'Max' for males and 'Bella' for females, according to data collected from veterinary clinics and registries.",
-      "breed": null
+      "fact_number": 249,
+      "category": "General",
+      "fact": "The Greyhound's slender build is designed for aerodynamic efficiency.",
+      "breed": "greyhound"
     },
     {
-      "fact_number": 345,
-      "category": "Culture",
-      "fact": "Police dogs — K9s — are often granted official officer rank in their departments. In many jurisdictions, harming a police dog is treated as assaulting a law enforcement officer.",
-      "breed": null
+      "fact_number": 250,
+      "category": "General",
+      "fact": "Greyhound Speed: They are the second fastest land animal on Earth (after the cheetah), capable of reaching 45 mph.",
+      "breed": "greyhound"
     },
     {
-      "fact_number": 346,
-      "category": "Culture",
-      "fact": "Dogs are mentioned 35 times in the Bible, making them the most frequently referenced animal in that text.",
-      "breed": null
+      "fact_number": 251,
+      "category": "General",
+      "fact": "The Irish Red and White Setter is the older of the two Irish Setter breeds.",
+      "breed": "irish red and white setter"
     },
     {
-      "fact_number": 347,
-      "category": "Culture",
-      "fact": "In ancient China, Emperor Tang of the Tang dynasty reportedly owned 2,500 pairs of hunting dogs, each pair with a dedicated handler.",
-      "breed": "chow chow"
+      "fact_number": 252,
+      "category": "General",
+      "fact": "By the mid-20th century, the Irish Red and White Setter had dwindled to just a handful of dogs; it survived only because a small group of dedicated Irish breeders tracked down the last remaining lines and rebuilt the population almost from scratch.",
+      "breed": "irish red and white setter"
     },
     {
-      "fact_number": 348,
-      "category": "Culture",
-      "fact": "In South Korea, it is considered good luck to have a dog cross your path — the opposite of the superstition many cultures hold about black cats.",
-      "breed": null
+      "fact_number": 253,
+      "category": "General",
+      "fact": "Unlike the flashier solid-red Irish Setter, the Red and White works at a more deliberate, methodical pace in the field, which some hunters actually prefer for covering thick cover without missing birds.",
+      "breed": "irish red and white setter"
     },
     {
-      "fact_number": 349,
-      "category": "Breeds",
-      "fact": "The Lhasa Apso was bred by Tibetan monks as an indoor sentinel dog — it would bark to alert the larger Tibetan Mastiff guard dogs of any intruders approaching the monastery.",
-      "breed": "lhasa apso"
+      "fact_number": 254,
+      "category": "General",
+      "fact": "They served with distinction as messenger dogs in the trenches of World War I earning numerous military commendations for bravery.",
+      "breed": "irish terrier"
     },
     {
-      "fact_number": 350,
-      "category": "Breeds",
-      "fact": "The Leonberger was bred in the 1840s in Leonberg, Germany, with the goal of creating a dog that resembled the lion on the town's coat of arms.",
-      "breed": "leonberger"
+      "fact_number": 255,
+      "category": "General",
+      "fact": "Known as the 'Daredevils' of the dog world they are the only all-red terrier breed in existence.",
+      "breed": "irish terrier"
     },
     {
-      "fact_number": 351,
-      "category": "Breeds",
-      "fact": "The Otterhound has webbed feet and a rough, double coat that repels water — traits bred specifically for hunting otters along riverbanks in medieval England.",
-      "breed": "otterhound"
+      "fact_number": 256,
+      "category": "General",
+      "fact": "Their dense wire coat is naturally water-repellent designed to protect them from the damp and chilly Irish climate.",
+      "breed": "irish terrier"
     },
     {
-      "fact_number": 352,
-      "category": "Breeds",
-      "fact": "The Pekingese was so revered in imperial China that commoners were required to bow to the breed — and theft of one was punishable by death.",
-      "breed": "pekingese"
+      "fact_number": 257,
+      "category": "General",
+      "fact": "The Irish Terrier is often called the 'Daredevil' because of its fiery personality.",
+      "breed": "irish terrier"
     },
     {
-      "fact_number": 353,
-      "category": "Breeds",
-      "fact": "The Brussels Griffon was a favorite pet of Belgian Queen Marie Henriette in the late 1800s, which helped launch the breed's popularity across Europe.",
-      "breed": "brussels griffon"
-    },
-    {
-      "fact_number": 354,
-      "category": "Breeds",
-      "fact": "The Kerry Blue Terrier is the national dog of Ireland, named for County Kerry where it was developed as an all-purpose farm dog for hunting, herding, and guarding.",
-      "breed": "kerry blue terrier"
-    },
-    {
-      "fact_number": 355,
-      "category": "Breeds",
-      "fact": "The Japanese Chin was historically given as a gift between Japanese and Korean royalty, and was considered a symbol of aristocratic status in ancient Japan.",
-      "breed": "japanese chin"
-    },
-    {
-      "fact_number": 356,
-      "category": "Breeds",
-      "fact": "The Borzoi — also known as the Russian Wolfhound — was bred by Russian aristocrats to course wolves across the open steppe, hunting in pairs or trios.",
-      "breed": "borzoi"
-    },
-    {
-      "fact_number": 357,
-      "category": "Breeds",
-      "fact": "The Norwegian Elkhound is one of the oldest Spitz breeds, used by Vikings for hunting elk, bear, and moose and as a loyal companion on longship voyages.",
-      "breed": "norwegian elkhound"
-    },
-    {
-      "fact_number": 358,
-      "category": "Breeds",
-      "fact": "The Skye Terrier was a favorite of Mary, Queen of Scots — one of her dogs reportedly refused to leave her side even after her execution in 1587.",
-      "breed": "skye terrier"
-    },
-    {
-      "fact_number": 359,
-      "category": "Breeds",
-      "fact": "The Irish Wolfhound was so prized in ancient Ireland that Gaelic law set strict limits on how many could be owned based on rank — only kings could own six.",
+      "fact_number": 258,
+      "category": "General",
+      "fact": "They are officially recognized as the tallest of all canine breeds easily surpassing Great Danes when standing on their hind legs.",
       "breed": "irish wolfhound"
     },
     {
+      "fact_number": 259,
+      "category": "General",
+      "fact": "Roman records dating back to 391 AD mention these massive hounds being gifted to the Roman Consul as objects of intense wonder.",
+      "breed": "irish wolfhound"
+    },
+    {
+      "fact_number": 260,
+      "category": "General",
+      "fact": "The Irish Wolfhound is the tallest dog breed, even taller than the Great Dane on average.",
+      "breed": "irish wolfhound"
+    },
+    {
+      "fact_number": 261,
+      "category": "General",
+      "fact": "Reverend John Russell originally bred these small terriers in the 19th century specifically to flush white foxes out of underground dens without killing them.",
+      "breed": "jack russell terrier"
+    },
+    {
+      "fact_number": 262,
+      "category": "General",
+      "fact": "They can jump up to five times their own height using their powerful hind legs to leap over tall fences and barriers.",
+      "breed": "jack russell terrier"
+    },
+    {
+      "fact_number": 263,
+      "category": "General",
+      "fact": "The Jack Russell Terrier was bred specifically for fox hunting.",
+      "breed": "jack russell terrier"
+    },
+    {
+      "fact_number": 264,
+      "category": "General",
+      "fact": "Ancient Japanese royalty held these dogs in such high regard that they were considered separate entities from standard dogs classified instead as royal 'Chins.'",
+      "breed": "japanese chin"
+    },
+    {
+      "fact_number": 265,
+      "category": "General",
+      "fact": "They are known for performing the 'Chin Spin' a rapid self-contained pirouette on their hind legs when they become excited.",
+      "breed": "japanese chin"
+    },
+    {
+      "fact_number": 266,
+      "category": "General",
+      "fact": "The Japanese Chin was a favorite of the Japanese nobility for centuries.",
+      "breed": "japanese chin"
+    },
+    {
+      "fact_number": 267,
+      "category": "General",
+      "fact": "They are born with completely black coats which gradually clear and transform into their signature blue-gray shade by eighteen months of age.",
+      "breed": "kerry blue terrier"
+    },
+    {
+      "fact_number": 268,
+      "category": "General",
+      "fact": "They were traditionally utilized as versatile farm workers in Ireland managing tasks from herding cattle to hunting deep-water otters.",
+      "breed": "kerry blue terrier"
+    },
+    {
+      "fact_number": 269,
+      "category": "General",
+      "fact": "The Kerry Blue Terrier is the national dog of Ireland.",
+      "breed": "kerry blue terrier"
+    },
+    {
+      "fact_number": 270,
+      "category": "General",
+      "fact": "A Komondor's corded coat can take up to two years to fully form and weighs so much when wet that bathing one is basically an all-day event, with towels and fans required just to get it dry.",
+      "breed": "komondor"
+    },
+    {
+      "fact_number": 271,
+      "category": "General",
+      "fact": "The breed's ancestors arrived in Hungary with the nomadic Cuman people in the 12th and 13th centuries, and the name Komondor is thought to derive from 'Koman-dor' — literally 'Cuman dog.'",
+      "breed": "komondor"
+    },
+    {
+      "fact_number": 272,
+      "category": "General",
+      "fact": "The Komondor's corded coat helps it blend in with the sheep it protects.",
+      "breed": "komondor"
+    },
+    {
+      "fact_number": 273,
+      "category": "General",
+      "fact": "Heinrich Essig created the breed in Germany during the 1840s to look exactly like the prominent lion featured on the town crest of Leonberg.",
+      "breed": "leonberger"
+    },
+    {
+      "fact_number": 274,
+      "category": "General",
+      "fact": "They feature fully webbed feet and a highly water-resistant double coat making them superb natural swimmers used in modern water rescue.",
+      "breed": "leonberger"
+    },
+    {
+      "fact_number": 275,
+      "category": "General",
+      "fact": "The Leonberger was bred to resemble the lion on the town crest of Leonberg, Germany.",
+      "breed": "leonberger"
+    },
+    {
+      "fact_number": 276,
+      "category": "General",
+      "fact": "They served as indoor sentinels in Tibetan palaces and Buddhist monasteries alerting the monks to any intruders with a sharp resonant bark.",
+      "breed": "lhasa apso"
+    },
+    {
+      "fact_number": 277,
+      "category": "General",
+      "fact": "Tibetan culture traditionally viewed these dogs as sacred charms believing they could host the souls of deceased lamas who were waiting to be reborn.",
+      "breed": "lhasa apso"
+    },
+    {
+      "fact_number": 278,
+      "category": "General",
+      "fact": "The Lhasa Apso was bred as an indoor sentinel in Tibetan monasteries.",
+      "breed": "lhasa apso"
+    },
+    {
+      "fact_number": 279,
+      "category": "General",
+      "fact": "The Lowchen is also known as the 'Little Lion Dog.'",
+      "breed": "lowchen"
+    },
+    {
+      "fact_number": 280,
+      "category": "General",
+      "fact": "The traditional 'lion clip' shaves the hindquarters and leaves a full mane up front, a style some historians believe started so ladies of the court could use the dog's warm bare skin as a portable foot warmer.",
+      "breed": "lowchen"
+    },
+    {
+      "fact_number": 281,
+      "category": "General",
+      "fact": "By 1973 there were only around 65 registered Löwchen left in the world, earning it the title of rarest dog breed on the planet before a small group of European breeders pulled it back from the brink.",
+      "breed": "lowchen"
+    },
+    {
+      "fact_number": 282,
+      "category": "General",
+      "fact": "When Julius Caesar invaded Britain in 55 BC he was so impressed by the local Mastiffs that he brought them back to fight in Roman arenas.",
+      "breed": "mastiff"
+    },
+    {
+      "fact_number": 283,
+      "category": "General",
+      "fact": "An English Mastiff named Zorba holds the official Guinness World Record for the heaviest dog ever recorded weighing an astonishing 343 pounds.",
+      "breed": "mastiff"
+    },
+    {
+      "fact_number": 284,
+      "category": "General",
+      "fact": "Kublai Khan was said to have kept 5,000 Mastiffs for hunting and protection.",
+      "breed": "mastiff"
+    },
+    {
+      "fact_number": 285,
+      "category": "General",
+      "fact": "Newfoundlands have webbed feet and water-resistant coats, making them excellent swimmers.",
+      "breed": "newfoundland"
+    },
+    {
+      "fact_number": 286,
+      "category": "General",
+      "fact": "The Newfoundland is famous for its natural life-saving instincts in water.",
+      "breed": "newfoundland"
+    },
+    {
+      "fact_number": 287,
+      "category": "General",
+      "fact": "The Newfoundland dog was often used to help pull heavy carts in its native land.",
+      "breed": "newfoundland"
+    },
+    {
+      "fact_number": 288,
+      "category": "General",
+      "fact": "Newfoundland Paws: They have webbed feet and a water-resistant coat, making them elite natural swimmers.",
+      "breed": "newfoundland"
+    },
+    {
+      "fact_number": 289,
+      "category": "General",
+      "fact": "They served as trusted companions and guardians for the Vikings who frequently sailed with these brave hunting dogs on long ocean voyages.",
+      "breed": "norwegian elkhound"
+    },
+    {
+      "fact_number": 290,
+      "category": "General",
+      "fact": "They utilize an energetic hunting style where they corner large elk and hold them at bay by barking loudly until the hunter arrives.",
+      "breed": "norwegian elkhound"
+    },
+    {
+      "fact_number": 291,
+      "category": "General",
+      "fact": "The Norwegian Elkhound was used by Vikings for hunting elk and bear.",
+      "breed": "norwegian elkhound"
+    },
+    {
+      "fact_number": 292,
+      "category": "General",
+      "fact": "Lundehund Toes: The Norwegian Lundehund has six toes on each foot to help it climb slippery cliffs.",
+      "breed": "norwegian lundehund"
+    },
+    {
+      "fact_number": 293,
+      "category": "General",
+      "fact": "The Lundehund's neck is so flexible it can bend its head straight backward until it touches its own spine — a party trick that let it twist around inside tight puffin burrows without ever needing to back out.",
+      "breed": "norwegian lundehund"
+    },
+    {
+      "fact_number": 294,
+      "category": "General",
+      "fact": "The breed survived two brutal distemper outbreaks in the 20th century, the second of which left only six dogs alive worldwide in 1963 — every Lundehund alive today descends from that tiny surviving group.",
+      "breed": "norwegian lundehund"
+    },
+    {
+      "fact_number": 295,
+      "category": "General",
+      "fact": "They are currently considered one of the rarest endangered dog breeds in the world with fewer global individuals than the giant panda.",
+      "breed": "otterhound"
+    },
+    {
+      "fact_number": 296,
+      "category": "General",
+      "fact": "They feature oily waterproof coats alongside webbed feet allowing them to swim continuously for hours while tracking underwater scents.",
+      "breed": "otterhound"
+    },
+    {
+      "fact_number": 297,
+      "category": "General",
+      "fact": "The Otterhound is a rare breed that was originally used to hunt otters in England.",
+      "breed": "otterhound"
+    },
+    {
+      "fact_number": 298,
+      "category": "General",
+      "fact": "Their name translates to 'butterfly' in French a reference to their distinctive fringed ears that closely resemble open butterfly wings.",
+      "breed": "papillon"
+    },
+    {
+      "fact_number": 299,
+      "category": "General",
+      "fact": "Marie Antoinette famously walked to the guillotine clutching her beloved pet Papillon which was spared and cared for after her death.",
+      "breed": "papillon"
+    },
+    {
+      "fact_number": 300,
+      "category": "General",
+      "fact": "The Papillon's name means 'butterfly' in French, referring to its wing-like ears.",
+      "breed": "papillon"
+    },
+    {
+      "fact_number": 301,
+      "category": "General",
+      "fact": "According to ancient Chinese lore the breed was created when Buddha shrunk a mighty lion down to the size of a small companion dog.",
+      "breed": "pekingese"
+    },
+    {
+      "fact_number": 302,
+      "category": "General",
+      "fact": "The Pekingese was once so small it could be carried in the sleeve of a Chinese emperor's robe.",
+      "breed": "pekingese"
+    },
+    {
+      "fact_number": 303,
+      "category": "General",
+      "fact": "Pekingese were considered sacred in the Chinese imperial court, and for centuries commoners weren't even allowed to own one — the breed didn't reach the West until British troops brought some home after the Second Opium War in 1860.",
+      "breed": "pekingese"
+    },
+    {
+      "fact_number": 304,
+      "category": "General",
+      "fact": "The English Pointer as we know it today was pieced together from Foxhounds, Bloodhounds, Greyhounds, and various setters over roughly 300 years, engineered specifically for the nose-and-speed combination bird hunters wanted.",
+      "breed": "pointer"
+    },
+    {
+      "fact_number": 305,
+      "category": "General",
+      "fact": "The classic pointing behavior is entirely instinctual; puppies as young as eight weeks old will frozenly point their bodies toward birds without any formal training.",
+      "breed": "pointer"
+    },
+    {
+      "fact_number": 306,
+      "category": "General",
+      "fact": "The Pointer is named for its instinct to 'point' toward game.",
+      "breed": "pointer"
+    },
+    {
+      "fact_number": 307,
+      "category": "General",
+      "fact": "The Poodle's 'pompoms' were originally meant to protect their joints from cold water.",
+      "breed": "poodle"
+    },
+    {
+      "fact_number": 308,
+      "category": "General",
+      "fact": "Despite being closely associated with French elegance, the Poodle actually originated in Germany as a working water retriever — its name comes from the German word \"pudel,\" meaning \"to splash in water.\"",
+      "breed": "poodle"
+    },
+    {
+      "fact_number": 309,
+      "category": "General",
+      "fact": "Poodles were the single most popular breed registered by the AKC for 22 straight years, from 1960 to 1982, a streak no other breed has matched before or since.",
+      "breed": "poodle"
+    },
+    {
+      "fact_number": 310,
+      "category": "General",
+      "fact": "They traditionally worked alongside Portuguese fishermen herding schools of fish into open nets and swimming out to retrieve lost tackle.",
+      "breed": "portuguese water dog"
+    },
+    {
+      "fact_number": 311,
+      "category": "General",
+      "fact": "They possess a non-shedding coat that grows continuously which is why fishermen gave them the classic 'lion cut' to keep their front halves warm while leaving their rear legs free for swimming.",
+      "breed": "portuguese water dog"
+    },
+    {
+      "fact_number": 312,
+      "category": "General",
+      "fact": "The Portuguese Water Dog was bred to herd fish into nets and deliver messages between ships.",
+      "breed": "portuguese water dog"
+    },
+    {
+      "fact_number": 313,
+      "category": "General",
+      "fact": "A group of Pugs is officially referred to as a 'grumble' a nod to the low snorting and grunting noises they naturally make.",
+      "breed": "pug"
+    },
+    {
+      "fact_number": 314,
+      "category": "General",
+      "fact": "The House of Orange in the Netherlands adopted the Pug as its official royal dog after a alert Pug named Pompey saved the Prince's life by barking at assassins.",
+      "breed": "pug"
+    },
+    {
+      "fact_number": 315,
+      "category": "General",
+      "fact": "The Pug's name comes from the Latin word 'pugnus,' which means fist.",
+      "breed": "pug"
+    },
+    {
+      "fact_number": 316,
+      "category": "General",
+      "fact": "Ridgebacks were never meant to fight lions directly — their real job was darting in and out, baying and distracting a lion so hunters could get a clean shot, which took speed and nerve rather than brute strength.",
+      "breed": "ridgeback"
+    },
+    {
+      "fact_number": 317,
+      "category": "General",
+      "fact": "Genetic testing has found the Rhodesian Ridgeback shares a surprisingly close ancestral clade with the Great Dane, likely a legacy of the Danes that Dutch and British settlers crossed into the breed's early bloodlines.",
+      "breed": "ridgeback"
+    },
+    {
+      "fact_number": 318,
+      "category": "General",
+      "fact": "The Ridgeback's characteristic hair stripe grows in the opposite direction of the rest of the coat.",
+      "breed": "ridgeback"
+    },
+    {
+      "fact_number": 319,
+      "category": "General",
+      "fact": "They descended from ancient Roman drover dogs that marched across Europe alongside Roman legions to guard and herd cattle herds.",
+      "breed": "rottweiler"
+    },
+    {
+      "fact_number": 320,
+      "category": "General",
+      "fact": "In the town of Rottweil Germany butcher shops relied on these dogs to guard their money pouches tying the day's cash securely around the dogs' necks.",
+      "breed": "rottweiler"
+    },
+    {
+      "fact_number": 321,
+      "category": "General",
+      "fact": "The Rottweiler was originally used as a herding dog and to pull carts for butchers.",
+      "breed": "rottweiler"
+    },
+    {
+      "fact_number": 322,
+      "category": "General",
+      "fact": "The breed's comeback came from an unlikely source: German police departments in the early 1900s discovered Rottweilers made excellent police dogs, and that new job saved the breed from disappearing entirely.",
+      "breed": "rottweiler"
+    },
+    {
+      "fact_number": 323,
+      "category": "General",
+      "fact": "The Rottweiler nearly went extinct in the late 1800s once railways replaced long cattle drives and made the breed's original job obsolete — by 1882, only a single Rottweiler reportedly showed up at a dog show in Heilbronn, Germany.",
+      "breed": "rottweiler"
+    },
+    {
+      "fact_number": 324,
+      "category": "General",
+      "fact": "The Saint Bernard was bred by monks in the Swiss Alps for rescue missions.",
+      "breed": "saint bernard"
+    },
+    {
+      "fact_number": 325,
+      "category": "General",
+      "fact": "The Saint Bernard's barrel of brandy is a myth created by a painter named Edwin Landseer.",
+      "breed": "saint bernard"
+    },
+    {
+      "fact_number": 326,
+      "category": "General",
+      "fact": "The most famous Saint Bernard in history was Barry, who worked the Great St. Bernard Pass in the early 1800s and is credited with saving over 40 stranded travelers — his preserved body is still on display in a museum in Bern, Switzerland.",
+      "breed": "saint bernard"
+    },
+    {
+      "fact_number": 327,
+      "category": "General",
+      "fact": "They are one of the oldest known domesticated canine lineages with their likeness appearing carved on Egyptian tombs dating back to 2100 BC.",
+      "breed": "saluki"
+    },
+    {
+      "fact_number": 328,
+      "category": "General",
+      "fact": "They hunt entirely by sight rather than scent using an aerodynamic build to reach sprint speeds of 42 miles per hour.",
+      "breed": "saluki"
+    },
+    {
+      "fact_number": 329,
+      "category": "General",
+      "fact": "The Saluki is one of the oldest dog breeds, with origins dating back to Ancient Egypt.",
+      "breed": "saluki"
+    },
+    {
+      "fact_number": 330,
+      "category": "General",
+      "fact": "The Samoyedic people of Siberia originally used these dogs to sleep on top of them inside tents acting as living hot-water bottles during freezing nights.",
+      "breed": "samoyed"
+    },
+    {
+      "fact_number": 331,
+      "category": "General",
+      "fact": "Their iconic 'Samoyed smile' is a functional adaptation; the upturned corners of their mouths prevent drool from forming icicles on their faces.",
+      "breed": "samoyed"
+    },
+    {
+      "fact_number": 332,
+      "category": "General",
+      "fact": "The Samoyed's white coat was bred to help them blend into the snow of Siberia.",
+      "breed": "samoyed"
+    },
+    {
+      "fact_number": 333,
+      "category": "General",
+      "fact": "The Scottish Deerhound is built similarly to a Greyhound but is much larger and shaggier.",
+      "breed": "scottish deerhound"
+    },
+    {
+      "fact_number": 334,
+      "category": "General",
+      "fact": "Known as the 'Royal Dog of Scotland,' the Deerhound was once restricted by law to nobility of at least earl rank, a policy that nearly wiped the breed out once its exclusivity outlasted the demand for deer-coursing.",
+      "breed": "scottish deerhound"
+    },
+    {
+      "fact_number": 335,
+      "category": "General",
+      "fact": "Sir Walter Scott was a devoted owner who called his Deerhound Maida 'a most perfect creature of heaven,' and General Custer's own Deerhound, Tuck, reportedly died alongside him at Little Bighorn.",
+      "breed": "scottish deerhound"
+    },
+    {
+      "fact_number": 336,
+      "category": "General",
+      "fact": "The Scottish Terrier was the first breed to have its own national club in the U.S.",
+      "breed": "scottish terrier"
+    },
+    {
+      "fact_number": 337,
+      "category": "General",
+      "fact": "Scotties are a bona fide cultural icon — one is a classic Monopoly game piece, and the breed has long served as the mascot for Black & White Scotch Whisky.",
+      "breed": "scottish terrier"
+    },
+    {
+      "fact_number": 338,
+      "category": "General",
+      "fact": "Scottish Terriers have called the White House home more than almost any other breed, including Franklin D. Roosevelt's Fala and George W. Bush's Barney.",
+      "breed": "scottish terrier"
+    },
+    {
+      "fact_number": 339,
+      "category": "General",
+      "fact": "The Shiba Inu's high-pitched yodel-scream, nicknamed the 'Shiba scream,' is a real vocalization the breed makes when startled, annoyed, or occasionally just to make a point — and it's turned the dog into a full-blown internet legend.",
+      "breed": "shiba inu"
+    },
+    {
+      "fact_number": 340,
+      "category": "General",
+      "fact": "The Shiba Inu is the smallest of the six original Japanese spitz breeds.",
+      "breed": "shiba inu"
+    },
+    {
+      "fact_number": 341,
+      "category": "General",
+      "fact": "The Shiba Inu has a 'fox-like' appearance due to its pointed ears and snout.",
+      "breed": "shiba inu"
+    },
+    {
+      "fact_number": 342,
+      "category": "General",
+      "fact": "In 1925 teams of Huskies saved the remote town of Nome Alaska by running a frantic 674-mile sled relay to deliver life-saving diphtheria serum.",
+      "breed": "siberian husky"
+    },
+    {
+      "fact_number": 343,
+      "category": "General",
+      "fact": "They can alter their personal metabolic rates at will allowing them to travel vast distances on very little food without burning their own fat stores.",
+      "breed": "siberian husky"
+    },
+    {
+      "fact_number": 344,
+      "category": "General",
+      "fact": "The Siberian Husky is known for its incredible endurance over long distances.",
+      "breed": "siberian husky"
+    },
+    {
+      "fact_number": 345,
+      "category": "General",
+      "fact": "Greyfriars Bobby a loyal Skye Terrier in 19th-century Edinburgh touched the world by guarding his deceased owner's grave for 14 consecutive years.",
+      "breed": "skye terrier"
+    },
+    {
+      "fact_number": 346,
+      "category": "General",
+      "fact": "They were bred long and low to the ground to easily navigate rock crevices and hunt destructive badgers along the rugged Isle of Skye.",
+      "breed": "skye terrier"
+    },
+    {
+      "fact_number": 347,
+      "category": "General",
+      "fact": "The Skye Terrier was once the favorite breed of Mary, Queen of Scots.",
+      "breed": "skye terrier"
+    },
+    {
+      "fact_number": 348,
+      "category": "General",
+      "fact": "The first dog to win a Best in Show at Westminster was a Smooth Fox Terrier named Ch. Warren Remedy.",
+      "breed": "smooth fox terrier"
+    },
+    {
+      "fact_number": 349,
+      "category": "General",
+      "fact": "Smooth Fox Terriers were the first fox terrier type officially recognized by England's Kennel Club, back in 1875, making them the blueprint many later small terrier breeds trace their ancestry to.",
+      "breed": "smooth fox terrier"
+    },
+    {
+      "fact_number": 350,
+      "category": "General",
+      "fact": "Smooth Fox Terriers were bred to be mostly white on purpose, so hunters on horseback could tell their dog apart from the fox mid-chase and avoid an embarrassing mistake.",
+      "breed": "smooth fox terrier"
+    },
+    {
+      "fact_number": 351,
+      "category": "General",
+      "fact": "The Teddy Roosevelt Terriers were named after the president who kept them in the White House.",
+      "breed": "teddy roosevelt terrier"
+    },
+    {
+      "fact_number": 352,
+      "category": "General",
+      "fact": "Despite the name, there's no solid evidence Theodore Roosevelt actually bred these dogs — but he did own a short-legged ratting terrier named Scamp who reportedly killed 'a great many rats' in the White House basement.",
+      "breed": "teddy roosevelt terrier"
+    },
+    {
+      "fact_number": 353,
+      "category": "General",
+      "fact": "The Teddy Roosevelt Terrier shares its early roots with the Rat Terrier, and the two weren't formally split into separate breeds until the late 1990s, distinguished mainly by leg length and bone density.",
+      "breed": "teddy roosevelt terrier"
+    },
+    {
+      "fact_number": 354,
+      "category": "General",
+      "fact": "The Tibetan Mastiff was used to guard nomadic camps in the Himalayas.",
+      "breed": "tibetan mastiff"
+    },
+    {
+      "fact_number": 355,
+      "category": "General",
+      "fact": "In Tibetan Buddhist tradition, Tibetan Mastiffs are believed to carry the souls of monks and nuns who weren't quite ready to reach Shambhala, guarding monasteries in this life while working off the rest.",
+      "breed": "tibetan mastiff"
+    },
+    {
+      "fact_number": 356,
+      "category": "General",
+      "fact": "A red Tibetan Mastiff named Big Splash reportedly sold in China for roughly $1.5 million in 2011, briefly making it the most expensive dog ever purchased.",
+      "breed": "tibetan mastiff"
+    },
+    {
+      "fact_number": 357,
+      "category": "General",
+      "fact": "The Tibetan Terrier was originally bred as a companion and good luck charm.",
+      "breed": "tibetan terrier"
+    },
+    {
+      "fact_number": 358,
+      "category": "General",
+      "fact": "Despite the name, the Tibetan Terrier isn't a terrier at all — Western travelers just slapped the label on because of its size, while Tibetans traditionally called it 'Tsang Apso,' or shaggy dog.",
+      "breed": "tibetan terrier"
+    },
+    {
+      "fact_number": 359,
+      "category": "General",
+      "fact": "Their oversized, flat 'snowshoe' feet are a genuine adaptation for walking across Himalayan snow and loose rock, giving them far better traction than a typical dog paw.",
+      "breed": "tibetan terrier"
+    },
+    {
       "fact_number": 360,
-      "category": "History",
-      "fact": "The Iditarod Trail Sled Dog Race in Alaska commemorates a famous 1925 relay in which sled dog teams delivered life-saving diphtheria antitoxin to Nome across 674 miles of frozen wilderness.",
-      "breed": null
+      "category": "General",
+      "fact": "The Toy Poodle was bred as a smaller version of the Standard Poodle for urban companionship.",
+      "breed": "toy poodle"
     },
     {
       "fact_number": 361,
-      "category": "Behavior",
-      "fact": "Dogs have been observed bringing their owners gifts — including toys, sticks, or household objects — as a form of greeting or to share their excitement.",
-      "breed": null
+      "category": "General",
+      "fact": "Toy Poodles regularly top rankings of the most intelligent dog breeds, with some canine cognition researchers finding they can learn a new command in as few as five repetitions.",
+      "breed": "toy poodle"
     },
     {
       "fact_number": 362,
-      "category": "Sensory",
-      "fact": "Dogs can hear the ultrasonic frequencies emitted by rodents — a range completely inaudible to humans — which is part of why they are such effective ratters.",
-      "breed": null
+      "category": "General",
+      "fact": "Small as they are, Toy Poodles are still full of working retriever instinct underneath the fancy haircut — many take naturally to fetching, swimming, and problem-solving games most toy breeds couldn't care less about.",
+      "breed": "toy poodle"
     },
     {
       "fact_number": 363,
-      "category": "Behavior",
-      "fact": "Dogs use play bows — stretching the front legs forward and lowering the chest — as a universal signal to other dogs and humans that what follows is just play.",
-      "breed": null
+      "category": "General",
+      "fact": "Known widely as 'Velcro dogs' they form exceptionally tight bonds with their human owners and visibly dislike being left alone in separate rooms.",
+      "breed": "vizsla"
     },
     {
       "fact_number": 364,
-      "category": "Health",
-      "fact": "Dogs who live with active owners walk more, weigh less, and visit the vet less often — studies show dog ownership directly improves human physical fitness levels too.",
-      "breed": null
+      "category": "General",
+      "fact": "They do not possess an insulating undercoat which means they produce almost no typical dog odor but require extra warmth in chilly weather.",
+      "breed": "vizsla"
     },
     {
       "fact_number": 365,
-      "category": "Culture",
-      "fact": "The first dog show ever held took place in Newcastle upon Tyne, England, in June 1859, with only Pointers and Setters competing.",
-      "breed": null
+      "category": "General",
+      "fact": "The Vizsla is known as the 'Velcro dog' because it stays so close to its owner.",
+      "breed": "vizsla"
+    },
+    {
+      "fact_number": 366,
+      "category": "General",
+      "fact": "The German aristocracy originally bred these 'Gray Ghosts' to hunt massive big game including wolves wild boars and mountain bears.",
+      "breed": "weimaraner"
+    },
+    {
+      "fact_number": 367,
+      "category": "General",
+      "fact": "They are born with bright blue eyes that gradually transition into an amber or blue-gray shade as they mature into adulthood.",
+      "breed": "weimaraner"
+    },
+    {
+      "fact_number": 368,
+      "category": "General",
+      "fact": "The Weimaraner is often called the 'Gray Ghost' because of its sleek, silvery coat.",
+      "breed": "weimaraner"
+    },
+    {
+      "fact_number": 369,
+      "category": "General",
+      "fact": "Pembrokes are notorious food hounds prone to weight gain, and vets consider obesity one of the breed's single biggest health risks — not bad for four legs that only reach about ten inches off the ground.",
+      "breed": "welsh corgi pembroke"
+    },
+    {
+      "fact_number": 370,
+      "category": "General",
+      "fact": "Pembroke Welsh Corgis are believed to have arrived in Wales around 1107 AD with Flemish weavers, making them a genuinely different bloodline from the older, Celtic-linked Cardigan despite the near-identical look.",
+      "breed": "welsh corgi pembroke"
+    },
+    {
+      "fact_number": 371,
+      "category": "General",
+      "fact": "The Welsh Corgi Pembroke was a favorite of the British Royal Family for decades.",
+      "breed": "welsh corgi pembroke"
+    },
+    {
+      "fact_number": 372,
+      "category": "General",
+      "fact": "They can accelerate from a dead standstill to a top sprinting speed of 35 miles per hour in just a few seconds.",
+      "breed": "whippet"
+    },
+    {
+      "fact_number": 373,
+      "category": "General",
+      "fact": "19th-century English miners who could not afford to stable large Greyhounds bred these compact sighthounds for racing earning them the nickname 'the poor man's racehorse.'",
+      "breed": "whippet"
+    },
+    {
+      "fact_number": 374,
+      "category": "General",
+      "fact": "They utilize a 'suspended animation' running stride meaning all four of their paws leave the ground twice during every single stride cycle.",
+      "breed": "whippet"
+    },
+    {
+      "fact_number": 375,
+      "category": "General",
+      "fact": "The Whippet is often called the 'poor man's racehorse' due to its speed.",
+      "breed": "whippet"
+    },
+    {
+      "fact_number": 376,
+      "category": "General",
+      "fact": "The Wire Fox Terrier was a favorite of King Edward VII.",
+      "breed": "wire fox terrier"
+    },
+    {
+      "fact_number": 377,
+      "category": "General",
+      "fact": "The Wire Fox Terrier has won Best in Show at the Westminster Kennel Club more than any other breed in history, racking up 15 titles and counting.",
+      "breed": "wire fox terrier"
+    },
+    {
+      "fact_number": 378,
+      "category": "General",
+      "fact": "Asta, the scene-stealing dog from the 1930s 'Thin Man' film series, was a Wire Fox Terrier, and the role single-handedly turned the breed into a household name overnight.",
+      "breed": "wire fox terrier"
     }
   ]
 }

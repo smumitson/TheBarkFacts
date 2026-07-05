@@ -231,15 +231,15 @@
     <img id="dog-photo" src="" alt="" />
     <div id="photo-caption" class="photo-caption"></div>
     <div class="photo-nav">
-      <button onclick="prevPhoto()">&#8592; Prev</button>
+      <button onclick="prevPhoto()">← Prev</button>
       <span id="photo-counter" class="photo-counter">1 / 6</span>
-      <button onclick="nextPhoto()">Next &#8594;</button>
+      <button onclick="nextPhoto()">Next →</button>
     </div>
   </div>
 
-  <div class="breadcrumb"><a href="../index.html">&#8592; Back to Home</a> &nbsp;&middot;&nbsp; <a href="index.html">&#8592; Back to Breeds</a></div>
+  <div class="breadcrumb"><a href="../index.html">← Back to Home</a> &nbsp;&middot;&nbsp; <a href="index.html">← Back to Breeds</a></div>
 
-  <div class="facts-heading">5 facts about the German Shepherd</div>
+  <div class="facts-heading">3 facts about the German Shepherd</div>
 
   <div id="facts-section"></div>
 
@@ -248,9 +248,9 @@
 <footer>Dog Facts &mdash; a fun project</footer>
 
 <script>
-const PHOTOS = [{"file": "german_shepard_1.jpg", "breeds": ["german-shepherd"], "tags": ["herding dog", "working dog", "police dog", "large breed"], "caption": "German Shepherd. Already three steps ahead of you."}, {"file": "german_shepard_2.jpg", "breeds": ["german-shepherd"], "tags": ["herding dog", "working dog", "police dog", "large breed"], "caption": "Has a job. Takes it seriously. Unlike you."}, {"file": "german_shepard_3.jpg", "breeds": ["german-shepherd"], "tags": ["herding dog", "working dog", "police dog", "large breed"], "caption": "Ears up. Threat assessment in progress."}, {"file": "german_shepard_4.jpg", "breeds": ["german-shepherd"], "tags": ["herding dog", "working dog", "police dog", "large breed"], "caption": "Loyal to a fault. The fault is yours."}, {"file": "german_shepard_5.jpg", "breeds": ["german-shepherd"], "tags": ["herding dog", "working dog", "police dog", "large breed"], "caption": "Working breed. Currently working on a nap."}, {"file": "german_shepard_6.jpg", "breeds": ["german-shepherd"], "tags": ["herding dog", "working dog", "police dog", "large breed"], "caption": "Could herd sheep. Settles for herding you to the door."}];
+const PHOTOS = [{"file": "german_shepard_1.jpg", "breeds": ["german shepherd"], "tags": ["working dog", "intelligent", "loyal", "large breed"], "caption": "German Shepherd. Loyal. Intense. Judges your life choices."}, {"file": "german_shepard_2.jpg", "breeds": ["german shepherd"], "tags": ["working dog", "intelligent", "loyal", "large breed"], "caption": "Off duty K9. Still judging."}, {"file": "german_shepard_3.jpg", "breeds": ["german shepherd"], "tags": ["working dog", "intelligent", "loyal", "large breed"], "caption": "Smart dog. Smarter than you. Knows it."}, {"file": "german_shepard_4.jpg", "breeds": ["german shepherd"], "tags": ["working dog", "intelligent", "loyal", "large breed"], "caption": "Professional good boy. Also part-time therapist."}, {"file": "german_shepard_5.jpg", "breeds": ["german shepherd"], "tags": ["working dog", "intelligent", "loyal", "large breed"], "caption": "10/10 would protect. 10/10 would also steal your sandwich."}, {"file": "german_shepard_6.jpg", "breeds": ["german shepherd"], "tags": ["working dog", "intelligent", "loyal", "large breed"], "caption": "Focused. Fierce. Would still like belly rubs."}];
 
-const FACTS = [{"fact_number": 95, "category": "Intelligence", "fact": "German Shepherds are widely ranked among the most intelligent dog breeds, capable of learning a new command in as few as five repetitions.", "breed": "german-shepherd"}, {"fact_number": 142, "category": "History", "fact": "The breed was developed in Germany in the late 1800s by Max von Stephanitz, who set out to create the ideal herding and working dog.", "breed": "german-shepherd"}, {"fact_number": 188, "category": "Working Dogs", "fact": "German Shepherds are among the most common breeds used in police and military work thanks to their trainability, drive, and keen sense of smell.", "breed": "german-shepherd"}, {"fact_number": 256, "category": "Breeds", "fact": "The first guide dog for the blind was a German Shepherd named Buddy, trained in the 1920s.", "breed": "german-shepherd"}, {"fact_number": 339, "category": "Anatomy", "fact": "German Shepherds have a distinctive double coat that sheds year-round, earning them the affectionate nickname \"German Shedders.\"", "breed": "german-shepherd"}];
+const FACTS = [{"fact_number": 235, "category": "General", "fact": "The first seeing-eye dog in the U.S. was a German Shepherd named Buddy, in 1928.", "breed": "german shepherd"}, {"fact_number": 236, "category": "General", "fact": "Rin Tin Tin, the movie star German Shepherd, was rescued from a WWI battlefield.", "breed": "german shepherd"}, {"fact_number": 237, "category": "General", "fact": "German Shepherd Strongheart was one of Hollywood's first canine movie stars, headlining silent films throughout the 1920s and helping pave the way for Rin Tin Tin's fame just a few years later.", "breed": "german shepherd"}];
 
 let currentPhoto = 0;
 

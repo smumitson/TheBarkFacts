@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Toy Spaniel Facts — The Bark Facts</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #FAF0DC;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #3D2B1F;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #5C3D11;
+      color: #FAF0DC;
+      text-align: center;
+      padding: 18px 24px 14px;
+    }
+    header h1 {
+      font-size: 4rem;
+      letter-spacing: 0.04em;
+      font-weight: normal;
+    }
+    header .subtitle {
+      font-size: 0.85rem;
+      color: #D4B483;
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    .site-nav {
+      background: #4A2E0A;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 0 12px;
+    }
+    .site-nav a {
+      color: #C8A87A;
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.82rem;
+      padding: 9px 20px;
+      display: inline-block;
+      letter-spacing: 0.03em;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: #FAF0DC;
+      border-bottom-color: #C05621;
+    }
+
+    .main {
+      flex: 1;
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 28px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .breed-hero {
+      text-align: center;
+      padding: 8px 0 4px;
+    }
+    .breed-hero h2 {
+      font-size: 2.4rem;
+      font-weight: normal;
+      color: #5C3D11;
+      letter-spacing: 0.04em;
+    }
+    .breed-tagline {
+      font-size: 0.95rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 6px;
+    }
+
+    .photo-section {
+      background: #3a2509;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(92,61,17,0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .photo-section img {
+      width: 100%;
+      max-height: 380px;
+      object-fit: contain;
+      background: #3a2509;
+      display: block;
+    }
+    .photo-caption {
+      color: #F5E6C8;
+      font-style: italic;
+      font-size: 0.95rem;
+      padding: 10px 18px 10px;
+      text-align: center;
+      background: #5C3D11;
+      width: 100%;
+    }
+    .photo-nav {
+      background: #4A2E0A;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+    }
+    .photo-nav button {
+      background: #C05621;
+      color: white;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-family: Georgia, serif;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .photo-nav button:hover {
+      background: #9E4418;
+    }
+    .photo-counter {
+      font-size: 0.82rem;
+      color: #C8A87A;
+      font-style: italic;
+    }
+
+    .breadcrumb {
+      font-size: 0.82rem;
+    }
+    .breadcrumb a {
+      color: #C05621;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover {
+      text-decoration: underline;
+    }
+
+    .facts-heading {
+      font-size: 0.82rem;
+      color: #7A4F2A;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .fact-card {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 28px 30px;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.12);
+    }
+    .fact-number {
+      font-size: 0.75rem;
+      font-weight: bold;
+      color: #C05621;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+    .fact-category {
+      font-size: 0.8rem;
+      color: #9A6B3A;
+      margin-bottom: 14px;
+      font-style: italic;
+    }
+    .fact-text {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: #3D2B1F;
+    }
+    .fact-breed-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      background: #C05621;
+      color: white;
+      padding: 3px 10px;
+      border-radius: 10px;
+      text-transform: capitalize;
+    }
+    .fact-footer {
+      display: flex;
+      align-items: center;
+      margin-top: 14px;
+    }
+
+    footer {
+      background: #5C3D11;
+      color: #A07840;
+      text-align: center;
+      font-size: 0.78rem;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Bark Facts</h1>
+  <div class="subtitle">one fact, one dog, one day at a time</div>
+</header>
+<nav class="site-nav">
+  <a href="../index.html">Home</a>
+  <a href="../index.html">Browse Facts</a>
+  <a href="index.html" class="active">Breeds</a>
+</nav>
+
+<div class="main">
+
+  <div class="breed-hero">
+    <h2>English Toy Spaniel</h2>
+    <p class="breed-tagline">Lap dog by trade. Royal by heritage.</p>
+  </div>
+
+  <div class="photo-section">
+    <img id="dog-photo" src="" alt="" />
+    <div id="photo-caption" class="photo-caption"></div>
+    <div class="photo-nav">
+      <button onclick="prevPhoto()">← Prev</button>
+      <span id="photo-counter" class="photo-counter">1 / 3</span>
+      <button onclick="nextPhoto()">Next →</button>
+    </div>
+  </div>
+
+  <div class="breadcrumb"><a href="../index.html">← Back to Home</a> &nbsp;&middot;&nbsp; <a href="index.html">← Back to Breeds</a></div>
+
+  <div class="facts-heading">4 facts about the English Toy Spaniel</div>
+
+  <div id="facts-section"></div>
+
+</div>
+
+<footer>Dog Facts &mdash; a fun project</footer>
+
+<script>
+const PHOTOS = [{"file": "english_toy_spaniel_1.jpg", "breeds": ["english toy spaniel"], "tags": ["toy breed", "companion dog", "small breed", "spaniel"], "caption": "English Toy Spaniel. Lap dog. Knows the lap is earned."}, {"file": "english_toy_spaniel_2.jpg", "breeds": ["english toy spaniel"], "tags": ["toy breed", "companion dog", "small breed", "spaniel"], "caption": "English Toy Spaniel. Royal companion. Taking the role very seriously."}, {"file": "english_toy_spaniel_3.jpg", "breeds": ["english toy spaniel"], "tags": ["toy breed", "companion dog", "small breed", "spaniel"], "caption": "Silky. Sweet. Historically sat on the laps of royalty."}];
+
+const FACTS = [{"fact_number": 225, "category": "General", "fact": "They were a favorite companion of King Charles II who passed a law stating they could not be banned from any public place including Parliament.", "breed": "english toy spaniel"}, {"fact_number": 226, "category": "General", "fact": "They are distinctly separate from the Cavalier King Charles Spaniel recognizable by their much shorter muzzles and rounder domed heads.", "breed": "english toy spaniel"}, {"fact_number": 227, "category": "General", "fact": "The breed is believed to have inherited its short face from crossbreeding with Asian lapdogs like the Pug and Japanese Chin in the 17th century.", "breed": "english toy spaniel"}, {"fact_number": 228, "category": "General", "fact": "The English Toy Spaniel was a favorite of the Tudor monarchs.", "breed": "english toy spaniel"}];
+
+let currentPhoto = 0;
+
+function showPhoto(idx) {
+  const p = PHOTOS[idx];
+  document.getElementById('dog-photo').src = '../images/' + p.file;
+  document.getElementById('dog-photo').alt = p.caption;
+  document.getElementById('photo-caption').textContent = p.caption;
+  document.getElementById('photo-counter').textContent = (idx + 1) + ' / ' + PHOTOS.length;
+}
+
+function nextPhoto() {
+  currentPhoto = (currentPhoto + 1) % PHOTOS.length;
+  showPhoto(currentPhoto);
+}
+
+function prevPhoto() {
+  currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
+  showPhoto(currentPhoto);
+}
+
+const section = document.getElementById('facts-section');
+FACTS.forEach(function(fact) {
+  const card = document.createElement('div');
+  card.className = 'fact-card';
+  card.innerHTML =
+    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
+    '<div class="fact-category">' + fact.category + '</div>' +
+    '<div class="fact-text">' + fact.fact + '</div>' +
+    '<div class="fact-footer"><span class="fact-breed-tag">english toy spaniel</span></div>';
+  section.appendChild(card);
+});
+
+showPhoto(0);
+</script>
+</body>
+</html>

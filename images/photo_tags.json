@@ -404,7 +404,7 @@
       "caption": "On the case. The case is 'where did that smell go.'"
     },
     {
-      "file": "border_Collie_1.jpg",
+      "file": "border_collie_1.jpg",
       "breeds": [
         "border collie"
       ],
@@ -417,7 +417,7 @@
       "caption": "Border Collie. Herding the clouds. Just in case."
     },
     {
-      "file": "border_Collie_2.jpg",
+      "file": "border_collie_2.jpg",
       "breeds": [
         "border collie"
       ],
@@ -430,7 +430,7 @@
       "caption": "Most intelligent dog alive. Knows it. Uses it."
     },
     {
-      "file": "border_Collie_3.jpg",
+      "file": "border_collie_3.jpg",
       "breeds": [
         "border collie"
       ],
@@ -443,7 +443,7 @@
       "caption": "Eye contact that says 'I'm smarter than your PhD.'"
     },
     {
-      "file": "border_Collie_4.jpg",
+      "file": "border_collie_4.jpg",
       "breeds": [
         "border collie"
       ],
@@ -456,7 +456,7 @@
       "caption": "Sheep? Herded. Children? Herded. Adults? Also herded."
     },
     {
-      "file": "border_Collie_5.jpg",
+      "file": "border_collie_5.jpg",
       "breeds": [
         "border collie"
       ],
@@ -469,7 +469,7 @@
       "caption": "Infinite energy. Zero off switch."
     },
     {
-      "file": "border_Collie_6.jpg",
+      "file": "border_collie_6.jpg",
       "breeds": [
         "border collie"
       ],
@@ -2302,7 +2302,7 @@
       "caption": "Looks fragile. Outruns everyone."
     },
     {
-      "file": "grey_hound_1.jpg",
+      "file": "greyhound_1.jpg",
       "breeds": [
         "greyhound"
       ],
@@ -2406,7 +2406,7 @@
       "caption": "White floof. Mountain guardian. Unimpressed by everything."
     },
     {
-      "file": "greyhound_7.jpg",
+      "file": "greyhound_2.jpg",
       "breeds": [
         "greyhound"
       ],
@@ -2419,7 +2419,7 @@
       "caption": "Greyhound. Fastest dog on Earth. Napping competitively."
     },
     {
-      "file": "greyhound_8.jpg",
+      "file": "greyhound_3.jpg",
       "breeds": [
         "greyhound"
       ],
@@ -2432,7 +2432,7 @@
       "caption": "Lean machine. Off duty. Do not disturb."
     },
     {
-      "file": "greyhound_9.jpg",
+      "file": "greyhound_4.jpg",
       "breeds": [
         "greyhound"
       ],
@@ -2445,7 +2445,7 @@
       "caption": "Born to run. Currently declining."
     },
     {
-      "file": "greyhound_10.jpg",
+      "file": "greyhound_5.jpg",
       "breeds": [
         "greyhound"
       ],
@@ -2458,7 +2458,7 @@
       "caption": "45mph potential. 0mph current speed. Balance achieved."
     },
     {
-      "file": "greyhound_11.jpg",
+      "file": "greyhound_6.jpg",
       "breeds": [
         "greyhound"
       ],
@@ -2471,7 +2471,7 @@
       "caption": "Retired racer. Professional lounge expert."
     },
     {
-      "file": "greyhound_12.jpg",
+      "file": "greyhound_7.jpg",
       "breeds": [
         "greyhound"
       ],
@@ -2627,7 +2627,7 @@
       "caption": "Weimaraner. The Gray Ghost. Haunting your kitchen for scraps."
     },
     {
-      "file": "Norwegian_elkhound_1.jpg",
+      "file": "norwegian_elkhound_1.jpg",
       "breeds": [
         "norwegian elkhound"
       ],
@@ -2638,19 +2638,6 @@
         "nordic"
       ],
       "caption": "Norwegian Elkhound. Viking dog. Still on duty."
-    },
-    {
-      "file": "bichon_frise_.jpg",
-      "breeds": [
-        "bichon frise"
-      ],
-      "tags": [
-        "toy breed",
-        "companion dog",
-        "fluffy",
-        "non-shedding"
-      ],
-      "caption": "Bichon Frise. Cotton ball with opinions."
     },
     {
       "file": "brussels_griffon_1.jpg",
@@ -2755,6 +2742,812 @@
         "long coat"
       ],
       "caption": "Skye Terrier. Long coat. Longer memory."
+    },
+    {
+      "file": "alaskan_malamute_2.jpg",
+      "breeds": [
+        "alaskan malamute"
+      ],
+      "tags": [
+        "working dog",
+        "sled dog",
+        "large breed",
+        "fluffy"
+      ],
+      "caption": "Alaskan Malamute. Bred for the tundra. Tolerating the suburbs."
+    },
+    {
+      "file": "alaskan_malamute_3.jpg",
+      "breeds": [
+        "alaskan malamute"
+      ],
+      "tags": [
+        "working dog",
+        "sled dog",
+        "large breed",
+        "fluffy"
+      ],
+      "caption": "Big dog. Bigger personality. Biggest paws."
+    },
+    {
+      "file": "alaskan_malamute_4.jpg",
+      "breeds": [
+        "alaskan malamute"
+      ],
+      "tags": [
+        "working dog",
+        "sled dog",
+        "large breed",
+        "fluffy"
+      ],
+      "caption": "Could pull a sled. Prefers to pull your arm."
+    },
+    {
+      "file": "alaskan_malamute_5.jpg",
+      "breeds": [
+        "alaskan malamute"
+      ],
+      "tags": [
+        "working dog",
+        "sled dog",
+        "large breed",
+        "fluffy"
+      ],
+      "caption": "Malamute. Floof champion. Currently shedding everywhere."
+    },
+    {
+      "file": "basenji_2.jpg",
+      "breeds": [
+        "basenji"
+      ],
+      "tags": [
+        "hound",
+        "barkless",
+        "small breed",
+        "ancient breed"
+      ],
+      "caption": "No bark. Plenty of attitude. Problem solved differently."
+    },
+    {
+      "file": "basenji_3.jpg",
+      "breeds": [
+        "basenji"
+      ],
+      "tags": [
+        "hound",
+        "barkless",
+        "small breed",
+        "ancient breed"
+      ],
+      "caption": "Ancient Egyptian hunting dog. Still on the hunt."
+    },
+    {
+      "file": "basenji_4.jpg",
+      "breeds": [
+        "basenji"
+      ],
+      "tags": [
+        "hound",
+        "barkless",
+        "small breed",
+        "ancient breed"
+      ],
+      "caption": "Self-grooming like a cat. Running like a cheetah."
+    },
+    {
+      "file": "basenji_5.jpg",
+      "breeds": [
+        "basenji"
+      ],
+      "tags": [
+        "hound",
+        "barkless",
+        "small breed",
+        "ancient breed"
+      ],
+      "caption": "Silence. Speed. Judgment. All at once."
+    },
+    {
+      "file": "basenji_6.jpg",
+      "breeds": [
+        "basenji"
+      ],
+      "tags": [
+        "hound",
+        "barkless",
+        "small breed",
+        "ancient breed"
+      ],
+      "caption": "Basenji. Doesn't bark. Communicates through soul stare."
+    },
+    {
+      "file": "bichon_frise_1.jpg",
+      "breeds": [
+        "bichon frise"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "fluffy",
+        "non-shedding"
+      ],
+      "caption": "Bichon Frise. Cotton ball with opinions."
+    },
+    {
+      "file": "bichon_frise_2.jpg",
+      "breeds": [
+        "bichon frise"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "fluffy",
+        "non-shedding"
+      ],
+      "caption": "Cloud dog. Zero shedding. Maximum fluff."
+    },
+    {
+      "file": "bichon_frise_3.jpg",
+      "breeds": [
+        "bichon frise"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "fluffy",
+        "non-shedding"
+      ],
+      "caption": "Small. Cheerful. Refuses to have a bad day."
+    },
+    {
+      "file": "borzoi_2.jpg",
+      "breeds": [
+        "borzoi"
+      ],
+      "tags": [
+        "sighthound",
+        "elegant",
+        "large breed",
+        "russian"
+      ],
+      "caption": "Borzoi. Aristocratic. Slightly dismissive of your presence."
+    },
+    {
+      "file": "borzoi_3.jpg",
+      "breeds": [
+        "borzoi"
+      ],
+      "tags": [
+        "sighthound",
+        "elegant",
+        "large breed",
+        "russian"
+      ],
+      "caption": "Nose: imperial. Speed: extraordinary. Snack interest: eternal."
+    },
+    {
+      "file": "borzoi_4.jpg",
+      "breeds": [
+        "borzoi"
+      ],
+      "tags": [
+        "sighthound",
+        "elegant",
+        "large breed",
+        "russian"
+      ],
+      "caption": "Russian wolfhound. Silky. Statuesque. Oddly photogenic."
+    },
+    {
+      "file": "borzoi_5.jpg",
+      "breeds": [
+        "borzoi"
+      ],
+      "tags": [
+        "sighthound",
+        "elegant",
+        "large breed",
+        "russian"
+      ],
+      "caption": "Borzoi. Born to run. Also born to pose dramatically."
+    },
+    {
+      "file": "brussels_griffon_2.jpg",
+      "breeds": [
+        "brussels griffon"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "small breed",
+        "wiry"
+      ],
+      "caption": "Brussels Griffon. Looks like a Muppet. Totally owns it."
+    },
+    {
+      "file": "brussels_griffon_3.jpg",
+      "breeds": [
+        "brussels griffon"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "small breed",
+        "wiry"
+      ],
+      "caption": "Tiny face. Enormous feelings. Non-negotiable."
+    },
+    {
+      "file": "brussels_griffon_4.jpg",
+      "breeds": [
+        "brussels griffon"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "small breed",
+        "wiry"
+      ],
+      "caption": "Distinguished. Bearded. Deeply opinionated about everything."
+    },
+    {
+      "file": "bull_terrier_2.jpg",
+      "breeds": [
+        "bull terrier"
+      ],
+      "tags": [
+        "terrier",
+        "medium breed",
+        "muscular",
+        "playful"
+      ],
+      "caption": "Bull Terrier. Egg head. Maximum personality."
+    },
+    {
+      "file": "bull_terrier_3.jpg",
+      "breeds": [
+        "bull terrier"
+      ],
+      "tags": [
+        "terrier",
+        "medium breed",
+        "muscular",
+        "playful"
+      ],
+      "caption": "Clown. Athlete. Best friend you didn't expect."
+    },
+    {
+      "file": "bull_terrier_4.jpg",
+      "breeds": [
+        "bull terrier"
+      ],
+      "tags": [
+        "terrier",
+        "medium breed",
+        "muscular",
+        "playful"
+      ],
+      "caption": "Bull Terrier. Unique face. Even more unique spirit."
+    },
+    {
+      "file": "doberman_2.jpg",
+      "breeds": [
+        "doberman"
+      ],
+      "tags": [
+        "working dog",
+        "guardian",
+        "large breed",
+        "loyal"
+      ],
+      "caption": "Doberman. Precision machine. Runs on loyalty."
+    },
+    {
+      "file": "doberman_3.jpg",
+      "breeds": [
+        "doberman"
+      ],
+      "tags": [
+        "working dog",
+        "guardian",
+        "large breed",
+        "loyal"
+      ],
+      "caption": "Vigilant. Elegant. Would die for you and also steal your seat."
+    },
+    {
+      "file": "english_toy_spaniel_2.jpg",
+      "breeds": [
+        "english toy spaniel"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "small breed",
+        "spaniel"
+      ],
+      "caption": "English Toy Spaniel. Royal companion. Taking the role very seriously."
+    },
+    {
+      "file": "english_toy_spaniel_3.jpg",
+      "breeds": [
+        "english toy spaniel"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "small breed",
+        "spaniel"
+      ],
+      "caption": "Silky. Sweet. Historically sat on the laps of royalty."
+    },
+    {
+      "file": "finnish_lapphund_2.jpg",
+      "breeds": [
+        "finnish lapphund"
+      ],
+      "tags": [
+        "spitz type",
+        "herding dog",
+        "medium breed",
+        "fluffy"
+      ],
+      "caption": "Finnish Lapphund. Arctic floof. Warm heart. Cold nose."
+    },
+    {
+      "file": "finnish_lapphund_3.jpg",
+      "breeds": [
+        "finnish lapphund"
+      ],
+      "tags": [
+        "spitz type",
+        "herding dog",
+        "medium breed",
+        "fluffy"
+      ],
+      "caption": "Reindeer herder on sabbatical. Enjoying the warmth."
+    },
+    {
+      "file": "great_dane_6.jpg",
+      "breeds": [
+        "great dane"
+      ],
+      "tags": [
+        "giant breed",
+        "gentle giant",
+        "working dog",
+        "elegant"
+      ],
+      "caption": "Great Dane. World's tallest dog. Still wants to be a lapdog."
+    },
+    {
+      "file": "great_pyrenees_3.jpg",
+      "breeds": [
+        "great pyrenees"
+      ],
+      "tags": [
+        "working dog",
+        "fluffy",
+        "giant breed",
+        "guardian"
+      ],
+      "caption": "Great Pyrenees. Mountain floof. Would block a wolf. Also the door."
+    },
+    {
+      "file": "great_pyrenees_4.jpg",
+      "breeds": [
+        "great pyrenees"
+      ],
+      "tags": [
+        "working dog",
+        "fluffy",
+        "giant breed",
+        "guardian"
+      ],
+      "caption": "Nocturnal guardian. Loud barker. Excellent napper by day."
+    },
+    {
+      "file": "irish_terrier_2.jpg",
+      "breeds": [
+        "irish terrier"
+      ],
+      "tags": [
+        "terrier",
+        "medium breed",
+        "red coat",
+        "bold"
+      ],
+      "caption": "Irish Terrier. Spirited. Stubborn. Absolutely worth it."
+    },
+    {
+      "file": "irish_terrier_3.jpg",
+      "breeds": [
+        "irish terrier"
+      ],
+      "tags": [
+        "terrier",
+        "medium breed",
+        "red coat",
+        "bold"
+      ],
+      "caption": "Daredevil dog. Fiery coat. Even fierier personality."
+    },
+    {
+      "file": "irish_wolfhound_2.jpg",
+      "breeds": [
+        "irish wolfhound"
+      ],
+      "tags": [
+        "sighthound",
+        "giant breed",
+        "gentle giant",
+        "historic"
+      ],
+      "caption": "Irish Wolfhound. Gentle. Enormous. Would not harm a fly."
+    },
+    {
+      "file": "irish_wolfhound_3.jpg",
+      "breeds": [
+        "irish wolfhound"
+      ],
+      "tags": [
+        "sighthound",
+        "giant breed",
+        "gentle giant",
+        "historic"
+      ],
+      "caption": "Historic breed. Ancient nobility. Currently napping."
+    },
+    {
+      "file": "japanese_chin_dog_2.jpg",
+      "breeds": [
+        "japanese chin"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "small breed",
+        "japanese breed"
+      ],
+      "caption": "Japanese Chin. Elegant. Refined. Absolutely judging your decor."
+    },
+    {
+      "file": "japanese_chin_dog_3.jpg",
+      "breeds": [
+        "japanese chin"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "small breed",
+        "japanese breed"
+      ],
+      "caption": "Temple dog. Still expecting temple-level treatment."
+    },
+    {
+      "file": "kerry_blue_terrier_2.jpg",
+      "breeds": [
+        "kerry blue terrier"
+      ],
+      "tags": [
+        "terrier",
+        "medium breed",
+        "irish breed",
+        "blue coat"
+      ],
+      "caption": "Kerry Blue Terrier. Stunning coat. Even more stunning stubbornness."
+    },
+    {
+      "file": "kerry_blue_terrier_3.jpg",
+      "breeds": [
+        "kerry blue terrier"
+      ],
+      "tags": [
+        "terrier",
+        "medium breed",
+        "irish breed",
+        "blue coat"
+      ],
+      "caption": "Irish through and through. Bold, brave, and curly."
+    },
+    {
+      "file": "leonberger_2.jpg",
+      "breeds": [
+        "leonberger"
+      ],
+      "tags": [
+        "working dog",
+        "giant breed",
+        "fluffy",
+        "gentle giant"
+      ],
+      "caption": "Leonberger. Part lion. Part lapdog. All heart."
+    },
+    {
+      "file": "leonberger_3.jpg",
+      "breeds": [
+        "leonberger"
+      ],
+      "tags": [
+        "working dog",
+        "giant breed",
+        "fluffy",
+        "gentle giant"
+      ],
+      "caption": "Mane like a lion. Temperament like a golden."
+    },
+    {
+      "file": "lhasa_apso_2.jpg",
+      "breeds": [
+        "lhasa apso"
+      ],
+      "tags": [
+        "companion dog",
+        "small breed",
+        "fluffy",
+        "ancient breed"
+      ],
+      "caption": "Lhasa Apso. Small in size. Large in confidence."
+    },
+    {
+      "file": "lhasa_apso_3.jpg",
+      "breeds": [
+        "lhasa apso"
+      ],
+      "tags": [
+        "companion dog",
+        "small breed",
+        "fluffy",
+        "ancient breed"
+      ],
+      "caption": "Monk approved. Palace raised. Currently judging your home."
+    },
+    {
+      "file": "norwegian_elkhound_2.jpg",
+      "breeds": [
+        "norwegian elkhound"
+      ],
+      "tags": [
+        "spitz type",
+        "working dog",
+        "medium breed",
+        "nordic"
+      ],
+      "caption": "Norwegian Elkhound. Survived Vikings. Can handle your schedule."
+    },
+    {
+      "file": "norwegian_elkhound_3.jpg",
+      "breeds": [
+        "norwegian elkhound"
+      ],
+      "tags": [
+        "spitz type",
+        "working dog",
+        "medium breed",
+        "nordic"
+      ],
+      "caption": "Ancient Nordic hunter. Thick coat. Thick determination."
+    },
+    {
+      "file": "otterhound_2.jpg",
+      "breeds": [
+        "otterhound"
+      ],
+      "tags": [
+        "hound",
+        "rare breed",
+        "medium breed",
+        "scruffy"
+      ],
+      "caption": "Otterhound. One of the rarest breeds. Worth every rarity point."
+    },
+    {
+      "file": "otterhound_3.jpg",
+      "breeds": [
+        "otterhound"
+      ],
+      "tags": [
+        "hound",
+        "rare breed",
+        "medium breed",
+        "scruffy"
+      ],
+      "caption": "Shaggy. Lovable. Swimming optional but preferred."
+    },
+    {
+      "file": "pekingese_3.jpg",
+      "breeds": [
+        "pekingese"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "ancient breed",
+        "imperial"
+      ],
+      "caption": "Pekingese. Descended from palace dogs. Has not forgotten."
+    },
+    {
+      "file": "pekingese_4.jpg",
+      "breeds": [
+        "pekingese"
+      ],
+      "tags": [
+        "toy breed",
+        "companion dog",
+        "ancient breed",
+        "imperial"
+      ],
+      "caption": "Small. Fluffy. Carrying 2000 years of dignified history."
+    },
+    {
+      "file": "pointer_2.jpg",
+      "breeds": [
+        "pointer"
+      ],
+      "tags": [
+        "sporting dog",
+        "medium breed",
+        "hunting dog",
+        "athletic"
+      ],
+      "caption": "Pointer. Locked in. Target acquired. Waiting for your signal."
+    },
+    {
+      "file": "pointer_3.jpg",
+      "breeds": [
+        "pointer"
+      ],
+      "tags": [
+        "sporting dog",
+        "medium breed",
+        "hunting dog",
+        "athletic"
+      ],
+      "caption": "Precision nose. Sculptural pose. Born to hunt."
+    },
+    {
+      "file": "pointer_4.jpg",
+      "breeds": [
+        "pointer"
+      ],
+      "tags": [
+        "sporting dog",
+        "medium breed",
+        "hunting dog",
+        "athletic"
+      ],
+      "caption": "Pointer. Elegant. Athletic. Always pointing at something."
+    },
+    {
+      "file": "portuguese_water_dog_2.jpg",
+      "breeds": [
+        "portuguese water dog"
+      ],
+      "tags": [
+        "working dog",
+        "water dog",
+        "medium breed",
+        "curly"
+      ],
+      "caption": "Portuguese Water Dog. Loves the water. Tolerates the bath."
+    },
+    {
+      "file": "portuguese_water_dog_3.jpg",
+      "breeds": [
+        "portuguese water dog"
+      ],
+      "tags": [
+        "working dog",
+        "water dog",
+        "medium breed",
+        "curly"
+      ],
+      "caption": "Curly. Energetic. Ready to jump in at any moment."
+    },
+    {
+      "file": "shiba_inu_3.jpg",
+      "breeds": [
+        "shiba inu"
+      ],
+      "tags": [
+        "spitz type",
+        "small breed",
+        "japanese breed",
+        "bold"
+      ],
+      "caption": "Shiba Inu. Not your average dog. Never your average dog."
+    },
+    {
+      "file": "shiba_inu_4.jpg",
+      "breeds": [
+        "shiba inu"
+      ],
+      "tags": [
+        "spitz type",
+        "small breed",
+        "japanese breed",
+        "bold"
+      ],
+      "caption": "Ancient Japanese breed. Modern internet icon."
+    },
+    {
+      "file": "skye_terrier_2.jpg",
+      "breeds": [
+        "skye terrier"
+      ],
+      "tags": [
+        "terrier",
+        "small breed",
+        "scottish breed",
+        "long coat"
+      ],
+      "caption": "Skye Terrier. Hair everywhere. Heart even bigger."
+    },
+    {
+      "file": "skye_terrier_3.jpg",
+      "breeds": [
+        "skye terrier"
+      ],
+      "tags": [
+        "terrier",
+        "small breed",
+        "scottish breed",
+        "long coat"
+      ],
+      "caption": "Scottish legend. Coat like a waterfall. Loyalty like a rock."
+    },
+    {
+      "file": "vizsla_2.jpg",
+      "breeds": [
+        "vizsla"
+      ],
+      "tags": [
+        "sporting dog",
+        "medium breed",
+        "loyal",
+        "energetic"
+      ],
+      "caption": "Vizsla. Velcro dog. The 'where are you going' breed."
+    },
+    {
+      "file": "vizsla_3.jpg",
+      "breeds": [
+        "vizsla"
+      ],
+      "tags": [
+        "sporting dog",
+        "medium breed",
+        "loyal",
+        "energetic"
+      ],
+      "caption": "Golden rust coat. Golden retriever energy. No, not related."
+    },
+    {
+      "file": "weimaraner_2.jpg",
+      "breeds": [
+        "weimaraner"
+      ],
+      "tags": [
+        "sporting dog",
+        "large breed",
+        "silver",
+        "elegant"
+      ],
+      "caption": "Weimaraner. Silver ghost. Currently haunting your kitchen."
+    },
+    {
+      "file": "weimaraner_3.jpg",
+      "breeds": [
+        "weimaraner"
+      ],
+      "tags": [
+        "sporting dog",
+        "large breed",
+        "silver",
+        "elegant"
+      ],
+      "caption": "Sleek. Fast. Deeply attached to one specific human."
     }
   ]
 }
