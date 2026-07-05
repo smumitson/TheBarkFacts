@@ -294,8 +294,8 @@ TEMPLATE = """\
 </header>
 <nav class="site-nav">
   <a href="../index.html">Home</a>
-  <a href="../index.html">Browse Facts</a>
-  <a href="index.html" class="active">Breeds</a>
+  <a href="index.html" class="active">Browse Facts</a>
+  <a href="../deep-dives/index.html">Breeds</a>
 </nav>
 
 <div class="main">
@@ -315,7 +315,7 @@ TEMPLATE = """\
     </div>
   </div>
 
-  <div class="breadcrumb"><a href="../index.html">← Back to Home</a> &nbsp;&middot;&nbsp; <a href="index.html">← Back to Breeds</a></div>
+  <div class="breadcrumb"><a href="../index.html">← Back to Home</a> &nbsp;&middot;&nbsp; <a href="index.html">← Back to Browse Facts</a></div>
 
   <div class="facts-heading">{fact_count} facts about the {title}</div>
 
