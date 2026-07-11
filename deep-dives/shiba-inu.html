@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiba Inu &mdash; Deep Dive &mdash; The Bark Facts</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #FAF0DC;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #3D2B1F;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #5C3D11;
+      color: #FAF0DC;
+      text-align: center;
+      padding: 18px 24px 14px;
+    }
+    header h1 {
+      font-size: 4rem;
+      letter-spacing: 0.04em;
+      font-weight: normal;
+    }
+    header .subtitle {
+      font-size: 0.85rem;
+      color: #D4B483;
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    .site-nav {
+      background: #4A2E0A;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 0 12px;
+      flex-wrap: wrap;
+    }
+    .site-nav a {
+      color: #C8A87A;
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.82rem;
+      padding: 9px 20px;
+      display: inline-block;
+      letter-spacing: 0.03em;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: #FAF0DC;
+      border-bottom-color: #C05621;
+    }
+
+    .main {
+      flex: 1;
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 28px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .deep-hero {
+      text-align: center;
+      padding: 8px 0 4px;
+    }
+    .deep-hero h2 {
+      font-size: 2.4rem;
+      font-weight: normal;
+      color: #5C3D11;
+      letter-spacing: 0.04em;
+    }
+    .breed-tagline {
+      font-size: 0.95rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 6px;
+    }
+    .deep-dives-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      background: #5C3D11;
+      color: #D4B483;
+      padding: 3px 10px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .breadcrumb {
+      font-size: 0.82rem;
+    }
+    .breadcrumb a {
+      color: #C05621;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .stat-panel {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 22px 26px 26px;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+    }
+    .panel-heading {
+      font-size: 0.78rem;
+      color: #7A4F2A;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 18px;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px 12px;
+    }
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .stat-label {
+      font-size: 0.64rem;
+      color: #9A6B3A;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      line-height: 1.4;
+    }
+    .stat-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 20px;
+      line-height: 1.35;
+      width: fit-content;
+    }
+
+    .badge-low      { background: #E4CFA0; color: #4A2E0A; }
+    .badge-moderate { background: #C8A870; color: #3D2B1F; }
+    .badge-high     { background: #C05621; color: #FFF8EC; }
+    .badge-very-high{ background: #5C3D11; color: #FAF0DC; }
+    .badge-neutral  { background: #7A4F2A; color: #FAF0DC; }
+    .badge-yes      { background: #6B7C45; color: #F5F0E8; }
+    .badge-with-exp { background: #B8880A; color: #FFF8EC; }
+    .badge-no       { background: #8B3A1A; color: #FAF0DC; }
+
+    .narrative-section {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 28px 30px;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.12);
+      overflow: hidden;
+    }
+    .narrative-heading {
+      font-size: 0.78rem;
+      color: #7A4F2A;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 14px;
+    }
+    .narrative-body {
+      font-size: 1.05rem;
+      line-height: 1.78;
+      color: #3D2B1F;
+    }
+    .narrative-body p + p {
+      margin-top: 14px;
+    }
+
+    .narrative-img {
+      float: right;
+      width: 150px;
+      margin: 4px 0 14px 18px;
+      border-radius: 8px;
+      border: 2px solid #E0C090;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.12);
+      display: block;
+    }
+
+    .narrative-section.honest-take {
+      border-left: 4px solid #C05621;
+    }
+    .narrative-section.honest-take .narrative-heading {
+      color: #C05621;
+    }
+
+    @media (max-width: 520px) {
+      header h1 { font-size: 2.8rem; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); gap: 12px 10px; }
+      .stat-badge { font-size: 0.74rem; }
+      .narrative-img {
+        float: none;
+        display: block;
+        width: 180px;
+        margin: 0 auto 16px;
+      }
+    }
+
+    footer {
+      background: #5C3D11;
+      color: #A07840;
+      text-align: center;
+      font-size: 0.78rem;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Bark Facts</h1>
+  <div class="subtitle">one fact, one dog, one day at a time</div>
+</header>
+<nav class="site-nav">
+  <a href="../index.html">Home</a>
+  <a href="../breeds/index.html">Browse Facts</a>
+  <a href="index.html" class="active">Breeds</a>
+</nav>
+
+<div class="main">
+
+  <div class="deep-hero">
+    <div class="deep-dives-label">Deep Dive</div>
+    <h2>Shiba Inu</h2>
+    <p class="breed-tagline">Has opinions. Will escalate. Actually you&rsquo;re not allowed here.</p>
+  </div>
+
+  <div class="breadcrumb">
+    <a href="../index.html">&#8592; Back to Home</a>
+    &nbsp;&middot;&nbsp;
+    <a href="index.html">&#8592; Back to Breeds</a>
+    &nbsp;&middot;&nbsp;
+    <a href="../breeds/shiba-inu.html">See Breed Facts Page</a>
+  </div>
+
+  <!-- Quick-Glance Panel -->
+  <section class="stat-panel">
+    <div class="panel-heading">Quick Glance</div>
+    <div class="stat-grid">
+
+      <div class="stat-item">
+        <div class="stat-label">Primary Role</div>
+        <span class="stat-badge badge-neutral">Hunting</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Physical Activity Needs</div>
+        <span class="stat-badge badge-moderate">Moderate</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Mental Stimulation Needs</div>
+        <span class="stat-badge badge-high">High</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Size</div>
+        <span class="stat-badge badge-neutral">Small</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Grooming Needs</div>
+        <span class="stat-badge badge-moderate">Moderate</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Trainability</div>
+        <span class="stat-badge badge-with-exp">Independent-Minded</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Good For Beginners</div>
+        <span class="stat-badge badge-no">Not Recommended</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Apartment Friendly</div>
+        <span class="stat-badge badge-with-exp">With Enough Exercise</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Temperament -->
+  <section class="narrative-section">
+    <div class="narrative-heading">Temperament</div>
+    <div class="narrative-body">
+      <img class="narrative-img" src="../images/shiba_inu_2.jpg" alt="Shiba Inu" />
+      <p>The Shiba Inu is the most popular dog in Japan, and understanding why requires understanding that Japanese dog culture rewards a different set of traits than most Western dog ownership does — independence, cleanliness, dignity, and loyalty on the dog's own terms rather than endless social enthusiasm.</p>
+      <p>Shibas are clean, cat-like, and genuinely devoted to their people without being clingy about it. They're also vocal — the 'Shiba scream' is a real thing, deployed at maximum volume during bathtime, nail trims, or perceived injustices — and they have strong opinions about strangers and other animals.</p>
+    </div>
+  </section>
+
+  <!-- Health & Lifespan -->
+  <section class="narrative-section">
+    <div class="narrative-heading">Health &amp; Lifespan</div>
+    <div class="narrative-body">
+      <p>Shibas are generally hardy and live 13–16 years, among the longer lifespans in their size class. The breed does carry some risk for hip dysplasia, patellar luxation, and progressive retinal atrophy, though at rates lower than many comparable breeds.</p>
+      <p>The bigger health conversation for Shibas is usually allergies — both environmental and food-related skin sensitivities appear frequently. If a Shiba is scratching chronically or having recurring ear infections, diet or environmental allergens are often involved.</p>
+    </div>
+  </section>
+
+  <!-- Nutrition Needs -->
+  <section class="narrative-section">
+    <div class="narrative-heading">Nutrition Needs</div>
+    <div class="narrative-body">
+      <p>Shibas are prone to food sensitivities and can be particular about what agrees with them. High-quality protein from a limited number of sources is often the starting point when managing skin or digestive issues.</p>
+      <p>They're not heavy eaters for their size, and overfeeding is easy to do with a breed that has a naturally compact build. Keep them lean — extra weight on small dogs adds up faster than people expect.</p>
+    </div>
+  </section>
+
+  <!-- Family Fit -->
+  <section class="narrative-section">
+    <div class="narrative-heading">Family Fit</div>
+    <div class="narrative-body">
+      <p>Shibas are better suited to households with older children who understand the concept of respecting a dog's space. Their prey drive is real and small animals — cats, rabbits, birds — are genuinely at risk. They can coexist with cats they've been raised with, but it's not guaranteed.</p>
+      <p>They're often better in calmer households than chaotic ones, and they bond deeply to their core family while remaining reserved with everyone else — which is exactly what some families want.</p>
+    </div>
+  </section>
+
+  <!-- The Honest Take -->
+  <section class="narrative-section honest-take">
+    <div class="narrative-heading">The Honest Take</div>
+    <div class="narrative-body">
+      <p>The Shiba Inu is not a beginner dog dressed up in a compact package. The independent nature isn't something training fixes — it's the whole personality. Recall off-leash is genuinely unreliable, and any off-leash time should happen in fully enclosed spaces.</p>
+      <p>For the right owner — someone who appreciates a dog that's clean, self-sufficient, and bonded to them without being needy — the Shiba is deeply satisfying. For someone expecting the easy affection of a golden, this will be a frustrating relationship. Matching expectations to the actual breed is the whole game here.</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>Dog Facts &mdash; a fun project</footer>
+
+</body>
+</html>

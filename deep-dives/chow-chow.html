@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chow Chow &mdash; Deep Dive &mdash; The Bark Facts</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #FAF0DC;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #3D2B1F;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #5C3D11;
+      color: #FAF0DC;
+      text-align: center;
+      padding: 18px 24px 14px;
+    }
+    header h1 {
+      font-size: 4rem;
+      letter-spacing: 0.04em;
+      font-weight: normal;
+    }
+    header .subtitle {
+      font-size: 0.85rem;
+      color: #D4B483;
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    .site-nav {
+      background: #4A2E0A;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 0 12px;
+      flex-wrap: wrap;
+    }
+    .site-nav a {
+      color: #C8A87A;
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.82rem;
+      padding: 9px 20px;
+      display: inline-block;
+      letter-spacing: 0.03em;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: #FAF0DC;
+      border-bottom-color: #C05621;
+    }
+
+    .main {
+      flex: 1;
+      max-width: 680px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 28px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .deep-hero {
+      text-align: center;
+      padding: 8px 0 4px;
+    }
+    .deep-hero h2 {
+      font-size: 2.4rem;
+      font-weight: normal;
+      color: #5C3D11;
+      letter-spacing: 0.04em;
+    }
+    .breed-tagline {
+      font-size: 0.95rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 6px;
+    }
+    .deep-dives-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      background: #5C3D11;
+      color: #D4B483;
+      padding: 3px 10px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 10px;
+    }
+
+    .breadcrumb {
+      font-size: 0.82rem;
+    }
+    .breadcrumb a {
+      color: #C05621;
+      text-decoration: none;
+    }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .stat-panel {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 22px 26px 26px;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+    }
+    .panel-heading {
+      font-size: 0.78rem;
+      color: #7A4F2A;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 18px;
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px 12px;
+    }
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .stat-label {
+      font-size: 0.64rem;
+      color: #9A6B3A;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      line-height: 1.4;
+    }
+    .stat-badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 20px;
+      line-height: 1.35;
+      width: fit-content;
+    }
+
+    .badge-low      { background: #E4CFA0; color: #4A2E0A; }
+    .badge-moderate { background: #C8A870; color: #3D2B1F; }
+    .badge-high     { background: #C05621; color: #FFF8EC; }
+    .badge-very-high{ background: #5C3D11; color: #FAF0DC; }
+    .badge-neutral  { background: #7A4F2A; color: #FAF0DC; }
+    .badge-yes      { background: #6B7C45; color: #F5F0E8; }
+    .badge-with-exp { background: #B8880A; color: #FFF8EC; }
+    .badge-no       { background: #8B3A1A; color: #FAF0DC; }
+
+    .narrative-section {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 28px 30px;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.12);
+      overflow: hidden;
+    }
+    .narrative-heading {
+      font-size: 0.78rem;
+      color: #7A4F2A;
+      font-style: italic;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 14px;
+    }
+    .narrative-body {
+      font-size: 1.05rem;
+      line-height: 1.78;
+      color: #3D2B1F;
+    }
+    .narrative-body p + p {
+      margin-top: 14px;
+    }
+
+    .narrative-img {
+      float: right;
+      width: 150px;
+      margin: 4px 0 14px 18px;
+      border-radius: 8px;
+      border: 2px solid #E0C090;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.12);
+      display: block;
+    }
+
+    .narrative-section.honest-take {
+      border-left: 4px solid #C05621;
+    }
+    .narrative-section.honest-take .narrative-heading {
+      color: #C05621;
+    }
+
+    @media (max-width: 520px) {
+      header h1 { font-size: 2.8rem; }
+      .stat-grid { grid-template-columns: repeat(2, 1fr); gap: 12px 10px; }
+      .stat-badge { font-size: 0.74rem; }
+      .narrative-img {
+        float: none;
+        display: block;
+        width: 180px;
+        margin: 0 auto 16px;
+      }
+    }
+
+    footer {
+      background: #5C3D11;
+      color: #A07840;
+      text-align: center;
+      font-size: 0.78rem;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>The Bark Facts</h1>
+  <div class="subtitle">one fact, one dog, one day at a time</div>
+</header>
+<nav class="site-nav">
+  <a href="../index.html">Home</a>
+  <a href="../breeds/index.html">Browse Facts</a>
+  <a href="index.html" class="active">Breeds</a>
+</nav>
+
+<div class="main">
+
+  <div class="deep-hero">
+    <div class="deep-dives-label">Deep Dive</div>
+    <h2>Chow Chow</h2>
+    <p class="breed-tagline">Ancient. Dignified. Not performing for you today.</p>
+  </div>
+
+  <div class="breadcrumb">
+    <a href="../index.html">&#8592; Back to Home</a>
+    &nbsp;&middot;&nbsp;
+    <a href="index.html">&#8592; Back to Breeds</a>
+    &nbsp;&middot;&nbsp;
+    <a href="../breeds/chow-chow.html">See Breed Facts Page</a>
+  </div>
+
+  <!-- Quick-Glance Panel -->
+  <section class="stat-panel">
+    <div class="panel-heading">Quick Glance</div>
+    <div class="stat-grid">
+
+      <div class="stat-item">
+        <div class="stat-label">Primary Role</div>
+        <span class="stat-badge badge-neutral">Working</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Physical Activity Needs</div>
+        <span class="stat-badge badge-moderate">Moderate</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Mental Stimulation Needs</div>
+        <span class="stat-badge badge-moderate">Moderate</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Size</div>
+        <span class="stat-badge badge-neutral">Medium</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Grooming Needs</div>
+        <span class="stat-badge badge-very-high">Very High</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Trainability</div>
+        <span class="stat-badge badge-with-exp">Independent-Minded</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Good For Beginners</div>
+        <span class="stat-badge badge-no">Not Recommended</span>
+      </div>
+
+      <div class="stat-item">
+        <div class="stat-label">Apartment Friendly</div>
+        <span class="stat-badge badge-with-exp">With Enough Exercise</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Temperament -->
+  <section class="narrative-section">
+    <div class="narrative-heading">Temperament</div>
+    <div class="narrative-body">
+      <img class="narrative-img" src="../images/chow_chow_1.jpg" alt="Chow Chow" />
+      <p>Chow Chows are dignified, aloof, and carry a cat-like independence that surprises people expecting typical dog enthusiasm. They're deeply loyal to family but genuinely reserved with strangers, and they're not a naturally playful or demonstrative breed.</p>
+    </div>
+  </section>
+
+  <!-- Health & Lifespan -->
+  <section class="narrative-section">
+    <div class="narrative-heading">Health &amp; Lifespan</div>
+    <div class="narrative-body">
+      <p>Chow Chows typically live 8–12 years. Hip and elbow dysplasia are common. Entropion, a condition where the eyelid rolls inward, appears frequently and often needs surgical correction. Their thick coat creates real heat intolerance, and skin and gastric issues are both documented at notable rates.</p>
+    </div>
+  </section>
+
+  <!-- Nutrition Needs -->
+  <section class="narrative-section">
+    <div class="narrative-heading">Nutrition Needs</div>
+    <div class="narrative-body">
+      <p>A quality diet with controlled calories suits this breed given moderate activity needs — weight management matters since this isn't a high-energy dog burning through excess food. Skin-supportive nutrients can help given the breed's skin issue tendency.</p>
+    </div>
+  </section>
+
+  <!-- Family Fit -->
+  <section class="narrative-section">
+    <div class="narrative-heading">Family Fit</div>
+    <div class="narrative-body">
+      <p>Chow Chows do best with respectful older kids or adult-focused households rather than young children expecting a playful companion. Early, consistent socialization is essential to prevent the reserved nature from tipping into over-guarding.</p>
+    </div>
+  </section>
+
+  <!-- The Honest Take -->
+  <section class="narrative-section honest-take">
+    <div class="narrative-heading">The Honest Take</div>
+    <div class="narrative-body">
+      <p>This breed gets mislabeled as aggressive when it's really just deeply reserved and independent by nature. A Chow Chow needs an owner who understands and respects that serious, undemonstrative temperament rather than one expecting the enthusiastic affection typical of most breeds.</p>
+    </div>
+  </section>
+
+</div>
+
+<footer>Dog Facts &mdash; a fun project</footer>
+
+</body>
+</html>
