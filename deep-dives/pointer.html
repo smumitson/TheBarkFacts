@@ -22,7 +22,7 @@
       text-align: center;
       padding: 18px 24px 14px;
     }
-    header h1 {
+    header .site-brand {
       font-size: 4rem;
       letter-spacing: 0.04em;
       font-weight: normal;
@@ -74,7 +74,7 @@
       text-align: center;
       padding: 8px 0 4px;
     }
-    .deep-hero h2 {
+    .deep-hero h1 {
       font-size: 2.4rem;
       font-weight: normal;
       color: #5C3D11;
@@ -201,7 +201,7 @@
     }
 
     @media (max-width: 520px) {
-      header h1 { font-size: 2.8rem; }
+      header .site-brand { font-size: 2.8rem; }
       .stat-grid { grid-template-columns: repeat(2, 1fr); gap: 12px 10px; }
       .stat-badge { font-size: 0.74rem; }
       .narrative-img {
@@ -297,7 +297,7 @@
 <body>
 
 <header>
-  <h1>The Bark Facts</h1>
+  <div class="site-brand">The Bark Facts</div>
   <div class="subtitle">one fact, one dog, one day at a time</div>
 </header>
 <nav class="site-nav">
@@ -310,7 +310,7 @@
 
   <div class="deep-hero">
     <div class="deep-dives-label">Deep Dive</div>
-    <h2>Pointer</h2>
+    <h1>Pointer</h1>
     <p class="breed-tagline">Built purely for the field. Profoundly uninterested in your walk.</p>
   </div>
 
