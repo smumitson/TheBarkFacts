@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Norwegian Elkhound</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #289</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They served as trusted companions and guardians for the Vikings who frequently sailed with these brave hunting dogs on long ocean voyages.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">norwegian elkhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #290</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They utilize an energetic hunting style where they corner large elk and hold them at bay by barking loudly until the hunter arrives.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">norwegian elkhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #291</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Norwegian Elkhound was used by Vikings for hunting elk and bear.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">norwegian elkhound</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/norwegian-elkhound.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "norwegian_elkhound_1.jpg", "breeds": ["norwegian elkhound"], "tags": ["spitz type", "working dog", "medium breed", "nordic"], "caption": "Norwegian Elkhound. Viking dog. Still on duty."}, {"file": "norwegian_elkhound_2.jpg", "breeds": ["norwegian elkhound"], "tags": ["spitz type", "working dog", "medium breed", "nordic"], "caption": "Norwegian Elkhound. Survived Vikings. Can handle your schedule."}, {"file": "norwegian_elkhound_3.jpg", "breeds": ["norwegian elkhound"], "tags": ["spitz type", "working dog", "medium breed", "nordic"], "caption": "Ancient Nordic hunter. Thick coat. Thick determination."}];
-
-const FACTS = [{"fact_number": 289, "category": "General", "fact": "They served as trusted companions and guardians for the Vikings who frequently sailed with these brave hunting dogs on long ocean voyages.", "breed": "norwegian elkhound"}, {"fact_number": 290, "category": "General", "fact": "They utilize an energetic hunting style where they corner large elk and hold them at bay by barking loudly until the hunter arrives.", "breed": "norwegian elkhound"}, {"fact_number": 291, "category": "General", "fact": "The Norwegian Elkhound was used by Vikings for hunting elk and bear.", "breed": "norwegian elkhound"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">norwegian elkhound</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

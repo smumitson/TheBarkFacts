@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Brussels Griffon</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #59</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They were originally kept by coachmen in 19th-century Belgium to keep stables clear of rats and mice.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">brussels griffon</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #60</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The breed gained massive international popularity after a Brussels Griffon named Verdell starred alongside Jack Nicholson in the 1997 movie As Good as It Gets.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">brussels griffon</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #61</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Brussels Griffon was originally bred to hunt rats in stables.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">brussels griffon</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/brussels-griffon.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "brussels_griffon_1.jpg", "breeds": ["brussels griffon"], "tags": ["toy breed", "companion dog", "small breed", "wiry"], "caption": "Brussels Griffon. Big personality. Very small dog."}, {"file": "brussels_griffon_2.jpg", "breeds": ["brussels griffon"], "tags": ["toy breed", "companion dog", "small breed", "wiry"], "caption": "Brussels Griffon. Looks like a Muppet. Totally owns it."}, {"file": "brussels_griffon_3.jpg", "breeds": ["brussels griffon"], "tags": ["toy breed", "companion dog", "small breed", "wiry"], "caption": "Tiny face. Enormous feelings. Non-negotiable."}, {"file": "brussels_griffon_4.jpg", "breeds": ["brussels griffon"], "tags": ["toy breed", "companion dog", "small breed", "wiry"], "caption": "Distinguished. Bearded. Deeply opinionated about everything."}];
-
-const FACTS = [{"fact_number": 59, "category": "General", "fact": "They were originally kept by coachmen in 19th-century Belgium to keep stables clear of rats and mice.", "breed": "brussels griffon"}, {"fact_number": 60, "category": "General", "fact": "The breed gained massive international popularity after a Brussels Griffon named Verdell starred alongside Jack Nicholson in the 1997 movie As Good as It Gets.", "breed": "brussels griffon"}, {"fact_number": 61, "category": "General", "fact": "The Brussels Griffon was originally bred to hunt rats in stables.", "breed": "brussels griffon"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">brussels griffon</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

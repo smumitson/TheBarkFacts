@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Otterhound</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #295</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They are currently considered one of the rarest endangered dog breeds in the world with fewer global individuals than the giant panda.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">otterhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #296</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They feature oily waterproof coats alongside webbed feet allowing them to swim continuously for hours while tracking underwater scents.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">otterhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #297</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Otterhound is a rare breed that was originally used to hunt otters in England.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">otterhound</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/otterhound.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "otterhound_1.jpg", "breeds": ["otterhound"], "tags": ["hound", "rare breed", "medium breed", "scruffy"], "caption": "Otterhound. Rare. Shaggy. Absolutely magnificent."}, {"file": "otterhound_2.jpg", "breeds": ["otterhound"], "tags": ["hound", "rare breed", "medium breed", "scruffy"], "caption": "Otterhound. One of the rarest breeds. Worth every rarity point."}, {"file": "otterhound_3.jpg", "breeds": ["otterhound"], "tags": ["hound", "rare breed", "medium breed", "scruffy"], "caption": "Shaggy. Lovable. Swimming optional but preferred."}];
-
-const FACTS = [{"fact_number": 295, "category": "General", "fact": "They are currently considered one of the rarest endangered dog breeds in the world with fewer global individuals than the giant panda.", "breed": "otterhound"}, {"fact_number": 296, "category": "General", "fact": "They feature oily waterproof coats alongside webbed feet allowing them to swim continuously for hours while tracking underwater scents.", "breed": "otterhound"}, {"fact_number": 297, "category": "General", "fact": "The Otterhound is a rare breed that was originally used to hunt otters in England.", "breed": "otterhound"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">otterhound</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

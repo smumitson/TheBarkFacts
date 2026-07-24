@@ -344,7 +344,26 @@
 
   <div class="facts-heading">3 facts about the Shiba Inu</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #339</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Shiba Inu's high-pitched yodel-scream, nicknamed the 'Shiba scream,' is a real vocalization the breed makes when startled, annoyed, or occasionally just to make a point — and it's turned the dog into a full-blown internet legend.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">shiba inu</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #340</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Shiba Inu is the smallest of the six original Japanese spitz breeds.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">shiba inu</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #341</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Shiba Inu has a 'fox-like' appearance due to its pointed ears and snout.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">shiba inu</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/shiba-inu.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -354,8 +373,6 @@
 
 <script>
 const PHOTOS = [{"file": "shiba_inu_1.jpg", "breeds": ["shiba inu"], "tags": ["spitz type", "small breed", "japanese breed", "bold"], "caption": "Shiba Inu. Much wow. Very dog. Such attitude."}, {"file": "shiba_inu_2.jpg", "breeds": ["shiba inu"], "tags": ["spitz type", "small breed", "japanese breed", "bold"], "caption": "Shiba Inu. Fox face. Cat personality. Dog rules."}, {"file": "shiba_inu_3.jpg", "breeds": ["shiba inu"], "tags": ["spitz type", "small breed", "japanese breed", "bold"], "caption": "Shiba Inu. Not your average dog. Never your average dog."}, {"file": "shiba_inu_4.jpg", "breeds": ["shiba inu"], "tags": ["spitz type", "small breed", "japanese breed", "bold"], "caption": "Ancient Japanese breed. Modern internet icon."}];
-
-const FACTS = [{"fact_number": 339, "category": "General", "fact": "The Shiba Inu's high-pitched yodel-scream, nicknamed the 'Shiba scream,' is a real vocalization the breed makes when startled, annoyed, or occasionally just to make a point — and it's turned the dog into a full-blown internet legend.", "breed": "shiba inu"}, {"fact_number": 340, "category": "General", "fact": "The Shiba Inu is the smallest of the six original Japanese spitz breeds.", "breed": "shiba inu"}, {"fact_number": 341, "category": "General", "fact": "The Shiba Inu has a 'fox-like' appearance due to its pointed ears and snout.", "breed": "shiba inu"}];
 
 let currentPhoto = 0;
 
@@ -376,18 +393,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">shiba inu</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

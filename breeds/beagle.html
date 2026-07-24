@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Beagle</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #29</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Their distinct white-tipped tails were intentionally bred so that hunters could easily spot the dogs while they tracked game through tall grass.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">beagle</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #30</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The United States government employs a special team called the 'Beagle Brigade' to sniff out illegal agricultural products at international airports.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">beagle</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #31</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Beagle's name is thought to come from the French word 'begueule,' meaning 'loudmouth.'</div>
+      <div class="fact-footer"><span class="fact-breed-tag">beagle</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/beagle.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "beagle_1.jpg", "breeds": ["beagle"], "tags": ["scent hound", "small breed", "curious", "friendly"], "caption": "Beagle. Nose down. World above. Irrelevant."}, {"file": "beagle_2.jpg", "breeds": ["beagle"], "tags": ["scent hound", "small breed", "curious", "friendly"], "caption": "Certified smell detective. Amateur escape artist."}, {"file": "beagle_3.jpg", "breeds": ["beagle"], "tags": ["scent hound", "small breed", "curious", "friendly"], "caption": "That nose has filed more complaints than HR."}, {"file": "beagle_4.jpg", "breeds": ["beagle"], "tags": ["scent hound", "small breed", "curious", "friendly"], "caption": "Beagle. Follow the nose. Ignore everything else."}, {"file": "beagle_5.jpg", "breeds": ["beagle"], "tags": ["scent hound", "small breed", "curious", "friendly"], "caption": "Howl at 3am? Just keeping the neighborhood informed."}, {"file": "beagle_6.jpg", "breeds": ["beagle"], "tags": ["scent hound", "small breed", "curious", "friendly"], "caption": "Ears that drag. Nose that leads. Heart that melts."}, {"file": "beagle_7.jpg", "breeds": ["beagle"], "tags": ["scent hound", "small breed", "curious", "friendly"], "caption": "Beagle on duty. The duty is sniffing everything."}];
-
-const FACTS = [{"fact_number": 29, "category": "General", "fact": "Their distinct white-tipped tails were intentionally bred so that hunters could easily spot the dogs while they tracked game through tall grass.", "breed": "beagle"}, {"fact_number": 30, "category": "General", "fact": "The United States government employs a special team called the 'Beagle Brigade' to sniff out illegal agricultural products at international airports.", "breed": "beagle"}, {"fact_number": 31, "category": "General", "fact": "The Beagle's name is thought to come from the French word 'begueule,' meaning 'loudmouth.'", "breed": "beagle"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">beagle</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

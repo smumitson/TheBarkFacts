@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Bulldog</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #65</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Bulldog's flat face was originally bred to allow it to breathe while holding onto a bull.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bulldog</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #66</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Bulldogs have a surprisingly solid presidential resume. Warren Harding's, named "Oh Boy," held the official title of First Dog, and Calvin Coolidge kept one too, called "Boston Beans." Churchill apparently wasn't a fan, but he was outvoted.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bulldog</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #67</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Between the Beckhams, Michael Phelps, and Shemar Moore, the Bulldog's celebrity fanbase runs deep — which tracks, since it's one of the most popular breeds in the country. It's also the mascot of choice for over 40 U.S. universities, Georgetown and Yale included, which says everything about the tough, no-nonsense reputation this breed has built.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bulldog</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/bulldog.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "bulldog_1.jpg", "breeds": ["bulldog"], "tags": ["companion dog", "stocky", "wrinkly", "medium breed"], "caption": "Bulldog. Nap champion. Two-time defending."}, {"file": "bulldog_2.jpg", "breeds": ["bulldog"], "tags": ["companion dog", "stocky", "wrinkly", "medium breed"], "caption": "Snoring is a love language."}, {"file": "bulldog_3.jpg", "breeds": ["bulldog"], "tags": ["companion dog", "stocky", "wrinkly", "medium breed"], "caption": "Zero regrets. Maximum wrinkles."}, {"file": "bulldog_4.jpg", "breeds": ["bulldog"], "tags": ["companion dog", "stocky", "wrinkly", "medium breed"], "caption": "Derp level: certified."}, {"file": "bulldog_5.jpg", "breeds": ["bulldog"], "tags": ["companion dog", "stocky", "wrinkly", "medium breed"], "caption": "Built for hugs, not speed. Perfectly fine with that."}, {"file": "bulldog_6.jpg", "breeds": ["bulldog"], "tags": ["companion dog", "stocky", "wrinkly", "medium breed"], "caption": "Stubborn? No. Strongly opinionated? Yes."}, {"file": "bulldog_7.jpg", "breeds": ["bulldog"], "tags": ["companion dog", "stocky", "wrinkly", "medium breed"], "caption": "Wrinkles are wisdom. This dog is very wise."}];
-
-const FACTS = [{"fact_number": 65, "category": "General", "fact": "The Bulldog's flat face was originally bred to allow it to breathe while holding onto a bull.", "breed": "bulldog"}, {"fact_number": 66, "category": "General", "fact": "Bulldogs have a surprisingly solid presidential resume. Warren Harding's, named \"Oh Boy,\" held the official title of First Dog, and Calvin Coolidge kept one too, called \"Boston Beans.\" Churchill apparently wasn't a fan, but he was outvoted.", "breed": "bulldog"}, {"fact_number": 67, "category": "General", "fact": "Between the Beckhams, Michael Phelps, and Shemar Moore, the Bulldog's celebrity fanbase runs deep — which tracks, since it's one of the most popular breeds in the country. It's also the mascot of choice for over 40 U.S. universities, Georgetown and Yale included, which says everything about the tough, no-nonsense reputation this breed has built.", "breed": "bulldog"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">bulldog</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

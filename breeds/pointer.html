@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Pointer</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #304</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The English Pointer as we know it today was pieced together from Foxhounds, Bloodhounds, Greyhounds, and various setters over roughly 300 years, engineered specifically for the nose-and-speed combination bird hunters wanted.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">pointer</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #305</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The classic pointing behavior is entirely instinctual; puppies as young as eight weeks old will frozenly point their bodies toward birds without any formal training.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">pointer</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #306</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Pointer is named for its instinct to 'point' toward game.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">pointer</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/pointer.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "pointer_1.jpg", "breeds": ["pointer"], "tags": ["sporting dog", "medium breed", "hunting dog", "athletic"], "caption": "Pointer. Spots the bird. Holds the pose. Awaits applause."}, {"file": "pointer_2.jpg", "breeds": ["pointer"], "tags": ["sporting dog", "medium breed", "hunting dog", "athletic"], "caption": "Pointer. Locked in. Target acquired. Waiting for your signal."}, {"file": "pointer_3.jpg", "breeds": ["pointer"], "tags": ["sporting dog", "medium breed", "hunting dog", "athletic"], "caption": "Precision nose. Sculptural pose. Born to hunt."}, {"file": "pointer_4.jpg", "breeds": ["pointer"], "tags": ["sporting dog", "medium breed", "hunting dog", "athletic"], "caption": "Pointer. Elegant. Athletic. Always pointing at something."}];
-
-const FACTS = [{"fact_number": 304, "category": "General", "fact": "The English Pointer as we know it today was pieced together from Foxhounds, Bloodhounds, Greyhounds, and various setters over roughly 300 years, engineered specifically for the nose-and-speed combination bird hunters wanted.", "breed": "pointer"}, {"fact_number": 305, "category": "General", "fact": "The classic pointing behavior is entirely instinctual; puppies as young as eight weeks old will frozenly point their bodies toward birds without any formal training.", "breed": "pointer"}, {"fact_number": 306, "category": "General", "fact": "The Pointer is named for its instinct to 'point' toward game.", "breed": "pointer"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">pointer</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

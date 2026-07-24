@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Dalmatian</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #93</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Dalmatians were used as carriage dogs to protect horses from stray dogs and predators.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">dalmatian</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #94</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Dalmatian is the traditional mascot of fire departments because of its history with horse-drawn fire engines.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">dalmatian</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #95</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Dalmatians are born pure white and don't develop their signature spots until about two to three weeks of age, so every litter starts out looking like a box of plain marshmallows.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">dalmatian</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/dalmatian.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "dalmation_1.jpg", "breeds": ["dalmatian"], "tags": ["spotted", "energetic", "medium breed", "athletic"], "caption": "Dalmatian. Spotted. Speedy. Stylish."}, {"file": "dalmation_2.jpg", "breeds": ["dalmatian"], "tags": ["spotted", "energetic", "medium breed", "athletic"], "caption": "101 reasons to love this dog. Starting with the spots."}, {"file": "dalmation_3.jpg", "breeds": ["dalmatian"], "tags": ["spotted", "energetic", "medium breed", "athletic"], "caption": "Fire station mascot off duty. Still on alert."}, {"file": "dalmation_4.jpg", "breeds": ["dalmatian"], "tags": ["spotted", "energetic", "medium breed", "athletic"], "caption": "Born with the polka dots. Earns them daily."}, {"file": "dalmation_5.jpg", "breeds": ["dalmatian"], "tags": ["spotted", "energetic", "medium breed", "athletic"], "caption": "Spots aren't a pattern. It's a personality."}, {"file": "dalmation_6.jpg", "breeds": ["dalmatian"], "tags": ["spotted", "energetic", "medium breed", "athletic"], "caption": "Energetic. Spotted. Absolutely not sitting still for this photo."}];
-
-const FACTS = [{"fact_number": 93, "category": "General", "fact": "Dalmatians were used as carriage dogs to protect horses from stray dogs and predators.", "breed": "dalmatian"}, {"fact_number": 94, "category": "General", "fact": "The Dalmatian is the traditional mascot of fire departments because of its history with horse-drawn fire engines.", "breed": "dalmatian"}, {"fact_number": 95, "category": "General", "fact": "Dalmatians are born pure white and don't develop their signature spots until about two to three weeks of age, so every litter starts out looking like a box of plain marshmallows.", "breed": "dalmatian"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">dalmatian</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

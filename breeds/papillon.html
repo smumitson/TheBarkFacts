@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Papillon</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #298</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Their name translates to 'butterfly' in French a reference to their distinctive fringed ears that closely resemble open butterfly wings.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">papillon</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #299</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Marie Antoinette famously walked to the guillotine clutching her beloved pet Papillon which was spared and cared for after her death.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">papillon</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #300</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Papillon's name means 'butterfly' in French, referring to its wing-like ears.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">papillon</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/papillon.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "papillon_1.jpg", "breeds": ["papillon"], "tags": ["papillon", "toy breed", "butterfly ears", "elegant"], "caption": "Papillon. Butterfly ears. Butterfly soul."}, {"file": "papillon_2.jpg", "breeds": ["papillon"], "tags": ["papillon", "toy breed", "butterfly ears", "elegant"], "caption": "Fancy ears. Fancy attitude. Completely justified."}, {"file": "papillon_3.jpg", "breeds": ["papillon"], "tags": ["papillon", "toy breed", "butterfly ears", "elegant"], "caption": "Small but make it elegant."}, {"file": "papillon_4.jpg", "breeds": ["papillon"], "tags": ["papillon", "toy breed", "butterfly ears", "elegant"], "caption": "Ears like wings. Runs like the wind."}, {"file": "papillon_5.jpg", "breeds": ["papillon"], "tags": ["papillon", "toy breed", "butterfly ears", "elegant"], "caption": "French for butterfly. Also French for 'this dog is adorable.'"}, {"file": "papillon_6.jpg", "breeds": ["papillon"], "tags": ["papillon", "toy breed", "butterfly ears", "elegant"], "caption": "Tiny. Graceful. Somehow also a chaos agent."}];
-
-const FACTS = [{"fact_number": 298, "category": "General", "fact": "Their name translates to 'butterfly' in French a reference to their distinctive fringed ears that closely resemble open butterfly wings.", "breed": "papillon"}, {"fact_number": 299, "category": "General", "fact": "Marie Antoinette famously walked to the guillotine clutching her beloved pet Papillon which was spared and cared for after her death.", "breed": "papillon"}, {"fact_number": 300, "category": "General", "fact": "The Papillon's name means 'butterfly' in French, referring to its wing-like ears.", "breed": "papillon"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">papillon</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

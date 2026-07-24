@@ -343,7 +343,32 @@
 
   <div class="facts-heading">4 facts about the Basenji</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #22</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Known as Africa's 'barkless dog,' they produce an unusual sound resembling a yodel or chortle due to their unusually shaped larynx.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">basenji</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #23</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They groom themselves using their paws in a manner very similar to cats which keeps their short coats exceptionally clean and virtually odor-free.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">basenji</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #24</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Basenji is the only dog that cannot bark; they 'yodel' instead.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">basenji</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #25</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Basenji: Known as the "barkless dog," they make a sound more like a yodel due to the shape of their larynx.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">basenji</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/basenji.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +378,6 @@
 
 <script>
 const PHOTOS = [{"file": "basenji_1.jpg", "breeds": ["basenji"], "tags": ["hound", "barkless", "small breed", "ancient breed"], "caption": "Basenji. Cannot bark. Has other ways of making his feelings known."}, {"file": "basenji_2.jpg", "breeds": ["basenji"], "tags": ["hound", "barkless", "small breed", "ancient breed"], "caption": "No bark. Plenty of attitude. Problem solved differently."}, {"file": "basenji_3.jpg", "breeds": ["basenji"], "tags": ["hound", "barkless", "small breed", "ancient breed"], "caption": "Ancient Egyptian hunting dog. Still on the hunt."}, {"file": "basenji_4.jpg", "breeds": ["basenji"], "tags": ["hound", "barkless", "small breed", "ancient breed"], "caption": "Self-grooming like a cat. Running like a cheetah."}, {"file": "basenji_5.jpg", "breeds": ["basenji"], "tags": ["hound", "barkless", "small breed", "ancient breed"], "caption": "Silence. Speed. Judgment. All at once."}, {"file": "basenji_6.jpg", "breeds": ["basenji"], "tags": ["hound", "barkless", "small breed", "ancient breed"], "caption": "Basenji. Doesn't bark. Communicates through soul stare."}];
-
-const FACTS = [{"fact_number": 22, "category": "General", "fact": "Known as Africa's 'barkless dog,' they produce an unusual sound resembling a yodel or chortle due to their unusually shaped larynx.", "breed": "basenji"}, {"fact_number": 23, "category": "General", "fact": "They groom themselves using their paws in a manner very similar to cats which keeps their short coats exceptionally clean and virtually odor-free.", "breed": "basenji"}, {"fact_number": 24, "category": "General", "fact": "The Basenji is the only dog that cannot bark; they 'yodel' instead.", "breed": "basenji"}, {"fact_number": 25, "category": "General", "fact": "The Basenji: Known as the \"barkless dog,\" they make a sound more like a yodel due to the shape of their larynx.", "breed": "basenji"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +398,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">basenji</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

@@ -344,7 +344,26 @@
 
   <div class="facts-heading">3 facts about the Samoyed</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #330</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Samoyedic people of Siberia originally used these dogs to sleep on top of them inside tents acting as living hot-water bottles during freezing nights.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">samoyed</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #331</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Their iconic 'Samoyed smile' is a functional adaptation; the upturned corners of their mouths prevent drool from forming icicles on their faces.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">samoyed</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #332</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Samoyed's white coat was bred to help them blend into the snow of Siberia.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">samoyed</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/samoyed.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -354,8 +373,6 @@
 
 <script>
 const PHOTOS = [{"file": "samoyed_1.jpg", "breeds": ["samoyed"], "tags": ["fluffy", "spitz type", "working dog", "friendly"], "caption": "Samoyed. Smiling. Always smiling."}, {"file": "samoyed_2.jpg", "breeds": ["samoyed"], "tags": ["fluffy", "spitz type", "working dog", "friendly"], "caption": "Living cloud. Sentient floof."}, {"file": "samoyed_3.jpg", "breeds": ["samoyed"], "tags": ["fluffy", "spitz type", "working dog", "friendly"], "caption": "This dog has never had a bad day. You can tell."}, {"file": "samoyed_4.jpg", "breeds": ["samoyed"], "tags": ["fluffy", "spitz type", "working dog", "friendly"], "caption": "White fluff. Pure joy. Constant shedding."}, {"file": "samoyed_5.jpg", "breeds": ["samoyed"], "tags": ["fluffy", "spitz type", "working dog", "friendly"], "caption": "The Samoyed smile is a legally binding contract of happiness."}, {"file": "samoyed_6.jpg", "breeds": ["samoyed"], "tags": ["fluffy", "spitz type", "working dog", "friendly"], "caption": "Snow dog in the suburbs. Still thriving."}];
-
-const FACTS = [{"fact_number": 330, "category": "General", "fact": "The Samoyedic people of Siberia originally used these dogs to sleep on top of them inside tents acting as living hot-water bottles during freezing nights.", "breed": "samoyed"}, {"fact_number": 331, "category": "General", "fact": "Their iconic 'Samoyed smile' is a functional adaptation; the upturned corners of their mouths prevent drool from forming icicles on their faces.", "breed": "samoyed"}, {"fact_number": 332, "category": "General", "fact": "The Samoyed's white coat was bred to help them blend into the snow of Siberia.", "breed": "samoyed"}];
 
 let currentPhoto = 0;
 
@@ -376,18 +393,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">samoyed</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

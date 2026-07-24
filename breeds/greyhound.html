@@ -343,7 +343,32 @@
 
   <div class="facts-heading">4 facts about the Greyhound</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #247</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Greyhound is the fastest dog breed, capable of reaching speeds up to 45 mph.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">greyhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #248</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Greyhound is the only dog breed mentioned by name in the Bible.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">greyhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #249</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Greyhound's slender build is designed for aerodynamic efficiency.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">greyhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #250</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Greyhound Speed: They are the second fastest land animal on Earth (after the cheetah), capable of reaching 45 mph.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">greyhound</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/greyhound.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +378,6 @@
 
 <script>
 const PHOTOS = [{"file": "greyhound_1.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Greyhound. 45mph. Also napping. Mostly napping."}, {"file": "greyhound_2.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Greyhound. Fastest dog on Earth. Napping competitively."}, {"file": "greyhound_3.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Lean machine. Off duty. Do not disturb."}, {"file": "greyhound_4.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Born to run. Currently declining."}, {"file": "greyhound_5.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "45mph potential. 0mph current speed. Balance achieved."}, {"file": "greyhound_6.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Retired racer. Professional lounge expert."}, {"file": "greyhound_7.jpg", "breeds": ["greyhound"], "tags": ["sighthound", "racing dog", "large breed", "athletic"], "caption": "Greyhound. Sees the treat. Will absolutely sprint for it."}];
-
-const FACTS = [{"fact_number": 247, "category": "General", "fact": "The Greyhound is the fastest dog breed, capable of reaching speeds up to 45 mph.", "breed": "greyhound"}, {"fact_number": 248, "category": "General", "fact": "The Greyhound is the only dog breed mentioned by name in the Bible.", "breed": "greyhound"}, {"fact_number": 249, "category": "General", "fact": "The Greyhound's slender build is designed for aerodynamic efficiency.", "breed": "greyhound"}, {"fact_number": 250, "category": "General", "fact": "Greyhound Speed: They are the second fastest land animal on Earth (after the cheetah), capable of reaching 45 mph.", "breed": "greyhound"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +398,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">greyhound</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

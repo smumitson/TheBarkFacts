@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Dachshund</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #90</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Their long low-slung bodies and short legs were specifically engineered to let them flush out badgers from narrow underground burrows.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">dachshund</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #91</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Queen Victoria is credited with popularizing the breed in Great Britain famously stating that 'marvellous intelligence' belonged to Dachshunds.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">dachshund</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #92</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Dachshund's long body and short legs were bred specifically for hunting badgers in burrows.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">dachshund</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/dachshund.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "dachshund_1.jpg", "breeds": ["dachshund"], "tags": ["hound", "long body", "small breed", "stubborn"], "caption": "Dachshund. Treat. Zero regrets."}, {"file": "dachshund_2.jpg", "breeds": ["dachshund"], "tags": ["hound", "long body", "small breed", "stubborn"], "caption": "Long boi. Short legs. Big dreams."}, {"file": "dachshund_3.jpg", "breeds": ["dachshund"], "tags": ["hound", "long body", "small breed", "stubborn"], "caption": "Aerodynamic? No. Adorable? Absolutely."}, {"file": "dachshund_4.jpg", "breeds": ["dachshund"], "tags": ["hound", "long body", "small breed", "stubborn"], "caption": "Hot dog, hold the bun."}, {"file": "dachshund_5.jpg", "breeds": ["dachshund"], "tags": ["hound", "long body", "small breed", "stubborn"], "caption": "Two speeds: asleep and sprinting toward snacks."}, {"file": "dachshund_6.jpg", "breeds": ["dachshund"], "tags": ["hound", "long body", "small breed", "stubborn"], "caption": "Underground operations specialist."}, {"file": "dachshund_7.jpg", "breeds": ["dachshund"], "tags": ["hound", "long body", "small breed", "stubborn"], "caption": "Stubborn by design. Lovable by default."}];
-
-const FACTS = [{"fact_number": 90, "category": "General", "fact": "Their long low-slung bodies and short legs were specifically engineered to let them flush out badgers from narrow underground burrows.", "breed": "dachshund"}, {"fact_number": 91, "category": "General", "fact": "Queen Victoria is credited with popularizing the breed in Great Britain famously stating that 'marvellous intelligence' belonged to Dachshunds.", "breed": "dachshund"}, {"fact_number": 92, "category": "General", "fact": "The Dachshund's long body and short legs were bred specifically for hunting badgers in burrows.", "breed": "dachshund"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">dachshund</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

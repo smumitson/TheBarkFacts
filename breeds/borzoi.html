@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Borzoi</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #50</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Borzoi were selectively bred by the Russian aristocracy to pursue wolves across wide open landscapes.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">borzoi</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #51</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Borzoi was originally known as the Russian Wolfhound.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">borzoi</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #52</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Borzoi was once so tied to Russian aristocracy that hundreds were slaughtered during the 1917 Revolution simply for their association with the Tsars. the breed survived largely because dogs gifted to European royalty, including Queen Victoria, had already scattered the bloodline abroad.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">borzoi</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/borzoi.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "borzoi_1.jpg", "breeds": ["borzoi"], "tags": ["sighthound", "elegant", "large breed", "russian"], "caption": "Borzoi. Long nose. Longer legs. Infinite elegance."}, {"file": "borzoi_2.jpg", "breeds": ["borzoi"], "tags": ["sighthound", "elegant", "large breed", "russian"], "caption": "Borzoi. Aristocratic. Slightly dismissive of your presence."}, {"file": "borzoi_3.jpg", "breeds": ["borzoi"], "tags": ["sighthound", "elegant", "large breed", "russian"], "caption": "Nose: imperial. Speed: extraordinary. Snack interest: eternal."}, {"file": "borzoi_4.jpg", "breeds": ["borzoi"], "tags": ["sighthound", "elegant", "large breed", "russian"], "caption": "Russian wolfhound. Silky. Statuesque. Oddly photogenic."}, {"file": "borzoi_5.jpg", "breeds": ["borzoi"], "tags": ["sighthound", "elegant", "large breed", "russian"], "caption": "Borzoi. Born to run. Also born to pose dramatically."}];
-
-const FACTS = [{"fact_number": 50, "category": "General", "fact": "The Borzoi were selectively bred by the Russian aristocracy to pursue wolves across wide open landscapes.", "breed": "borzoi"}, {"fact_number": 51, "category": "General", "fact": "The Borzoi was originally known as the Russian Wolfhound.", "breed": "borzoi"}, {"fact_number": 52, "category": "General", "fact": "The Borzoi was once so tied to Russian aristocracy that hundreds were slaughtered during the 1917 Revolution simply for their association with the Tsars. the breed survived largely because dogs gifted to European royalty, including Queen Victoria, had already scattered the bloodline abroad.", "breed": "borzoi"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">borzoi</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

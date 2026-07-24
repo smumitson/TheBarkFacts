@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Alaskan Malamute</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #10</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They possess a dense double coat with an oily woolly undercoat that protects them against freezing temperatures up to 70 degrees below zero.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">alaskan malamute</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #11</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Unlike many domestic dogs Malamutes do not typically bark; instead they communicate through a characteristic 'woo-woo' vocalization and howling.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">alaskan malamute</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #12</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Alaskan Malamute was bred to pull heavy loads, not for speed.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">alaskan malamute</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/alaskan-malamute.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "alaskan_malamute_1.jpg", "breeds": ["alaskan malamute"], "tags": ["working dog", "sled dog", "large breed", "fluffy"], "caption": "Alaskan Malamute. Built for blizzards. Currently melting hearts."}, {"file": "alaskan_malamute_2.jpg", "breeds": ["alaskan malamute"], "tags": ["working dog", "sled dog", "large breed", "fluffy"], "caption": "Alaskan Malamute. Bred for the tundra. Tolerating the suburbs."}, {"file": "alaskan_malamute_3.jpg", "breeds": ["alaskan malamute"], "tags": ["working dog", "sled dog", "large breed", "fluffy"], "caption": "Big dog. Bigger personality. Biggest paws."}, {"file": "alaskan_malamute_4.jpg", "breeds": ["alaskan malamute"], "tags": ["working dog", "sled dog", "large breed", "fluffy"], "caption": "Could pull a sled. Prefers to pull your arm."}, {"file": "alaskan_malamute_5.jpg", "breeds": ["alaskan malamute"], "tags": ["working dog", "sled dog", "large breed", "fluffy"], "caption": "Malamute. Floof champion. Currently shedding everywhere."}];
-
-const FACTS = [{"fact_number": 10, "category": "General", "fact": "They possess a dense double coat with an oily woolly undercoat that protects them against freezing temperatures up to 70 degrees below zero.", "breed": "alaskan malamute"}, {"fact_number": 11, "category": "General", "fact": "Unlike many domestic dogs Malamutes do not typically bark; instead they communicate through a characteristic 'woo-woo' vocalization and howling.", "breed": "alaskan malamute"}, {"fact_number": 12, "category": "General", "fact": "The Alaskan Malamute was bred to pull heavy loads, not for speed.", "breed": "alaskan malamute"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">alaskan malamute</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

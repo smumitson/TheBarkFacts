@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Corgi</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #87</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Corgi is a cattle-herding dog; their short stature helps them avoid being kicked.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">corgi</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #88</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">'Corgi' is widely believed to come from the Welsh 'cor gi,' roughly 'dwarf dog' — a fitting name for a breed built low to the ground specifically to duck under a kicking cow's hooves.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">corgi</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #89</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Corgis are herding dogs at heart, which means a Corgi with nothing to herd will sometimes nip at ankles or try to round up the kids — the job instinct doesn't just switch off because there's no cattle around.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">corgi</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/corgi.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "corgi_1.jpg", "breeds": ["corgi"], "tags": ["herding dog", "short legs", "royal breed", "small breed"], "caption": "Corgi. Butt wiggle. No notes."}, {"file": "corgi_2.jpg", "breeds": ["corgi"], "tags": ["herding dog", "short legs", "royal breed", "small breed"], "caption": "Short king energy."}, {"file": "corgi_3.jpg", "breeds": ["corgi"], "tags": ["herding dog", "short legs", "royal breed", "small breed"], "caption": "Herding instincts: on. Herding skills: questionable."}, {"file": "corgi_4.jpg", "breeds": ["corgi"], "tags": ["herding dog", "short legs", "royal breed", "small breed"], "caption": "Royal breed. Unroyal behavior."}, {"file": "corgi_5.jpg", "breeds": ["corgi"], "tags": ["herding dog", "short legs", "royal breed", "small breed"], "caption": "Legs? Optional. Attitude? Mandatory."}, {"file": "corgi_6.jpg", "breeds": ["corgi"], "tags": ["herding dog", "short legs", "royal breed", "small breed"], "caption": "Built for herding. Currently herding snacks."}];
-
-const FACTS = [{"fact_number": 87, "category": "General", "fact": "The Corgi is a cattle-herding dog; their short stature helps them avoid being kicked.", "breed": "corgi"}, {"fact_number": 88, "category": "General", "fact": "'Corgi' is widely believed to come from the Welsh 'cor gi,' roughly 'dwarf dog' — a fitting name for a breed built low to the ground specifically to duck under a kicking cow's hooves.", "breed": "corgi"}, {"fact_number": 89, "category": "General", "fact": "Corgis are herding dogs at heart, which means a Corgi with nothing to herd will sometimes nip at ankles or try to round up the kids — the job instinct doesn't just switch off because there's no cattle around.", "breed": "corgi"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">corgi</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

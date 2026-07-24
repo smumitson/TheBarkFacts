@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Poodle</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #307</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Poodle's 'pompoms' were originally meant to protect their joints from cold water.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">poodle</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #308</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Despite being closely associated with French elegance, the Poodle actually originated in Germany as a working water retriever — its name comes from the German word "pudel," meaning "to splash in water."</div>
+      <div class="fact-footer"><span class="fact-breed-tag">poodle</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #309</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Poodles were the single most popular breed registered by the AKC for 22 straight years, from 1960 to 1982, a streak no other breed has matched before or since.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">poodle</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/poodle.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "poodle_1.jpg", "breeds": ["poodle"], "tags": ["intelligent", "non-shedding", "elegant", "companion dog"], "caption": "Poodle. Fluffier than you. Smarter too."}, {"file": "poodle_2.jpg", "breeds": ["poodle"], "tags": ["intelligent", "non-shedding", "elegant", "companion dog"], "caption": "Don't let the curls fool you. This one's a genius."}, {"file": "poodle_3.jpg", "breeds": ["poodle"], "tags": ["intelligent", "non-shedding", "elegant", "companion dog"], "caption": "Fancy haircut. Fancy attitude. Not sorry."}, {"file": "poodle_4.jpg", "breeds": ["poodle"], "tags": ["intelligent", "non-shedding", "elegant", "companion dog"], "caption": "IQ off the charts. Patience for nonsense: zero."}, {"file": "poodle_5.jpg", "breeds": ["poodle"], "tags": ["intelligent", "non-shedding", "elegant", "companion dog"], "caption": "Elegant. Intelligent. Slightly judging your outfit."}, {"file": "poodle_6.jpg", "breeds": ["poodle"], "tags": ["intelligent", "non-shedding", "elegant", "companion dog"], "caption": "Floof with a PhD."}];
-
-const FACTS = [{"fact_number": 307, "category": "General", "fact": "The Poodle's 'pompoms' were originally meant to protect their joints from cold water.", "breed": "poodle"}, {"fact_number": 308, "category": "General", "fact": "Despite being closely associated with French elegance, the Poodle actually originated in Germany as a working water retriever — its name comes from the German word \"pudel,\" meaning \"to splash in water.\"", "breed": "poodle"}, {"fact_number": 309, "category": "General", "fact": "Poodles were the single most popular breed registered by the AKC for 22 straight years, from 1960 to 1982, a streak no other breed has matched before or since.", "breed": "poodle"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">poodle</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

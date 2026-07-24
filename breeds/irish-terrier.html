@@ -343,7 +343,32 @@
 
   <div class="facts-heading">4 facts about the Irish Terrier</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #254</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They served with distinction as messenger dogs in the trenches of World War I earning numerous military commendations for bravery.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">irish terrier</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #255</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Known as the 'Daredevils' of the dog world they are the only all-red terrier breed in existence.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">irish terrier</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #256</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Their dense wire coat is naturally water-repellent designed to protect them from the damp and chilly Irish climate.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">irish terrier</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #257</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Irish Terrier is often called the 'Daredevil' because of its fiery personality.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">irish terrier</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/irish-terrier.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +378,6 @@
 
 <script>
 const PHOTOS = [{"file": "irish_terrier_1.jpg", "breeds": ["irish terrier"], "tags": ["terrier", "medium breed", "red coat", "bold"], "caption": "Irish Terrier. Red coat. Redder attitude."}, {"file": "irish_terrier_2.jpg", "breeds": ["irish terrier"], "tags": ["terrier", "medium breed", "red coat", "bold"], "caption": "Irish Terrier. Spirited. Stubborn. Absolutely worth it."}, {"file": "irish_terrier_3.jpg", "breeds": ["irish terrier"], "tags": ["terrier", "medium breed", "red coat", "bold"], "caption": "Daredevil dog. Fiery coat. Even fierier personality."}];
-
-const FACTS = [{"fact_number": 254, "category": "General", "fact": "They served with distinction as messenger dogs in the trenches of World War I earning numerous military commendations for bravery.", "breed": "irish terrier"}, {"fact_number": 255, "category": "General", "fact": "Known as the 'Daredevils' of the dog world they are the only all-red terrier breed in existence.", "breed": "irish terrier"}, {"fact_number": 256, "category": "General", "fact": "Their dense wire coat is naturally water-repellent designed to protect them from the damp and chilly Irish climate.", "breed": "irish terrier"}, {"fact_number": 257, "category": "General", "fact": "The Irish Terrier is often called the 'Daredevil' because of its fiery personality.", "breed": "irish terrier"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +398,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">irish terrier</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

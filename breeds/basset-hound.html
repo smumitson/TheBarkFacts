@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Basset Hound</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #26</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Their long droopy ears drag along the ground to stir up scent particles sweeping the smells directly toward their highly sensitive noses.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">basset hound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #27</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They have more loose skin around their face and neck than almost any other breed which helps trap and hold scents while tracking.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">basset hound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #28</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Basset Hound's wrinkles help trap scent particles, keeping them near the dog's nose.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">basset hound</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/basset-hound.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "basset_hound_1.jpg", "breeds": ["basset hound"], "tags": ["scent hound", "floppy ears", "low rider", "medium breed"], "caption": "Basset Hound. Low to the ground. High in cuteness."}, {"file": "basset_hound_2.jpg", "breeds": ["basset hound"], "tags": ["scent hound", "floppy ears", "low rider", "medium breed"], "caption": "Ears drag. Heart soars."}, {"file": "basset_hound_3.jpg", "breeds": ["basset hound"], "tags": ["scent hound", "floppy ears", "low rider", "medium breed"], "caption": "Gravity affects this dog more than others."}, {"file": "basset_hound_4.jpg", "breeds": ["basset hound"], "tags": ["scent hound", "floppy ears", "low rider", "medium breed"], "caption": "Speed: zero. Vibes: immaculate."}, {"file": "basset_hound_5.jpg", "breeds": ["basset hound"], "tags": ["scent hound", "floppy ears", "low rider", "medium breed"], "caption": "Those ears pick up everything. Except commands."}];
-
-const FACTS = [{"fact_number": 26, "category": "General", "fact": "Their long droopy ears drag along the ground to stir up scent particles sweeping the smells directly toward their highly sensitive noses.", "breed": "basset hound"}, {"fact_number": 27, "category": "General", "fact": "They have more loose skin around their face and neck than almost any other breed which helps trap and hold scents while tracking.", "breed": "basset hound"}, {"fact_number": 28, "category": "General", "fact": "The Basset Hound's wrinkles help trap scent particles, keeping them near the dog's nose.", "breed": "basset hound"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">basset hound</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

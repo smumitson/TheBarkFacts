@@ -344,7 +344,26 @@
 
   <div class="facts-heading">3 facts about the Siberian Husky</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #342</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">In 1925 teams of Huskies saved the remote town of Nome Alaska by running a frantic 674-mile sled relay to deliver life-saving diphtheria serum.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">siberian husky</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #343</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They can alter their personal metabolic rates at will allowing them to travel vast distances on very little food without burning their own fat stores.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">siberian husky</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #344</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Siberian Husky is known for its incredible endurance over long distances.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">siberian husky</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/siberian-husky.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -354,8 +373,6 @@
 
 <script>
 const PHOTOS = [{"file": "siberian_husky_1.jpg", "breeds": ["siberian husky"], "tags": ["sled dog", "working dog", "vocal", "energetic"], "caption": "Siberian Husky. Opinion? Yes. Volume? Maximum."}, {"file": "siberian_husky_2.jpg", "breeds": ["siberian husky"], "tags": ["sled dog", "working dog", "vocal", "energetic"], "caption": "Sled dog. No sled. Still complaining about it."}, {"file": "siberian_husky_3.jpg", "breeds": ["siberian husky"], "tags": ["sled dog", "working dog", "vocal", "energetic"], "caption": "Born for the Arctic. Living in Florida. Not thrilled."}, {"file": "siberian_husky_4.jpg", "breeds": ["siberian husky"], "tags": ["sled dog", "working dog", "vocal", "energetic"], "caption": "Dramatic. Vocal. Would not trade for anything."}, {"file": "siberian_husky_5.jpg", "breeds": ["siberian husky"], "tags": ["sled dog", "working dog", "vocal", "energetic"], "caption": "The meeting could have been an email. This Husky agrees loudly."}, {"file": "siberian_husky_6.jpg", "breeds": ["siberian husky"], "tags": ["sled dog", "working dog", "vocal", "energetic"], "caption": "50% floof. 50% chaos. 100% sassy."}, {"file": "siberian_husky_7.jpg", "breeds": ["siberian husky"], "tags": ["sled dog", "working dog", "vocal", "energetic"], "caption": "Escape artist. Drama queen. 10/10 would adopt again."}];
-
-const FACTS = [{"fact_number": 342, "category": "General", "fact": "In 1925 teams of Huskies saved the remote town of Nome Alaska by running a frantic 674-mile sled relay to deliver life-saving diphtheria serum.", "breed": "siberian husky"}, {"fact_number": 343, "category": "General", "fact": "They can alter their personal metabolic rates at will allowing them to travel vast distances on very little food without burning their own fat stores.", "breed": "siberian husky"}, {"fact_number": 344, "category": "General", "fact": "The Siberian Husky is known for its incredible endurance over long distances.", "breed": "siberian husky"}];
 
 let currentPhoto = 0;
 
@@ -376,18 +393,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">siberian husky</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

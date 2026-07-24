@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Pug</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #313</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">A group of Pugs is officially referred to as a 'grumble' a nod to the low snorting and grunting noises they naturally make.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">pug</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #314</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The House of Orange in the Netherlands adopted the Pug as its official royal dog after a alert Pug named Pompey saved the Prince's life by barking at assassins.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">pug</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #315</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Pug's name comes from the Latin word 'pugnus,' which means fist.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">pug</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/pug.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "pug_1.jpg", "breeds": ["pug"], "tags": ["toy breed", "wrinkly", "companion dog", "snorer"], "caption": "Pug. Breathing loudly. Living loudly."}, {"file": "pug_2.jpg", "breeds": ["pug"], "tags": ["toy breed", "wrinkly", "companion dog", "snorer"], "caption": "Snore machine. Cuddle expert."}, {"file": "pug_3.jpg", "breeds": ["pug"], "tags": ["toy breed", "wrinkly", "companion dog", "snorer"], "caption": "Face smooshed. Heart full."}, {"file": "pug_4.jpg", "breeds": ["pug"], "tags": ["toy breed", "wrinkly", "companion dog", "snorer"], "caption": "Pug life chose me."}, {"file": "pug_5.jpg", "breeds": ["pug"], "tags": ["toy breed", "wrinkly", "companion dog", "snorer"], "caption": "Eternal side-eye. Eternal love."}];
-
-const FACTS = [{"fact_number": 313, "category": "General", "fact": "A group of Pugs is officially referred to as a 'grumble' a nod to the low snorting and grunting noises they naturally make.", "breed": "pug"}, {"fact_number": 314, "category": "General", "fact": "The House of Orange in the Netherlands adopted the Pug as its official royal dog after a alert Pug named Pompey saved the Prince's life by barking at assassins.", "breed": "pug"}, {"fact_number": 315, "category": "General", "fact": "The Pug's name comes from the Latin word 'pugnus,' which means fist.", "breed": "pug"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">pug</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

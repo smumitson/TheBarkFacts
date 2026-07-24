@@ -343,7 +343,38 @@
 
   <div class="facts-heading">5 facts about the Bloodhound</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #42</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Their tracking ability is so trusted that their scent-trail identifications are legally admissible as evidence in American courts of law.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bloodhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #43</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They can follow a scent trail that is more than 300 hours old which is a testament to their 300 million olfactory receptors.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bloodhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #44</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Bloodhound is the only animal whose testimony is admissible in a U.S. court of law.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bloodhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #45</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Bloodhound's ears are so long they can touch the ground when the dog is sniffing.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bloodhound</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #46</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Bloodhound Tracking: A Bloodhound's sense of smell is so accurate it can be admitted as evidence in a court of law.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bloodhound</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/bloodhound.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +384,6 @@
 
 <script>
 const PHOTOS = [{"file": "blood_hound_1.jpg", "breeds": ["bloodhound"], "tags": ["scent hound", "large breed", "tracker", "wrinkly"], "caption": "Bloodhound. Nose first, brain second."}, {"file": "blood_hound_2.jpg", "breeds": ["bloodhound"], "tags": ["scent hound", "large breed", "tracker", "wrinkly"], "caption": "Can track a scent for miles. Cannot find his own toy."}, {"file": "blood_hound_3.jpg", "breeds": ["bloodhound"], "tags": ["scent hound", "large breed", "tracker", "wrinkly"], "caption": "Ear-to-ground detective work. Mostly napping between cases."}, {"file": "blood_hound_4.jpg", "breeds": ["bloodhound"], "tags": ["scent hound", "large breed", "tracker", "wrinkly"], "caption": "Crime solver. Couch occupier. Same energy."}, {"file": "blood_hound_5.jpg", "breeds": ["bloodhound"], "tags": ["scent hound", "large breed", "tracker", "wrinkly"], "caption": "Those ears aren't decorative. Actually, maybe they are."}, {"file": "blood_hound_6.jpg", "breeds": ["bloodhound"], "tags": ["scent hound", "large breed", "tracker", "wrinkly"], "caption": "Droopy face. Sharp nose. Zero filter."}, {"file": "blood_hound_7.jpg", "breeds": ["bloodhound"], "tags": ["scent hound", "large breed", "tracker", "wrinkly"], "caption": "On the case. The case is 'where did that smell go.'"}];
-
-const FACTS = [{"fact_number": 42, "category": "General", "fact": "Their tracking ability is so trusted that their scent-trail identifications are legally admissible as evidence in American courts of law.", "breed": "bloodhound"}, {"fact_number": 43, "category": "General", "fact": "They can follow a scent trail that is more than 300 hours old which is a testament to their 300 million olfactory receptors.", "breed": "bloodhound"}, {"fact_number": 44, "category": "General", "fact": "The Bloodhound is the only animal whose testimony is admissible in a U.S. court of law.", "breed": "bloodhound"}, {"fact_number": 45, "category": "General", "fact": "The Bloodhound's ears are so long they can touch the ground when the dog is sniffing.", "breed": "bloodhound"}, {"fact_number": 46, "category": "General", "fact": "Bloodhound Tracking: A Bloodhound's sense of smell is so accurate it can be admitted as evidence in a court of law.", "breed": "bloodhound"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +404,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">bloodhound</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

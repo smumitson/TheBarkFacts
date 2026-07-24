@@ -343,7 +343,32 @@
 
   <div class="facts-heading">4 facts about the Newfoundland</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #285</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Newfoundlands have webbed feet and water-resistant coats, making them excellent swimmers.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">newfoundland</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #286</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Newfoundland is famous for its natural life-saving instincts in water.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">newfoundland</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #287</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Newfoundland dog was often used to help pull heavy carts in its native land.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">newfoundland</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #288</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Newfoundland Paws: They have webbed feet and a water-resistant coat, making them elite natural swimmers.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">newfoundland</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/newfoundland.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +378,6 @@
 
 <script>
 const PHOTOS = [{"file": "newfoundland_dog_1.jpg", "breeds": ["newfoundland"], "tags": ["giant breed", "working dog", "water dog", "fluffy"], "caption": "Newfoundland. Water rescue certified. Bath time: avoided."}, {"file": "newfoundland_dog_2.jpg", "breeds": ["newfoundland"], "tags": ["giant breed", "working dog", "water dog", "fluffy"], "caption": "Floof level: maximum."}, {"file": "newfoundland_dog_3.jpg", "breeds": ["newfoundland"], "tags": ["giant breed", "working dog", "water dog", "fluffy"], "caption": "Technically a mop. Emotionally a saint."}, {"file": "newfoundland_dog_4.jpg", "breeds": ["newfoundland"], "tags": ["giant breed", "working dog", "water dog", "fluffy"], "caption": "Born to swim. Forced to sit. Will comply for treats."}, {"file": "newfoundland_dog_5.jpg", "breeds": ["newfoundland"], "tags": ["giant breed", "working dog", "water dog", "fluffy"], "caption": "Sir Drools-a-Lot, reporting for duty."}];
-
-const FACTS = [{"fact_number": 285, "category": "General", "fact": "Newfoundlands have webbed feet and water-resistant coats, making them excellent swimmers.", "breed": "newfoundland"}, {"fact_number": 286, "category": "General", "fact": "The Newfoundland is famous for its natural life-saving instincts in water.", "breed": "newfoundland"}, {"fact_number": 287, "category": "General", "fact": "The Newfoundland dog was often used to help pull heavy carts in its native land.", "breed": "newfoundland"}, {"fact_number": 288, "category": "General", "fact": "Newfoundland Paws: They have webbed feet and a water-resistant coat, making them elite natural swimmers.", "breed": "newfoundland"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +398,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">newfoundland</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

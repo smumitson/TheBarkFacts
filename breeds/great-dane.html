@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Great Dane</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #241</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Great Dane is the tallest dog breed, often reaching 30-32 inches at the shoulder.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">great dane</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #242</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Despite the name, Great Danes have no real connection to Denmark — the breed was actually developed in Germany, where it's still known as the Deutsche Dogge, to hunt wild boar.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">great dane</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #243</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Great Dane's coat can come in a pattern called 'harlequin,' which is white with black patches.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">great dane</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/great-dane.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "great_dane_1.jpg", "breeds": ["great dane"], "tags": ["giant breed", "gentle giant", "working dog", "elegant"], "caption": "Great Dane. Tiny apartment. Big regrets."}, {"file": "great_dane_2.jpg", "breeds": ["great dane"], "tags": ["giant breed", "gentle giant", "working dog", "elegant"], "caption": "Lap dog. Technically."}, {"file": "great_dane_3.jpg", "breeds": ["great dane"], "tags": ["giant breed", "gentle giant", "working dog", "elegant"], "caption": "Horse? No. Dog? Debatable."}, {"file": "great_dane_4.jpg", "breeds": ["great dane"], "tags": ["giant breed", "gentle giant", "working dog", "elegant"], "caption": "Built different. Also, just built bigger."}, {"file": "great_dane_5.jpg", "breeds": ["great dane"], "tags": ["giant breed", "gentle giant", "working dog", "elegant"], "caption": "Couch space: 0. Dignity: intact."}, {"file": "great_dane_6.jpg", "breeds": ["great dane"], "tags": ["giant breed", "gentle giant", "working dog", "elegant"], "caption": "Great Dane. World's tallest dog. Still wants to be a lapdog."}];
-
-const FACTS = [{"fact_number": 241, "category": "General", "fact": "The Great Dane is the tallest dog breed, often reaching 30-32 inches at the shoulder.", "breed": "great dane"}, {"fact_number": 242, "category": "General", "fact": "Despite the name, Great Danes have no real connection to Denmark — the breed was actually developed in Germany, where it's still known as the Deutsche Dogge, to hunt wild boar.", "breed": "great dane"}, {"fact_number": 243, "category": "General", "fact": "The Great Dane's coat can come in a pattern called 'harlequin,' which is white with black patches.", "breed": "great dane"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">great dane</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

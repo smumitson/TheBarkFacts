@@ -343,7 +343,32 @@
 
   <div class="facts-heading">4 facts about the Chihuahua</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #77</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Chihuahua is the smallest dog breed in the world, named after the Mexican state.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">chihuahua</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #78</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Chihuahuas have the largest brain-to-body size ratio of any dog breed — proportionally bigger than a Great Dane's, even though the whole thing could fit in a teaspoon.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">chihuahua</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #79</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Guinness World Record for shortest living dog has gone to a Chihuahua more than once; the most recent record holder, Pearl of Florida, stood just 3.59 inches tall</div>
+      <div class="fact-footer"><span class="fact-breed-tag">chihuahua</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #80</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Chihuahua was considered a sacred guide for souls in the afterlife by the Toltecs.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">chihuahua</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/chihuahua.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +378,6 @@
 
 <script>
 const PHOTOS = [{"file": "chihuahua_1.jpg", "breeds": ["chihuahua"], "tags": ["toy breed", "feisty", "small dog", "bold"], "caption": "Chihuahua. Tiny body. Big feelings."}, {"file": "chihuahua_2.jpg", "breeds": ["chihuahua"], "tags": ["toy breed", "feisty", "small dog", "bold"], "caption": "Napoleon complex? No. Just correct about everything."}, {"file": "chihuahua_3.jpg", "breeds": ["chihuahua"], "tags": ["toy breed", "feisty", "small dog", "bold"], "caption": "Small dog. Large attitude. No notes."}, {"file": "chihuahua_4.jpg", "breeds": ["chihuahua"], "tags": ["toy breed", "feisty", "small dog", "bold"], "caption": "Purse optional. Sass included."}, {"file": "chihuahua_5.jpg", "breeds": ["chihuahua"], "tags": ["toy breed", "feisty", "small dog", "bold"], "caption": "Smallest dog in the room. Loudest opinion."}, {"file": "chihuahua_6.jpg", "breeds": ["chihuahua"], "tags": ["toy breed", "feisty", "small dog", "bold"], "caption": "Five pounds of pure confidence."}, {"file": "chihuahua_7.jpg", "breeds": ["chihuahua"], "tags": ["toy breed", "feisty", "small dog", "bold"], "caption": "Shaking? Always. Cold? No. Just extremely opinionated."}];
-
-const FACTS = [{"fact_number": 77, "category": "General", "fact": "The Chihuahua is the smallest dog breed in the world, named after the Mexican state.", "breed": "chihuahua"}, {"fact_number": 78, "category": "General", "fact": "Chihuahuas have the largest brain-to-body size ratio of any dog breed — proportionally bigger than a Great Dane's, even though the whole thing could fit in a teaspoon.", "breed": "chihuahua"}, {"fact_number": 79, "category": "General", "fact": "The Guinness World Record for shortest living dog has gone to a Chihuahua more than once; the most recent record holder, Pearl of Florida, stood just 3.59 inches tall", "breed": "chihuahua"}, {"fact_number": 80, "category": "General", "fact": "The Chihuahua was considered a sacred guide for souls in the afterlife by the Toltecs.", "breed": "chihuahua"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +398,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">chihuahua</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

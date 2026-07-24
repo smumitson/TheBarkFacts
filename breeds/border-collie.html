@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Border Collie</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #47</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Border Collie is widely considered the most intelligent dog breed.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">border collie</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #48</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Bred to work the England-Scotland border, Border Collies control sheep using a hypnotic stalking crouch called 'the eye' — essentially predatory wolf behavior repurposed for herding instead of the kill.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">border collie</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #49</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">A Border Collie named Chaser learned the names of over 1,000 individual objects and could sort them by category, making her the reigning record holder for the largest tested vocabulary of any dog.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">border collie</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/border-collie.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "border_collie_1.jpg", "breeds": ["border collie"], "tags": ["herding dog", "intelligent", "energetic", "medium breed"], "caption": "Border Collie. Herding the clouds. Just in case."}, {"file": "border_collie_2.jpg", "breeds": ["border collie"], "tags": ["herding dog", "intelligent", "energetic", "medium breed"], "caption": "Most intelligent dog alive. Knows it. Uses it."}, {"file": "border_collie_3.jpg", "breeds": ["border collie"], "tags": ["herding dog", "intelligent", "energetic", "medium breed"], "caption": "Eye contact that says 'I'm smarter than your PhD.'"}, {"file": "border_collie_4.jpg", "breeds": ["border collie"], "tags": ["herding dog", "intelligent", "energetic", "medium breed"], "caption": "Sheep? Herded. Children? Herded. Adults? Also herded."}, {"file": "border_collie_5.jpg", "breeds": ["border collie"], "tags": ["herding dog", "intelligent", "energetic", "medium breed"], "caption": "Infinite energy. Zero off switch."}, {"file": "border_collie_6.jpg", "breeds": ["border collie"], "tags": ["herding dog", "intelligent", "energetic", "medium breed"], "caption": "Border Collie. Stares into your soul. Judges your efficiency."}];
-
-const FACTS = [{"fact_number": 47, "category": "General", "fact": "The Border Collie is widely considered the most intelligent dog breed.", "breed": "border collie"}, {"fact_number": 48, "category": "General", "fact": "Bred to work the England-Scotland border, Border Collies control sheep using a hypnotic stalking crouch called 'the eye' — essentially predatory wolf behavior repurposed for herding instead of the kill.", "breed": "border collie"}, {"fact_number": 49, "category": "General", "fact": "A Border Collie named Chaser learned the names of over 1,000 individual objects and could sort them by category, making her the reigning record holder for the largest tested vocabulary of any dog.", "breed": "border collie"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">border collie</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

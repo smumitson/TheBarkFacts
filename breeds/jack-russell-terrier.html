@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Jack Russell Terrier</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #261</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Reverend John Russell originally bred these small terriers in the 19th century specifically to flush white foxes out of underground dens without killing them.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">jack russell terrier</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #262</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They can jump up to five times their own height using their powerful hind legs to leap over tall fences and barriers.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">jack russell terrier</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #263</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Jack Russell Terrier was bred specifically for fox hunting.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">jack russell terrier</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/jack-russell-terrier.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "jack_russell_terrier_1.jpg", "breeds": ["jack russell terrier"], "tags": ["jack russell terrier", "terrier", "energetic", "small breed"], "caption": "Jack Russell Terrier. Tiny tornado. No off switch."}, {"file": "jack_russell_terrier_2.jpg", "breeds": ["jack russell terrier"], "tags": ["jack russell terrier", "terrier", "energetic", "small breed"], "caption": "Small dog. Big chaos. Bigger personality."}, {"file": "jack_russell_terrier_3.jpg", "breeds": ["jack russell terrier"], "tags": ["jack russell terrier", "terrier", "energetic", "small breed"], "caption": "Terrier mode: always on."}, {"file": "jack_russell_terrier_4.jpg", "breeds": ["jack russell terrier"], "tags": ["jack russell terrier", "terrier", "energetic", "small breed"], "caption": "This dog has more energy than your WiFi."}, {"file": "jack_russell_terrier_5.jpg", "breeds": ["jack russell terrier"], "tags": ["jack russell terrier", "terrier", "energetic", "small breed"], "caption": "Certified trouble. Worth every bit of it."}, {"file": "jack_russell_terrier_6.jpg", "breeds": ["jack russell terrier"], "tags": ["jack russell terrier", "terrier", "energetic", "small breed"], "caption": "Jack Russell. Digs holes. Digs into your heart."}];
-
-const FACTS = [{"fact_number": 261, "category": "General", "fact": "Reverend John Russell originally bred these small terriers in the 19th century specifically to flush white foxes out of underground dens without killing them.", "breed": "jack russell terrier"}, {"fact_number": 262, "category": "General", "fact": "They can jump up to five times their own height using their powerful hind legs to leap over tall fences and barriers.", "breed": "jack russell terrier"}, {"fact_number": 263, "category": "General", "fact": "The Jack Russell Terrier was bred specifically for fox hunting.", "breed": "jack russell terrier"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">jack russell terrier</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

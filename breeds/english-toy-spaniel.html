@@ -343,7 +343,32 @@
 
   <div class="facts-heading">4 facts about the English Toy Spaniel</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #225</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They were a favorite companion of King Charles II who passed a law stating they could not be banned from any public place including Parliament.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">english toy spaniel</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #226</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They are distinctly separate from the Cavalier King Charles Spaniel recognizable by their much shorter muzzles and rounder domed heads.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">english toy spaniel</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #227</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The breed is believed to have inherited its short face from crossbreeding with Asian lapdogs like the Pug and Japanese Chin in the 17th century.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">english toy spaniel</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #228</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The English Toy Spaniel was a favorite of the Tudor monarchs.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">english toy spaniel</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/english-toy-spaniel.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +378,6 @@
 
 <script>
 const PHOTOS = [{"file": "english_toy_spaniel_1.jpg", "breeds": ["english toy spaniel"], "tags": ["toy breed", "companion dog", "small breed", "spaniel"], "caption": "English Toy Spaniel. Lap dog. Knows the lap is earned."}, {"file": "english_toy_spaniel_2.jpg", "breeds": ["english toy spaniel"], "tags": ["toy breed", "companion dog", "small breed", "spaniel"], "caption": "English Toy Spaniel. Royal companion. Taking the role very seriously."}, {"file": "english_toy_spaniel_3.jpg", "breeds": ["english toy spaniel"], "tags": ["toy breed", "companion dog", "small breed", "spaniel"], "caption": "Silky. Sweet. Historically sat on the laps of royalty."}];
-
-const FACTS = [{"fact_number": 225, "category": "General", "fact": "They were a favorite companion of King Charles II who passed a law stating they could not be banned from any public place including Parliament.", "breed": "english toy spaniel"}, {"fact_number": 226, "category": "General", "fact": "They are distinctly separate from the Cavalier King Charles Spaniel recognizable by their much shorter muzzles and rounder domed heads.", "breed": "english toy spaniel"}, {"fact_number": 227, "category": "General", "fact": "The breed is believed to have inherited its short face from crossbreeding with Asian lapdogs like the Pug and Japanese Chin in the 17th century.", "breed": "english toy spaniel"}, {"fact_number": 228, "category": "General", "fact": "The English Toy Spaniel was a favorite of the Tudor monarchs.", "breed": "english toy spaniel"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +398,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">english toy spaniel</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

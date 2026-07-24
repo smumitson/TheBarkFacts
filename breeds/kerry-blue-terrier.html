@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Kerry Blue Terrier</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #267</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They are born with completely black coats which gradually clear and transform into their signature blue-gray shade by eighteen months of age.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">kerry blue terrier</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #268</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They were traditionally utilized as versatile farm workers in Ireland managing tasks from herding cattle to hunting deep-water otters.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">kerry blue terrier</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #269</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Kerry Blue Terrier is the national dog of Ireland.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">kerry blue terrier</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/kerry-blue-terrier.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "kerry_blue_terrier_1.jpg", "breeds": ["kerry blue terrier"], "tags": ["terrier", "medium breed", "irish breed", "blue coat"], "caption": "Kerry Blue Terrier. Blue coat. Bold heart."}, {"file": "kerry_blue_terrier_2.jpg", "breeds": ["kerry blue terrier"], "tags": ["terrier", "medium breed", "irish breed", "blue coat"], "caption": "Kerry Blue Terrier. Stunning coat. Even more stunning stubbornness."}, {"file": "kerry_blue_terrier_3.jpg", "breeds": ["kerry blue terrier"], "tags": ["terrier", "medium breed", "irish breed", "blue coat"], "caption": "Irish through and through. Bold, brave, and curly."}];
-
-const FACTS = [{"fact_number": 267, "category": "General", "fact": "They are born with completely black coats which gradually clear and transform into their signature blue-gray shade by eighteen months of age.", "breed": "kerry blue terrier"}, {"fact_number": 268, "category": "General", "fact": "They were traditionally utilized as versatile farm workers in Ireland managing tasks from herding cattle to hunting deep-water otters.", "breed": "kerry blue terrier"}, {"fact_number": 269, "category": "General", "fact": "The Kerry Blue Terrier is the national dog of Ireland.", "breed": "kerry blue terrier"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">kerry blue terrier</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

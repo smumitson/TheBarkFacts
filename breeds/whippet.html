@@ -344,7 +344,32 @@
 
   <div class="facts-heading">4 facts about the Whippet</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #372</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They can accelerate from a dead standstill to a top sprinting speed of 35 miles per hour in just a few seconds.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">whippet</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #373</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">19th-century English miners who could not afford to stable large Greyhounds bred these compact sighthounds for racing earning them the nickname 'the poor man's racehorse.'</div>
+      <div class="fact-footer"><span class="fact-breed-tag">whippet</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #374</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They utilize a 'suspended animation' running stride meaning all four of their paws leave the ground twice during every single stride cycle.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">whippet</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #375</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Whippet is often called the 'poor man's racehorse' due to its speed.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">whippet</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/whippet.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -354,8 +379,6 @@
 
 <script>
 const PHOTOS = [{"file": "whippet_1.jpg", "breeds": ["whippet"], "tags": ["whippet", "sighthound", "elegant", "racing dog"], "caption": "Whippet. Fast. Elegant. Cuddly at home."}, {"file": "whippet_2.jpg", "breeds": ["whippet"], "tags": ["whippet", "sighthound", "elegant", "racing dog"], "caption": "0 to 35mph. Then right back to the couch."}, {"file": "whippet_3.jpg", "breeds": ["whippet"], "tags": ["whippet", "sighthound", "elegant", "racing dog"], "caption": "Lean. Mean. Mostly just sleepy."}, {"file": "whippet_4.jpg", "breeds": ["whippet"], "tags": ["whippet", "sighthound", "elegant", "racing dog"], "caption": "Racing dog energy. Couch dog reality."}, {"file": "whippet_5.jpg", "breeds": ["whippet"], "tags": ["whippet", "sighthound", "elegant", "racing dog"], "caption": "Looks fragile. Outruns everyone."}];
-
-const FACTS = [{"fact_number": 372, "category": "General", "fact": "They can accelerate from a dead standstill to a top sprinting speed of 35 miles per hour in just a few seconds.", "breed": "whippet"}, {"fact_number": 373, "category": "General", "fact": "19th-century English miners who could not afford to stable large Greyhounds bred these compact sighthounds for racing earning them the nickname 'the poor man's racehorse.'", "breed": "whippet"}, {"fact_number": 374, "category": "General", "fact": "They utilize a 'suspended animation' running stride meaning all four of their paws leave the ground twice during every single stride cycle.", "breed": "whippet"}, {"fact_number": 375, "category": "General", "fact": "The Whippet is often called the 'poor man's racehorse' due to its speed.", "breed": "whippet"}];
 
 let currentPhoto = 0;
 
@@ -376,18 +399,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">whippet</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

@@ -344,7 +344,26 @@
 
   <div class="facts-heading">3 facts about the Weimaraner</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #366</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The German aristocracy originally bred these 'Gray Ghosts' to hunt massive big game including wolves wild boars and mountain bears.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">weimaraner</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #367</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They are born with bright blue eyes that gradually transition into an amber or blue-gray shade as they mature into adulthood.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">weimaraner</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #368</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Weimaraner is often called the 'Gray Ghost' because of its sleek, silvery coat.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">weimaraner</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/weimaraner.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -354,8 +373,6 @@
 
 <script>
 const PHOTOS = [{"file": "weimaraner_1.jpg", "breeds": ["weimaraner"], "tags": ["sporting dog", "large breed", "silver", "elegant"], "caption": "Weimaraner. The Gray Ghost. Haunting your kitchen for scraps."}, {"file": "weimaraner_2.jpg", "breeds": ["weimaraner"], "tags": ["sporting dog", "large breed", "silver", "elegant"], "caption": "Weimaraner. Silver ghost. Currently haunting your kitchen."}, {"file": "weimaraner_3.jpg", "breeds": ["weimaraner"], "tags": ["sporting dog", "large breed", "silver", "elegant"], "caption": "Sleek. Fast. Deeply attached to one specific human."}];
-
-const FACTS = [{"fact_number": 366, "category": "General", "fact": "The German aristocracy originally bred these 'Gray Ghosts' to hunt massive big game including wolves wild boars and mountain bears.", "breed": "weimaraner"}, {"fact_number": 367, "category": "General", "fact": "They are born with bright blue eyes that gradually transition into an amber or blue-gray shade as they mature into adulthood.", "breed": "weimaraner"}, {"fact_number": 368, "category": "General", "fact": "The Weimaraner is often called the 'Gray Ghost' because of its sleek, silvery coat.", "breed": "weimaraner"}];
 
 let currentPhoto = 0;
 
@@ -376,18 +393,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">weimaraner</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

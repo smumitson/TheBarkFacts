@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Australian Shepherd</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #19</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Despite their name the breed actually originated in the western United States during the Gold Rush where they were bred to herd sheep.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">australian shepherd</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #20</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They are highly prone to heterochromia a condition where individual dogs can have two different colored eyes or even multiple colors within the same eye.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">australian shepherd</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #21</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Australian Shepherd actually originated in the western United States, not Australia.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">australian shepherd</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/australian-shepherd.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "australian_shepard_1.jpg", "breeds": ["australian shepherd"], "tags": ["herding dog", "energetic", "intelligent", "medium breed"], "caption": "Australian Shepherd. Spinning. Always spinning."}, {"file": "australian_shepard_2.jpg", "breeds": ["australian shepherd"], "tags": ["herding dog", "energetic", "intelligent", "medium breed"], "caption": "Herding instincts: maximum. Things to herd: everything."}, {"file": "australian_shepard_3.jpg", "breeds": ["australian shepherd"], "tags": ["herding dog", "energetic", "intelligent", "medium breed"], "caption": "Merle coat. Galaxy brain. Boundless energy."}, {"file": "australian_shepard_4.jpg", "breeds": ["australian shepherd"], "tags": ["herding dog", "energetic", "intelligent", "medium breed"], "caption": "Frisbee champion. Also herded a toddler once. Accidentally."}, {"file": "australian_shepard_5.jpg", "breeds": ["australian shepherd"], "tags": ["herding dog", "energetic", "intelligent", "medium breed"], "caption": "Off switch: not included."}, {"file": "australian_shepard_6.jpg", "breeds": ["australian shepherd"], "tags": ["herding dog", "energetic", "intelligent", "medium breed"], "caption": "Ranch dog energy in a suburban yard."}];
-
-const FACTS = [{"fact_number": 19, "category": "General", "fact": "Despite their name the breed actually originated in the western United States during the Gold Rush where they were bred to herd sheep.", "breed": "australian shepherd"}, {"fact_number": 20, "category": "General", "fact": "They are highly prone to heterochromia a condition where individual dogs can have two different colored eyes or even multiple colors within the same eye.", "breed": "australian shepherd"}, {"fact_number": 21, "category": "General", "fact": "The Australian Shepherd actually originated in the western United States, not Australia.", "breed": "australian shepherd"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">australian shepherd</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

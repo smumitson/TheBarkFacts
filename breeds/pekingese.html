@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Pekingese</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #301</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">According to ancient Chinese lore the breed was created when Buddha shrunk a mighty lion down to the size of a small companion dog.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">pekingese</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #302</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Pekingese was once so small it could be carried in the sleeve of a Chinese emperor's robe.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">pekingese</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #303</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Pekingese were considered sacred in the Chinese imperial court, and for centuries commoners weren't even allowed to own one — the breed didn't reach the West until British troops brought some home after the Second Opium War in 1860.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">pekingese</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/pekingese.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "pekingese_1.jpg", "breeds": ["pekingese"], "tags": ["toy breed", "companion dog", "ancient breed", "imperial"], "caption": "Pekingese. Carried in sleeves. Still expects that treatment."}, {"file": "pekingese_2.jpg", "breeds": ["pekingese"], "tags": ["toy breed", "companion dog", "ancient breed", "imperial"], "caption": "Imperial breed. Imperial attitude. Non-negotiable."}, {"file": "pekingese_3.jpg", "breeds": ["pekingese"], "tags": ["toy breed", "companion dog", "ancient breed", "imperial"], "caption": "Pekingese. Descended from palace dogs. Has not forgotten."}, {"file": "pekingese_4.jpg", "breeds": ["pekingese"], "tags": ["toy breed", "companion dog", "ancient breed", "imperial"], "caption": "Small. Fluffy. Carrying 2000 years of dignified history."}];
-
-const FACTS = [{"fact_number": 301, "category": "General", "fact": "According to ancient Chinese lore the breed was created when Buddha shrunk a mighty lion down to the size of a small companion dog.", "breed": "pekingese"}, {"fact_number": 302, "category": "General", "fact": "The Pekingese was once so small it could be carried in the sleeve of a Chinese emperor's robe.", "breed": "pekingese"}, {"fact_number": 303, "category": "General", "fact": "Pekingese were considered sacred in the Chinese imperial court, and for centuries commoners weren't even allowed to own one — the breed didn't reach the West until British troops brought some home after the Second Opium War in 1860.", "breed": "pekingese"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">pekingese</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

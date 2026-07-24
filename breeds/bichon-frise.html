@@ -343,7 +343,32 @@
 
   <div class="facts-heading">4 facts about the Bichon Frise</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #35</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Sailors frequently used these small dogs as items of barter during Mediterranean trading voyages throughout the 14th century.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bichon frise</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #36</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Their hair grows continuously rather than shedding out making regular professional grooming essential to prevent painful matting.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bichon frise</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #37</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">King Henry III of France loved his Bichons so much that he famously carried them everywhere in a small basket suspended from his neck.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bichon frise</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #38</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Bichon Frise's name means 'curly lap dog' in French.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">bichon frise</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/bichon-frise.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +378,6 @@
 
 <script>
 const PHOTOS = [{"file": "bichon_frise_1.jpg", "breeds": ["bichon frise"], "tags": ["toy breed", "companion dog", "fluffy", "non-shedding"], "caption": "Bichon Frise. Cotton ball with opinions."}, {"file": "bichon_frise_2.jpg", "breeds": ["bichon frise"], "tags": ["toy breed", "companion dog", "fluffy", "non-shedding"], "caption": "Cloud dog. Zero shedding. Maximum fluff."}, {"file": "bichon_frise_3.jpg", "breeds": ["bichon frise"], "tags": ["toy breed", "companion dog", "fluffy", "non-shedding"], "caption": "Small. Cheerful. Refuses to have a bad day."}];
-
-const FACTS = [{"fact_number": 35, "category": "General", "fact": "Sailors frequently used these small dogs as items of barter during Mediterranean trading voyages throughout the 14th century.", "breed": "bichon frise"}, {"fact_number": 36, "category": "General", "fact": "Their hair grows continuously rather than shedding out making regular professional grooming essential to prevent painful matting.", "breed": "bichon frise"}, {"fact_number": 37, "category": "General", "fact": "King Henry III of France loved his Bichons so much that he famously carried them everywhere in a small basket suspended from his neck.", "breed": "bichon frise"}, {"fact_number": 38, "category": "General", "fact": "The Bichon Frise's name means 'curly lap dog' in French.", "breed": "bichon frise"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +398,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">bichon frise</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

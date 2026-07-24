@@ -344,7 +344,26 @@
 
   <div class="facts-heading">3 facts about the Skye Terrier</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #345</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Greyfriars Bobby a loyal Skye Terrier in 19th-century Edinburgh touched the world by guarding his deceased owner's grave for 14 consecutive years.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">skye terrier</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #346</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They were bred long and low to the ground to easily navigate rock crevices and hunt destructive badgers along the rugged Isle of Skye.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">skye terrier</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #347</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Skye Terrier was once the favorite breed of Mary, Queen of Scots.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">skye terrier</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/skye-terrier.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -354,8 +373,6 @@
 
 <script>
 const PHOTOS = [{"file": "skye_terrier_1.jpg", "breeds": ["skye terrier"], "tags": ["terrier", "small breed", "scottish breed", "long coat"], "caption": "Skye Terrier. Long coat. Longer memory."}, {"file": "skye_terrier_2.jpg", "breeds": ["skye terrier"], "tags": ["terrier", "small breed", "scottish breed", "long coat"], "caption": "Skye Terrier. Hair everywhere. Heart even bigger."}, {"file": "skye_terrier_3.jpg", "breeds": ["skye terrier"], "tags": ["terrier", "small breed", "scottish breed", "long coat"], "caption": "Scottish legend. Coat like a waterfall. Loyalty like a rock."}];
-
-const FACTS = [{"fact_number": 345, "category": "General", "fact": "Greyfriars Bobby a loyal Skye Terrier in 19th-century Edinburgh touched the world by guarding his deceased owner's grave for 14 consecutive years.", "breed": "skye terrier"}, {"fact_number": 346, "category": "General", "fact": "They were bred long and low to the ground to easily navigate rock crevices and hunt destructive badgers along the rugged Isle of Skye.", "breed": "skye terrier"}, {"fact_number": 347, "category": "General", "fact": "The Skye Terrier was once the favorite breed of Mary, Queen of Scots.", "breed": "skye terrier"}];
 
 let currentPhoto = 0;
 
@@ -376,18 +393,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">skye terrier</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Portuguese Water Dog</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #310</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They traditionally worked alongside Portuguese fishermen herding schools of fish into open nets and swimming out to retrieve lost tackle.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">portuguese water dog</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #311</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They possess a non-shedding coat that grows continuously which is why fishermen gave them the classic 'lion cut' to keep their front halves warm while leaving their rear legs free for swimming.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">portuguese water dog</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #312</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Portuguese Water Dog was bred to herd fish into nets and deliver messages between ships.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">portuguese water dog</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/portuguese-water-dog.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "portuguese_water_dog_1.jpg", "breeds": ["portuguese water dog"], "tags": ["working dog", "water dog", "medium breed", "curly"], "caption": "Portuguese Water Dog. Herded fish once. Would do it again."}, {"file": "portuguese_water_dog_2.jpg", "breeds": ["portuguese water dog"], "tags": ["working dog", "water dog", "medium breed", "curly"], "caption": "Portuguese Water Dog. Loves the water. Tolerates the bath."}, {"file": "portuguese_water_dog_3.jpg", "breeds": ["portuguese water dog"], "tags": ["working dog", "water dog", "medium breed", "curly"], "caption": "Curly. Energetic. Ready to jump in at any moment."}];
-
-const FACTS = [{"fact_number": 310, "category": "General", "fact": "They traditionally worked alongside Portuguese fishermen herding schools of fish into open nets and swimming out to retrieve lost tackle.", "breed": "portuguese water dog"}, {"fact_number": 311, "category": "General", "fact": "They possess a non-shedding coat that grows continuously which is why fishermen gave them the classic 'lion cut' to keep their front halves warm while leaving their rear legs free for swimming.", "breed": "portuguese water dog"}, {"fact_number": 312, "category": "General", "fact": "The Portuguese Water Dog was bred to herd fish into nets and deliver messages between ships.", "breed": "portuguese water dog"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">portuguese water dog</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

@@ -344,7 +344,26 @@
 
   <div class="facts-heading">3 facts about the Saluki</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #327</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They are one of the oldest known domesticated canine lineages with their likeness appearing carved on Egyptian tombs dating back to 2100 BC.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">saluki</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #328</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They hunt entirely by sight rather than scent using an aerodynamic build to reach sprint speeds of 42 miles per hour.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">saluki</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #329</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Saluki is one of the oldest dog breeds, with origins dating back to Ancient Egypt.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">saluki</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/saluki.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -354,8 +373,6 @@
 
 <script>
 const PHOTOS = [{"file": "saluki_1.jpg", "breeds": ["saluki"], "tags": ["saluki", "sighthound", "elegant", "ancient breed"], "caption": "Saluki. Ancient breed. Timeless elegance."}, {"file": "saluki_2.jpg", "breeds": ["saluki"], "tags": ["saluki", "sighthound", "elegant", "ancient breed"], "caption": "Fastest dog you'll never catch."}, {"file": "saluki_3.jpg", "breeds": ["saluki"], "tags": ["saluki", "sighthound", "elegant", "ancient breed"], "caption": "Royalty? Obviously."}, {"file": "saluki_4.jpg", "breeds": ["saluki"], "tags": ["saluki", "sighthound", "elegant", "ancient breed"], "caption": "Sighthound. Sees everything. Interested in nothing."}, {"file": "saluki_5.jpg", "breeds": ["saluki"], "tags": ["saluki", "sighthound", "elegant", "ancient breed"], "caption": "Built for speed. Resting at the speed of light."}, {"file": "saluki_6.jpg", "breeds": ["saluki"], "tags": ["saluki", "sighthound", "elegant", "ancient breed"], "caption": "Saluki. The original supermodel."}];
-
-const FACTS = [{"fact_number": 327, "category": "General", "fact": "They are one of the oldest known domesticated canine lineages with their likeness appearing carved on Egyptian tombs dating back to 2100 BC.", "breed": "saluki"}, {"fact_number": 328, "category": "General", "fact": "They hunt entirely by sight rather than scent using an aerodynamic build to reach sprint speeds of 42 miles per hour.", "breed": "saluki"}, {"fact_number": 329, "category": "General", "fact": "The Saluki is one of the oldest dog breeds, with origins dating back to Ancient Egypt.", "breed": "saluki"}];
 
 let currentPhoto = 0;
 
@@ -376,18 +393,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">saluki</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

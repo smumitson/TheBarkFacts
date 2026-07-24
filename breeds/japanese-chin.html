@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Japanese Chin</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #264</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Ancient Japanese royalty held these dogs in such high regard that they were considered separate entities from standard dogs classified instead as royal 'Chins.'</div>
+      <div class="fact-footer"><span class="fact-breed-tag">japanese chin</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #265</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">They are known for performing the 'Chin Spin' a rapid self-contained pirouette on their hind legs when they become excited.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">japanese chin</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #266</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">The Japanese Chin was a favorite of the Japanese nobility for centuries.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">japanese chin</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/japanese-chin.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "japanese_chin_dog_1.jpg", "breeds": ["japanese chin"], "tags": ["toy breed", "companion dog", "small breed", "japanese breed"], "caption": "Japanese Chin. Imperial origins. Eternal elegance."}, {"file": "japanese_chin_dog_2.jpg", "breeds": ["japanese chin"], "tags": ["toy breed", "companion dog", "small breed", "japanese breed"], "caption": "Japanese Chin. Elegant. Refined. Absolutely judging your decor."}, {"file": "japanese_chin_dog_3.jpg", "breeds": ["japanese chin"], "tags": ["toy breed", "companion dog", "small breed", "japanese breed"], "caption": "Temple dog. Still expecting temple-level treatment."}];
-
-const FACTS = [{"fact_number": 264, "category": "General", "fact": "Ancient Japanese royalty held these dogs in such high regard that they were considered separate entities from standard dogs classified instead as royal 'Chins.'", "breed": "japanese chin"}, {"fact_number": 265, "category": "General", "fact": "They are known for performing the 'Chin Spin' a rapid self-contained pirouette on their hind legs when they become excited.", "breed": "japanese chin"}, {"fact_number": 266, "category": "General", "fact": "The Japanese Chin was a favorite of the Japanese nobility for centuries.", "breed": "japanese chin"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">japanese chin</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>

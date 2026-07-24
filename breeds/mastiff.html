@@ -343,7 +343,26 @@
 
   <div class="facts-heading">3 facts about the Mastiff</div>
 
-  <div id="facts-section"></div>
+  <div id="facts-section">
+    <div class="fact-card">
+      <div class="fact-number">Fact #282</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">When Julius Caesar invaded Britain in 55 BC he was so impressed by the local Mastiffs that he brought them back to fight in Roman arenas.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">mastiff</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #283</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">An English Mastiff named Zorba holds the official Guinness World Record for the heaviest dog ever recorded weighing an astonishing 343 pounds.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">mastiff</span></div>
+    </div>
+    <div class="fact-card">
+      <div class="fact-number">Fact #284</div>
+      <div class="fact-category">General</div>
+      <div class="fact-text">Kublai Khan was said to have kept 5,000 Mastiffs for hunting and protection.</div>
+      <div class="fact-footer"><span class="fact-breed-tag">mastiff</span></div>
+    </div>
+  </div>
 
   <a class="deep-dive-cta" href="../deep-dives/mastiff.html">There&rsquo;s more to this dog than facts. Deep dive &rarr;</a>
 
@@ -353,8 +372,6 @@
 
 <script>
 const PHOTOS = [{"file": "mastiff_1.jpg", "breeds": ["mastiff"], "tags": ["giant breed", "working dog", "guardian", "gentle giant"], "caption": "Mastiff. Drool. Zero apologies."}, {"file": "mastiff_2.jpg", "breeds": ["mastiff"], "tags": ["giant breed", "working dog", "guardian", "gentle giant"], "caption": "Big dog. Bigger heart. Biggest drool."}, {"file": "mastiff_3.jpg", "breeds": ["mastiff"], "tags": ["giant breed", "working dog", "guardian", "gentle giant"], "caption": "Guardian mode: always on."}, {"file": "mastiff_4.jpg", "breeds": ["mastiff"], "tags": ["giant breed", "working dog", "guardian", "gentle giant"], "caption": "The word 'no' is not in his vocabulary. Neither is 'off the couch.'"}, {"file": "mastiff_5.jpg", "breeds": ["mastiff"], "tags": ["giant breed", "working dog", "guardian", "gentle giant"], "caption": "Why have a guard dog when you can have a bear?"}];
-
-const FACTS = [{"fact_number": 282, "category": "General", "fact": "When Julius Caesar invaded Britain in 55 BC he was so impressed by the local Mastiffs that he brought them back to fight in Roman arenas.", "breed": "mastiff"}, {"fact_number": 283, "category": "General", "fact": "An English Mastiff named Zorba holds the official Guinness World Record for the heaviest dog ever recorded weighing an astonishing 343 pounds.", "breed": "mastiff"}, {"fact_number": 284, "category": "General", "fact": "Kublai Khan was said to have kept 5,000 Mastiffs for hunting and protection.", "breed": "mastiff"}];
 
 let currentPhoto = 0;
 
@@ -375,18 +392,6 @@ function prevPhoto() {
   currentPhoto = (currentPhoto - 1 + PHOTOS.length) % PHOTOS.length;
   showPhoto(currentPhoto);
 }
-
-const section = document.getElementById('facts-section');
-FACTS.forEach(function(fact) {
-  const card = document.createElement('div');
-  card.className = 'fact-card';
-  card.innerHTML =
-    '<div class="fact-number">Fact #' + fact.fact_number + '</div>' +
-    '<div class="fact-category">' + fact.category + '</div>' +
-    '<div class="fact-text">' + fact.fact + '</div>' +
-    '<div class="fact-footer"><span class="fact-breed-tag">mastiff</span></div>';
-  section.appendChild(card);
-});
 
 showPhoto(0);
 </script>
