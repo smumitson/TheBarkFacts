@@ -5,3 +5,7 @@ desktop.ini
 
 #Git's own / editor noise
 *.tmp
+
+# Python
+__pycache__/
+*.pyc

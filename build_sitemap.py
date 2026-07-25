@@ -51,7 +51,7 @@ def canonical_url(path: Path) -> str:
 
 
 def discover():
-    files = [ROOT / "index.html"]
+    files = [ROOT / "index.html", ROOT / "about.html"]
     for section in ("breeds", "deep-dives"):
         files += sorted((ROOT / section).glob("*.html"))
     return [f for f in files if f.exists()]
