@@ -3,7 +3,7 @@
 
 Inserts the link right before the "About" nav item, matching each page's own
 relative path prefix (root pages use "", subdir pages use "../"). Idempotent:
-skips any file that already has the link. Does not touch the Rankings/ pages,
+skips any file that already has the link. Does not touch the rankings/ pages,
 which are generated with the link already in place.
 
 Run once after build_rankings.py. Safe to re-run.
@@ -30,7 +30,7 @@ def add_link(html: str) -> str | None:
 
     def repl(m):
         indent, about_anchor, prefix = m.group(1), m.group(2), m.group(3)
-        link = f'{indent}<a href="{prefix}Rankings/index.html">Breed Rankings</a>\n'
+        link = f'{indent}<a href="{prefix}rankings/index.html">Breed Rankings</a>\n'
         return f"{link}{indent}{about_anchor}"
 
     new, n = ABOUT_RE.subn(repl, html, count=1)
