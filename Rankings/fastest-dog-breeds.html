@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fastest Dog Breeds, Ranked by Speed &middot; The Bark Facts</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #FAF0DC;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #3D2B1F;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #5C3D11;
+      color: #FAF0DC;
+      text-align: center;
+      padding: 18px 24px 14px;
+    }
+    header .site-brand {
+      font-size: 4rem;
+      letter-spacing: 0.04em;
+      font-weight: normal;
+    }
+    header .subtitle {
+      font-size: 0.85rem;
+      color: #D4B483;
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    .site-nav {
+      background: #4A2E0A;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 0 12px;
+      flex-wrap: wrap;
+    }
+    .site-nav a {
+      color: #C8A87A;
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.82rem;
+      padding: 9px 20px;
+      display: inline-block;
+      letter-spacing: 0.03em;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: #FAF0DC;
+      border-bottom-color: #C05621;
+    }
+
+    .main {
+      flex: 1;
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 36px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .page-heading { text-align: center; }
+    .page-heading h1 {
+      font-size: 2.1rem;
+      font-weight: normal;
+      color: #5C3D11;
+      letter-spacing: 0.02em;
+    }
+    .page-heading p {
+      font-size: 0.95rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    .note {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-left: 6px solid #C05621;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #3D2B1F;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+    }
+    .note strong { color: #5C3D11; }
+
+    .rank-list { display: flex; flex-direction: column; gap: 10px; }
+
+    .rank-row {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .rank-row:hover {
+      border-color: #C05621;
+      box-shadow: 0 3px 12px rgba(192,86,33,0.18);
+    }
+    .rank-row.champ { border-color: #C05621; }
+
+    .rank-num {
+      font-size: 1.5rem;
+      color: #C05621;
+      min-width: 2.4rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .rank-body { flex: 1; min-width: 0; }
+    .rank-name {
+      font-size: 1.2rem;
+      color: #5C3D11;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .rank-name:hover { color: #C05621; border-bottom-color: #C05621; }
+    .rank-comment {
+      font-size: 0.9rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    .rank-speed { text-align: right; flex-shrink: 0; min-width: 5rem; }
+    .rank-mph { font-size: 1.35rem; color: #5C3D11; white-space: nowrap; }
+    .rank-mph .unit { font-size: 0.68rem; color: #9A6B3A; }
+    .rank-mph .est { color: #C05621; }
+    .rank-kmh { font-size: 0.75rem; color: #9A6B3A; margin-top: 2px; white-space: nowrap; }
+
+    .rank-grid { display: flex; flex-direction: column; gap: 12px; }
+    .rank-card {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 20px 24px;
+      text-decoration: none;
+      color: #3D2B1F;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .rank-card:hover {
+      border-color: #C05621;
+      box-shadow: 0 3px 12px rgba(192,86,33,0.18);
+    }
+    .rank-card-name { font-size: 1.2rem; color: #5C3D11; }
+    .rank-card-teaser { font-size: 0.8rem; color: #9A6B3A; font-style: italic; margin-top: 3px; }
+    .rank-card-arrow { color: #C05621; font-size: 1.1rem; }
+    .rank-soon {
+      font-size: 0.85rem;
+      color: #9A6B3A;
+      font-style: italic;
+      text-align: center;
+      padding: 4px 0 0;
+    }
+
+    .breadcrumb { font-size: 0.82rem; }
+    .breadcrumb a { color: #C05621; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .sources {
+      font-size: 0.78rem;
+      color: #9A6B3A;
+      line-height: 1.6;
+      border-top: 1px solid #E0C090;
+      padding-top: 14px;
+    }
+    .sources a { color: #C05621; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+
+    footer {
+      background: #5C3D11;
+      color: #A07840;
+      text-align: center;
+      font-size: 0.78rem;
+      padding: 10px;
+    }
+
+    @media (max-width: 520px) {
+      .rank-row { padding: 14px 14px; gap: 10px; }
+      .rank-num { font-size: 1.25rem; min-width: 1.9rem; }
+      .rank-mph { font-size: 1.15rem; }
+      .rank-speed { min-width: 4.4rem; }
+    }
+  </style>
+  <meta name="description" content="All 53 dog breeds in our Deep Dives, ranked from fastest to slowest by top running speed in mph and km/h, with an honest, funny take on each." />
+  <link rel="canonical" href="https://thebarkfacts.com/Rankings/fastest-dog-breeds.html" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:site_name" content="The Bark Facts" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Fastest Dog Breeds, Ranked by Speed" />
+  <meta property="og:description" content="All 53 dog breeds in our Deep Dives, ranked from fastest to slowest by top running speed in mph and km/h, with an honest, funny take on each." />
+  <meta property="og:url" content="https://thebarkfacts.com/Rankings/fastest-dog-breeds.html" />
+  <meta property="og:image" content="https://thebarkfacts.com/images/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fastest Dog Breeds, Ranked by Speed" />
+  <meta name="twitter:description" content="All 53 dog breeds in our Deep Dives, ranked from fastest to slowest by top running speed in mph and km/h, with an honest, funny take on each." />
+  <meta name="twitter:image" content="https://thebarkfacts.com/images/og-cover.jpg" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Fastest Dog Breeds, Ranked by Speed",
+  "description": "All 53 dog breeds in our Deep Dives, ranked from fastest to slowest by top running speed in mph and km/h, with an honest, funny take on each.",
+  "url": "https://thebarkfacts.com/Rankings/fastest-dog-breeds.html",
+  "numberOfItems": 53,
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Greyhound",
+      "url": "https://thebarkfacts.com/deep-dives/greyhound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Saluki",
+      "url": "https://thebarkfacts.com/deep-dives/saluki.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Vizsla",
+      "url": "https://thebarkfacts.com/deep-dives/vizsla.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Irish Wolfhound",
+      "url": "https://thebarkfacts.com/deep-dives/irish-wolfhound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Dalmatian",
+      "url": "https://thebarkfacts.com/deep-dives/dalmatian.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Borzoi",
+      "url": "https://thebarkfacts.com/deep-dives/borzoi.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "Whippet",
+      "url": "https://thebarkfacts.com/deep-dives/whippet.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Weimaraner",
+      "url": "https://thebarkfacts.com/deep-dives/weimaraner.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Jack Russell Terrier",
+      "url": "https://thebarkfacts.com/deep-dives/jack-russell-terrier.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Doberman",
+      "url": "https://thebarkfacts.com/deep-dives/doberman.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Pointer",
+      "url": "https://thebarkfacts.com/deep-dives/pointer.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Boxer",
+      "url": "https://thebarkfacts.com/deep-dives/boxer.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Border Collie",
+      "url": "https://thebarkfacts.com/deep-dives/border-collie.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "German Shepherd",
+      "url": "https://thebarkfacts.com/deep-dives/german-shepherd.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Great Dane",
+      "url": "https://thebarkfacts.com/deep-dives/great-dane.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Standard Poodle",
+      "url": "https://thebarkfacts.com/deep-dives/poodle.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "name": "Australian Shepherd",
+      "url": "https://thebarkfacts.com/deep-dives/australian-shepherd.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "name": "Siberian Husky",
+      "url": "https://thebarkfacts.com/deep-dives/siberian-husky.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "name": "Irish Terrier",
+      "url": "https://thebarkfacts.com/deep-dives/irish-terrier.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "name": "Bull Terrier",
+      "url": "https://thebarkfacts.com/deep-dives/bull-terrier.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "name": "Kerry Blue Terrier",
+      "url": "https://thebarkfacts.com/deep-dives/kerry-blue-terrier.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "name": "Portuguese Water Dog",
+      "url": "https://thebarkfacts.com/deep-dives/portuguese-water-dog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "name": "Basenji",
+      "url": "https://thebarkfacts.com/deep-dives/basenji.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "name": "Shiba Inu",
+      "url": "https://thebarkfacts.com/deep-dives/shiba-inu.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "name": "Akita",
+      "url": "https://thebarkfacts.com/deep-dives/akita.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "name": "Norwegian Elkhound",
+      "url": "https://thebarkfacts.com/deep-dives/norwegian-elkhound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "name": "Rottweiler",
+      "url": "https://thebarkfacts.com/deep-dives/rottweiler.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "name": "Samoyed",
+      "url": "https://thebarkfacts.com/deep-dives/samoyed.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "name": "Finnish Lapphund",
+      "url": "https://thebarkfacts.com/deep-dives/finnish-lapphund.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "name": "Corgi",
+      "url": "https://thebarkfacts.com/deep-dives/corgi.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "name": "Bloodhound",
+      "url": "https://thebarkfacts.com/deep-dives/bloodhound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "name": "Otterhound",
+      "url": "https://thebarkfacts.com/deep-dives/otterhound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "name": "Leonberger",
+      "url": "https://thebarkfacts.com/deep-dives/leonberger.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "name": "Beagle",
+      "url": "https://thebarkfacts.com/deep-dives/beagle.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "name": "Alaskan Malamute",
+      "url": "https://thebarkfacts.com/deep-dives/alaskan-malamute.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "name": "Great Pyrenees",
+      "url": "https://thebarkfacts.com/deep-dives/great-pyrenees.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "name": "Newfoundland",
+      "url": "https://thebarkfacts.com/deep-dives/newfoundland.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "name": "Papillon",
+      "url": "https://thebarkfacts.com/deep-dives/papillon.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "name": "Chow Chow",
+      "url": "https://thebarkfacts.com/deep-dives/chow-chow.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "name": "Dachshund",
+      "url": "https://thebarkfacts.com/deep-dives/dachshund.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "name": "Mastiff",
+      "url": "https://thebarkfacts.com/deep-dives/mastiff.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "name": "Saint Bernard",
+      "url": "https://thebarkfacts.com/deep-dives/saint-bernard.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "name": "Chihuahua",
+      "url": "https://thebarkfacts.com/deep-dives/chihuahua.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "name": "Bichon Frise",
+      "url": "https://thebarkfacts.com/deep-dives/bichon-frise.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "name": "Bulldog",
+      "url": "https://thebarkfacts.com/deep-dives/bulldog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "name": "Japanese Chin",
+      "url": "https://thebarkfacts.com/deep-dives/japanese-chin.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "name": "Basset Hound",
+      "url": "https://thebarkfacts.com/deep-dives/basset-hound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "name": "Brussels Griffon",
+      "url": "https://thebarkfacts.com/deep-dives/brussels-griffon.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "name": "English Toy Spaniel",
+      "url": "https://thebarkfacts.com/deep-dives/english-toy-spaniel.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "name": "Lhasa Apso",
+      "url": "https://thebarkfacts.com/deep-dives/lhasa-apso.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "name": "Pug",
+      "url": "https://thebarkfacts.com/deep-dives/pug.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "name": "Skye Terrier",
+      "url": "https://thebarkfacts.com/deep-dives/skye-terrier.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "name": "Pekingese",
+      "url": "https://thebarkfacts.com/deep-dives/pekingese.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thebarkfacts.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Breed Rankings", "item": "https://thebarkfacts.com/Rankings/" },
+    { "@type": "ListItem", "position": 3, "name": "Fastest Dog Breeds", "item": "https://thebarkfacts.com/Rankings/fastest-dog-breeds.html" }
+  ]
+}
+  </script>
+  <!-- FAVICON:BEGIN (generated by add_favicon_links.py) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#5C3D11" />
+  <!-- FAVICON:END -->
+</head>
+<body>
+
+<header>
+  <div class="site-brand">The Bark Facts</div>
+  <div class="subtitle">Real facts and honest takes on the dogs we love.</div>
+</header>
+<nav class="site-nav">
+  <a href="../index.html">Home</a>
+  <a href="../breeds/index.html">Browse Facts</a>
+  <a href="../deep-dives/index.html">Breeds</a>
+  <a href="index.html" class="active">Breed Rankings</a>
+  <a href="../about.html">About</a>
+</nav>
+
+<div class="main">
+
+  <div class="page-heading">
+    <h1>Fastest Dog Breeds, Ranked</h1>
+    <p>Every breed in our Deep Dives, lined up from flat-out fastest to proudly<br>slowest. A few of these will surprise you. A few really won't.</p>
+  </div>
+
+  <div class="note">
+    Speeds are top sprint speed. Numbers marked with a <strong>*</strong> are our
+    own estimate. Where no reliable published figure exists, mostly the toy and
+    giant breeds, we estimated from size, build, and what the dog was made to do.
+    We marked those so you always know which is which.
+  </div>
+
+  <div class="rank-list">
+    <div class="rank-row champ">
+      <div class="rank-num">1</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/greyhound.html">Greyhound</a>
+        <div class="rank-comment">The undisputed champ. Forty-five miles an hour, then eighteen hours asleep on your couch.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">45 <span class="unit">mph</span></div>
+        <div class="rank-kmh">72 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">2</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/saluki.html">Saluki</a>
+        <div class="rank-comment">Ancient royalty with a Guinness record to back it up. It only just lost the crown to the Greyhound.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">42 <span class="unit">mph</span></div>
+        <div class="rank-kmh">68 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">3</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/vizsla.html">Vizsla</a>
+        <div class="rank-comment">Velcro at rest, rocket in a field. Blink and it's a dot on the horizon.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">40 <span class="unit">mph</span></div>
+        <div class="rank-kmh">64 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">4</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/irish-wolfhound.html">Irish Wolfhound</a>
+        <div class="rank-comment">Yes, this much dog moves that fast. Alarming for about six seconds, then it's over.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">40 <span class="unit">mph</span></div>
+        <div class="rank-kmh">64 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">5</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/dalmatian.html">Dalmatian</a>
+        <div class="rank-comment">Bred to run under carriages all day. Your morning jog is a warm-up.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">37 <span class="unit">mph</span></div>
+        <div class="rank-kmh">60 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">6</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/borzoi.html">Borzoi</a>
+        <div class="rank-comment">Built like a Greyhound that went to finishing school. Quietly, deceptively quick.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">36 <span class="unit">mph</span></div>
+        <div class="rank-kmh">58 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">7</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/whippet.html">Whippet</a>
+        <div class="rank-comment">The Greyhound's smaller cousin, and pound for pound maybe the better deal.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">35 <span class="unit">mph</span></div>
+        <div class="rank-kmh">56 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">8</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/weimaraner.html">Weimaraner</a>
+        <div class="rank-comment">The Gray Ghost earns the name. Usually gone before you've registered it left.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">35 <span class="unit">mph</span></div>
+        <div class="rank-kmh">56 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">9</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/jack-russell-terrier.html">Jack Russell Terrier</a>
+        <div class="rank-comment">All that speed crammed into a dog that flatly refuses to acknowledge its size.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">35 <span class="unit">mph</span></div>
+        <div class="rank-kmh">56 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">10</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/doberman.html">Doberman</a>
+        <div class="rank-comment">Fast, and it looks fast. The kind of fast that ends arguments.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">32 <span class="unit">mph</span></div>
+        <div class="rank-kmh">51 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">11</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/pointer.html">Pointer</a>
+        <div class="rank-comment">Built to sweep a field for hours. The speed is almost a side effect.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">32<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">51 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">12</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/boxer.html">Boxer</a>
+        <div class="rank-comment">Goofy right up until it decides to run laps around the yard for no reason.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">31 <span class="unit">mph</span></div>
+        <div class="rank-kmh">50 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">13</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/border-collie.html">Border Collie</a>
+        <div class="rank-comment">Could probably go faster if it weren't so busy managing everyone.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">30 <span class="unit">mph</span></div>
+        <div class="rank-kmh">48 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">14</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/german-shepherd.html">German Shepherd</a>
+        <div class="rank-comment">Fast, precise, and annoyingly good at this like it's good at everything.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">30 <span class="unit">mph</span></div>
+        <div class="rank-kmh">48 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">15</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/great-dane.html">Great Dane</a>
+        <div class="rank-comment">Thirty miles an hour of horse-sized dog. Give it room.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">30 <span class="unit">mph</span></div>
+        <div class="rank-kmh">48 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">16</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/poodle.html">Standard Poodle</a>
+        <div class="rank-comment">Under the ridiculous haircut is a real athlete. People keep forgetting that.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">30 <span class="unit">mph</span></div>
+        <div class="rank-kmh">48 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">17</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/australian-shepherd.html">Australian Shepherd</a>
+        <div class="rank-comment">Will run this fast around livestock, around your kids, or around nothing at all.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">30 <span class="unit">mph</span></div>
+        <div class="rank-kmh">48 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">18</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/siberian-husky.html">Siberian Husky</a>
+        <div class="rank-comment">Quick in a sprint, tireless over distance, and gone the instant the gate opens.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">30 <span class="unit">mph</span></div>
+        <div class="rank-kmh">48 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">19</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/irish-terrier.html">Irish Terrier</a>
+        <div class="rank-comment">The daredevil of the terrier world. Quicker than a dog that size has any right to be.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">30<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">48 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">20</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/bull-terrier.html">Bull Terrier</a>
+        <div class="rank-comment">That egg-shaped head is hiding a surprisingly serious engine.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">30<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">48 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">21</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/kerry-blue-terrier.html">Kerry Blue Terrier</a>
+        <div class="rank-comment">A working terrier under all that grooming. Faster than the show ring lets on.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">28<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">45 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">22</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/portuguese-water-dog.html">Portuguese Water Dog</a>
+        <div class="rank-comment">Quick on land, quicker in the water. It was bred to keep up with boats.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">28<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">45 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">23</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/basenji.html">Basenji</a>
+        <div class="rank-comment">The barkless one. Moves like a cat, then bolts like a hare.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">25 <span class="unit">mph</span></div>
+        <div class="rank-kmh">40 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">24</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/shiba-inu.html">Shiba Inu</a>
+        <div class="rank-comment">Plenty fast, but only when it personally sees the point. Recall sold separately.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">25 <span class="unit">mph</span></div>
+        <div class="rank-kmh">40 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">25</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/akita.html">Akita</a>
+        <div class="rank-comment">Dignified and unhurried, right up until it isn't. Then, briefly, quick.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">25<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">40 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">26</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/norwegian-elkhound.html">Norwegian Elkhound</a>
+        <div class="rank-comment">Built to track moose across cold country. Sturdy and steady more than fast.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">25<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">40 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">27</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/rottweiler.html">Rottweiler</a>
+        <div class="rank-comment">More power than speed, but you'd still lose the footrace.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">25<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">40 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">28</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/samoyed.html">Samoyed</a>
+        <div class="rank-comment">That smile hides a sled dog. Endurance is the gift here, not the sprint.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">25<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">40 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">29</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/finnish-lapphund.html">Finnish Lapphund</a>
+        <div class="rank-comment">A herder built to dodge reindeer. Nimble more than flat-out fast.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">25<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">40 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">30</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/corgi.html">Corgi</a>
+        <div class="rank-comment">Those little legs turn over shockingly fast. Physics is as confused as you are.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">24<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">39 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">31</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/bloodhound.html">Bloodhound</a>
+        <div class="rank-comment">The nose sets the pace, and the nose is in no particular hurry.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">22<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">35 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">32</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/otterhound.html">Otterhound</a>
+        <div class="rank-comment">A big shaggy hound that ambles along until there's water. Then it commits.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">22<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">35 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">33</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/leonberger.html">Leonberger</a>
+        <div class="rank-comment">A lot of dog moving at a gentleman's pace. No reason to rush.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">22<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">35 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">34</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/beagle.html">Beagle</a>
+        <div class="rank-comment">Follows its nose at a steady trot. Speed was never the assignment.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">20 <span class="unit">mph</span></div>
+        <div class="rank-kmh">32 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">35</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/alaskan-malamute.html">Alaskan Malamute</a>
+        <div class="rank-comment">Built to haul freight over distance, not to sprint. Truck, not sports car.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">20<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">32 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">36</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/great-pyrenees.html">Great Pyrenees</a>
+        <div class="rank-comment">Guardians hold ground, they don't chase. Fast enough when it truly counts.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">20<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">32 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">37</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/newfoundland.html">Newfoundland</a>
+        <div class="rank-comment">Slow on land, unstoppable in water. Wrong element for a footrace.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">20<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">32 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">38</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/papillon.html">Papillon</a>
+        <div class="rank-comment">The butterfly ears do more than decorate. Tiny, springy, quicker than you'd guess.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">18 <span class="unit">mph</span></div>
+        <div class="rank-kmh">29 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">39</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/chow-chow.html">Chow Chow</a>
+        <div class="rank-comment">That stilted walk was not built for speed. It was built for judging you.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">18<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">29 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">40</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/dachshund.html">Dachshund</a>
+        <div class="rank-comment">Short legs, long body, one gear. Charming, not fast.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">18<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">29 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">41</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/mastiff.html">Mastiff</a>
+        <div class="rank-comment">Two hundred pounds of no thank you. It will sit this one out.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">18<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">29 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">42</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/saint-bernard.html">Saint Bernard</a>
+        <div class="rank-comment">Rescues people from snowbanks. Nobody ever said quickly.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">18<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">29 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">43</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/chihuahua.html">Chihuahua</a>
+        <div class="rank-comment">The effort of a racehorse, roughly the output of a brisk walk.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">15<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">24 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">44</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/bichon-frise.html">Bichon Frise</a>
+        <div class="rank-comment">The zoomies are real. The top speed is not. Adorable blur, very small radius.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">15<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">24 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">45</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/bulldog.html">Bulldog</a>
+        <div class="rank-comment">Sprints in theory. In practice it prefers the shade and a solid nap.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">15<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">24 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">46</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/japanese-chin.html">Japanese Chin</a>
+        <div class="rank-comment">Elegant, cat-like, and completely uninterested in hurrying anywhere.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">14<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">23 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">47</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/basset-hound.html">Basset Hound</a>
+        <div class="rank-comment">Low to the ground and powered mostly by vibes. Those ears are basically drag.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">12<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">19 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">48</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/brussels-griffon.html">Brussels Griffon</a>
+        <div class="rank-comment">Big personality, short stride. It'll supervise the race, not enter it.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">12<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">19 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">49</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/english-toy-spaniel.html">English Toy Spaniel</a>
+        <div class="rank-comment">Bred for laps, not for laps of the track. Perfectly happy with the trade.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">12<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">19 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">50</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/lhasa-apso.html">Lhasa Apso</a>
+        <div class="rank-comment">An ancient sentinel, not a sprinter. It patrols the walls, slowly.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">12<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">19 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">51</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/pug.html">Pug</a>
+        <div class="rank-comment">The spirit is willing. The airway and the little legs are still negotiating.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">12<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">19 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">52</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/skye-terrier.html">Skye Terrier</a>
+        <div class="rank-comment">All that coat over those short legs. Style over velocity, every time.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">12<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">19 km/h</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-num">53</div>
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/pekingese.html">Pekingese</a>
+        <div class="rank-comment">Bred for palace laps at a palace pace. The dignified anchor of this whole list.</div>
+      </div>
+      <div class="rank-speed">
+        <div class="rank-mph">10<span class="est">*</span> <span class="unit">mph</span></div>
+        <div class="rank-kmh">16 km/h</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sources">
+    Published speeds drawn from
+    <a href="https://basepaws.com/blog/top-15-fastest-dog-breeds" rel="nofollow noopener" target="_blank">Basepaws</a>,
+    <a href="https://highlandcanine.com/blog/the-fastest-dog-breeds-in-the-world/" rel="nofollow noopener" target="_blank">Highland Canine</a>, and
+    <a href="https://www.lovetoknowpets.com/life-with-pets/how-fast-can-dogs-run-13-fastest-10-slowest-breeds" rel="nofollow noopener" target="_blank">LoveToKnow Pets</a>.
+    Individual dogs vary. Your couch potato is not disqualified.
+  </div>
+
+  <div class="breadcrumb"><a href="index.html">&#8592; All Breed Rankings</a></div>
+
+</div>
+
+<footer>The Bark Facts &middot; Real facts and honest takes on the dogs we love.</footer>
+
+</body>
+</html>

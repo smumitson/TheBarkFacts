@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breed Rankings &middot; The Bark Facts</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #FAF0DC;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #3D2B1F;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #5C3D11;
+      color: #FAF0DC;
+      text-align: center;
+      padding: 18px 24px 14px;
+    }
+    header .site-brand {
+      font-size: 4rem;
+      letter-spacing: 0.04em;
+      font-weight: normal;
+    }
+    header .subtitle {
+      font-size: 0.85rem;
+      color: #D4B483;
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    .site-nav {
+      background: #4A2E0A;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 0 12px;
+      flex-wrap: wrap;
+    }
+    .site-nav a {
+      color: #C8A87A;
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.82rem;
+      padding: 9px 20px;
+      display: inline-block;
+      letter-spacing: 0.03em;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: #FAF0DC;
+      border-bottom-color: #C05621;
+    }
+
+    .main {
+      flex: 1;
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 36px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .page-heading { text-align: center; }
+    .page-heading h1 {
+      font-size: 2.1rem;
+      font-weight: normal;
+      color: #5C3D11;
+      letter-spacing: 0.02em;
+    }
+    .page-heading p {
+      font-size: 0.95rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    .note {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-left: 6px solid #C05621;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #3D2B1F;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+    }
+    .note strong { color: #5C3D11; }
+
+    .rank-list { display: flex; flex-direction: column; gap: 10px; }
+
+    .rank-row {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .rank-row:hover {
+      border-color: #C05621;
+      box-shadow: 0 3px 12px rgba(192,86,33,0.18);
+    }
+    .rank-row.champ { border-color: #C05621; }
+
+    .rank-num {
+      font-size: 1.5rem;
+      color: #C05621;
+      min-width: 2.4rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .rank-body { flex: 1; min-width: 0; }
+    .rank-name {
+      font-size: 1.2rem;
+      color: #5C3D11;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .rank-name:hover { color: #C05621; border-bottom-color: #C05621; }
+    .rank-comment {
+      font-size: 0.9rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    .rank-speed { text-align: right; flex-shrink: 0; min-width: 5rem; }
+    .rank-mph { font-size: 1.35rem; color: #5C3D11; white-space: nowrap; }
+    .rank-mph .unit { font-size: 0.68rem; color: #9A6B3A; }
+    .rank-mph .est { color: #C05621; }
+    .rank-kmh { font-size: 0.75rem; color: #9A6B3A; margin-top: 2px; white-space: nowrap; }
+
+    .rank-grid { display: flex; flex-direction: column; gap: 12px; }
+    .rank-card {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 20px 24px;
+      text-decoration: none;
+      color: #3D2B1F;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .rank-card:hover {
+      border-color: #C05621;
+      box-shadow: 0 3px 12px rgba(192,86,33,0.18);
+    }
+    .rank-card-name { font-size: 1.2rem; color: #5C3D11; }
+    .rank-card-teaser { font-size: 0.8rem; color: #9A6B3A; font-style: italic; margin-top: 3px; }
+    .rank-card-arrow { color: #C05621; font-size: 1.1rem; }
+    .rank-soon {
+      font-size: 0.85rem;
+      color: #9A6B3A;
+      font-style: italic;
+      text-align: center;
+      padding: 4px 0 0;
+    }
+
+    .breadcrumb { font-size: 0.82rem; }
+    .breadcrumb a { color: #C05621; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .sources {
+      font-size: 0.78rem;
+      color: #9A6B3A;
+      line-height: 1.6;
+      border-top: 1px solid #E0C090;
+      padding-top: 14px;
+    }
+    .sources a { color: #C05621; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+
+    footer {
+      background: #5C3D11;
+      color: #A07840;
+      text-align: center;
+      font-size: 0.78rem;
+      padding: 10px;
+    }
+
+    @media (max-width: 520px) {
+      .rank-row { padding: 14px 14px; gap: 10px; }
+      .rank-num { font-size: 1.25rem; min-width: 1.9rem; }
+      .rank-mph { font-size: 1.15rem; }
+      .rank-speed { min-width: 4.4rem; }
+    }
+  </style>
+  <meta name="description" content="The Bark Facts breed rankings: our Deep Dive breeds sorted by the numbers and by our honest read of them. Starting with top speed." />
+  <link rel="canonical" href="https://thebarkfacts.com/Rankings/" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:site_name" content="The Bark Facts" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Breed Rankings &mdash; The Bark Facts" />
+  <meta property="og:description" content="The Bark Facts breed rankings: our Deep Dive breeds sorted by the numbers and by our honest read of them. Starting with top speed." />
+  <meta property="og:url" content="https://thebarkfacts.com/Rankings/" />
+  <meta property="og:image" content="https://thebarkfacts.com/images/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Breed Rankings &mdash; The Bark Facts" />
+  <meta name="twitter:description" content="The Bark Facts breed rankings: our Deep Dive breeds sorted by the numbers and by our honest read of them. Starting with top speed." />
+  <meta name="twitter:image" content="https://thebarkfacts.com/images/og-cover.jpg" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Breed Rankings",
+  "description": "The Bark Facts breed rankings: our Deep Dive breeds sorted by the numbers and by our honest read of them. Starting with top speed.",
+  "url": "https://thebarkfacts.com/Rankings/",
+  "isPartOf": { "@type": "WebSite", "name": "The Bark Facts", "url": "https://thebarkfacts.com/" }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thebarkfacts.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Breed Rankings", "item": "https://thebarkfacts.com/Rankings/" }
+  ]
+}
+  </script>
+  <!-- FAVICON:BEGIN (generated by add_favicon_links.py) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#5C3D11" />
+  <!-- FAVICON:END -->
+</head>
+<body>
+
+<header>
+  <div class="site-brand">The Bark Facts</div>
+  <div class="subtitle">Real facts and honest takes on the dogs we love.</div>
+</header>
+<nav class="site-nav">
+  <a href="../index.html">Home</a>
+  <a href="../breeds/index.html">Browse Facts</a>
+  <a href="../deep-dives/index.html">Breeds</a>
+  <a href="index.html" class="active">Breed Rankings</a>
+  <a href="../about.html">About</a>
+</nav>
+
+<div class="main">
+
+  <div class="page-heading">
+    <h1>Breed Rankings</h1>
+    <p>We line up the breeds in our Deep Dives by the numbers, and by our honest<br>read of them. One list so far. More on the way.</p>
+  </div>
+
+  <div class="rank-grid">
+    <a class="rank-card" href="fastest-dog-breeds.html">
+      <div>
+        <div class="rank-card-name">Fastest Dog Breeds</div>
+        <div class="rank-card-teaser">Every breed we cover, ranked from flat-out fastest to proudly slowest.</div>
+      </div>
+      <span class="rank-card-arrow">&#8594;</span>
+    </a>
+  </div>
+
+  <div class="rank-soon">More rankings coming. Hungriest, biggest, and a few you won't see anywhere else.</div>
+
+  <div class="breadcrumb"><a href="../index.html">&#8592; Back to Home</a></div>
+
+</div>
+
+<footer>The Bark Facts &middot; Real facts and honest takes on the dogs we love.</footer>
+
+</body>
+</html>

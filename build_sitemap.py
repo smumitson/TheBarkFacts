@@ -22,6 +22,8 @@ def meta_for(rel: str):
         return "0.8", "monthly"
     if rel.startswith("deep-dives/"):
         return "0.8", "monthly"
+    if rel.startswith("Rankings/"):
+        return "0.8", "monthly"
     return "0.7", "monthly"
 
 
@@ -52,7 +54,7 @@ def canonical_url(path: Path) -> str:
 
 def discover():
     files = [ROOT / "index.html", ROOT / "about.html"]
-    for section in ("breeds", "deep-dives"):
+    for section in ("breeds", "deep-dives", "Rankings"):
         files += sorted((ROOT / section).glob("*.html"))
     return [f for f in files if f.exists()]
 
