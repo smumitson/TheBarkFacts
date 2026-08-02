@@ -2,17 +2,22 @@
 """Generate the Breed Rankings section for The Bark Facts.
 
 Writes:
-  rankings/index.html               - the Breed Rankings landing page
-  rankings/fastest-dog-breeds.html  - breeds ranked by top running speed
+  rankings/index.html                - the Breed Rankings landing page
+  rankings/fastest-dog-breeds.html   - breeds ranked by top running speed
+  rankings/space-needs.html          - breeds ranked by how much room they need
 
 Speeds are top sprint speed in mph. Figures with `est=True` have no reliable
 published number (mostly toy and giant breeds); those are honest estimates from
 size, build, and what the breed was made to do, and are marked with a * on the
 page. Everything else is drawn from published breed-speed sources.
 
+Space-needs tiers are an editorial call combining energy level, original working
+purpose, and behavior when under-stimulated. Deliberately NOT ranked by size:
+the whole point is that a Great Dane needs less room than a Jack Russell.
+
 Re-run whenever the data below changes, then run build_sitemap.py.
 Only breeds that already have a Deep Dive page belong here. Add new breeds to
-FASTEST as their Deep Dives go live.
+FASTEST and SPACE as their Deep Dives go live.
 """
 from pathlib import Path
 
@@ -25,6 +30,7 @@ DOMAIN = "https://thebarkfacts.com"
 # self-referencing canonicals below must match these exact, non-redirecting URLs.
 HUB_URL = f"{DOMAIN}/rankings/"
 FASTEST_URL = f"{DOMAIN}/rankings/fastest-dog-breeds"
+SPACE_URL = f"{DOMAIN}/rankings/space-needs"
 
 # (name, deep-dive slug, mph, estimate?, whimsical comment)
 # Ordered fastest to slowest. km/h is computed.
@@ -135,6 +141,141 @@ FASTEST = [
      "All that coat over those short legs. Style over velocity, every time."),
     ("Pekingese", "pekingese", 10, True,
      "Bred for palace laps at a palace pace. The dignified anchor of this whole list."),
+]
+
+# Display name for each slug, taken from FASTEST so names stay consistent
+# across every ranking page.
+NAME_BY_SLUG = {slug: name for name, slug, *_ in FASTEST}
+
+# Space-needs tiers, ordered couch (1) to acreage (5).
+TIERS = [
+    (1, "Couch Potato",
+     "Genuinely happiest horizontal indoors. Minimal exercise, minimal square footage, zero guilt."),
+    (2, "Apartment-Fine with Daily Walks",
+     "Low to moderate energy. A regular walk and a bit of company, and they're content just about anywhere."),
+    (3, "Needs a Yard, Not a Farm",
+     "Moderate energy that wants daily outdoor access. Not demanding, but not a studio dog either."),
+    (4, "Needs Room to Run",
+     "High drive that doesn't shrink with body size. A walk isn't the exercise, it's the appetizer."),
+    (5, "Needs Acreage or a Job",
+     "Bred for open land or real work. Without a genuine outlet, no amount of walking is ever enough."),
+]
+
+# (slug, tier, one-liner on WHY it landed there). Ordered couch to acreage.
+# Deliberately not size-ordered: giants sit near the top, small working dogs
+# near the bottom. That contrast is the whole point of the page.
+SPACE = [
+    # Tier 1 - Couch Potato
+    ("great-dane", 1,
+     "A giant that mostly wants to be a rug. Enormous body, small appetite for exercise."),
+    ("mastiff", 1,
+     "Two hundred pounds of preferring not to. A couple of slow laps and it's done for the day."),
+    ("chow-chow", 1,
+     "Aloof, dignified, and about as interested in a run as a house cat."),
+    ("bulldog", 1,
+     "Built to overheat, not to roam. The couch isn't laziness, it's basically a medical plan."),
+    ("basset-hound", 1,
+     "Powered by naps between sniffs. A short amble around the block counts as a full workout."),
+    ("japanese-chin", 1,
+     "Bred to warm a lap in a palace. It has never once questioned the job description."),
+    ("english-toy-spaniel", 1,
+     "A lap is the entire habitat. Anything bigger is just surplus real estate."),
+    ("lhasa-apso", 1,
+     "Patrolled temple halls for centuries. Your hallway is more territory than it knows what to do with."),
+    ("pug", 1,
+     "The spirit is willing, the airway is not. Keep it short, shady, and close to the sofa."),
+    ("pekingese", 1,
+     "Bred for palace floors at a palace pace. A studio apartment is a generous estate."),
+    # Tier 2 - Apartment-Fine with Daily Walks
+    ("greyhound", 2,
+     "The famous twist. Forty-five miles an hour in short bursts, then eighteen hours flat on the couch. A walk or two covers it."),
+    ("whippet", 2,
+     "The same deal as the Greyhound in a smaller wrapper. Sprints hard, then melts into the cushions."),
+    ("chihuahua", 2,
+     "Tiny legs, tiny range. One lap of the block and it has logged its mileage."),
+    ("bichon-frise", 2,
+     "Cheerful zoomies, very small radius. A daily walk soaks up whatever's left."),
+    ("brussels-griffon", 2,
+     "Wants your attention far more than your acreage. Walks plus company are plenty."),
+    ("skye-terrier", 2,
+     "Long, low, and unhurried. Content indoors as long as the daily walk stays on the schedule."),
+    ("shiba-inu", 2,
+     "Clean, independent, and fine in an apartment, right up until you trust it off leash."),
+    ("papillon", 2,
+     "Small enough for a flat, sharp enough that the walk needs to include some thinking."),
+    ("dachshund", 2,
+     "A hunter in a hallway-sized body. Regular walks yes, big leaps and long stairs no."),
+    ("saint-bernard", 2,
+     "A mellow mountain of a dog. Daily strolls suit it fine, though it will need the floor space to sprawl."),
+    # Tier 3 - Needs a Yard, Not a Farm
+    ("boxer", 3,
+     "Goofy and springy well into middle age. It needs somewhere to burn that off every single day."),
+    ("irish-terrier", 3,
+     "A bold little furnace of energy. A yard keeps the mischief pointed outdoors."),
+    ("bull-terrier", 3,
+     "Muscle with a sense of humor. Under-exercise it and the furniture picks up the tab."),
+    ("kerry-blue-terrier", 3,
+     "A working terrier under the show coat. It wants a job, or at minimum a proper romp."),
+    ("basenji", 3,
+     "Cat-clean, fence-climbing, and bored easily. A secure yard is what saves your blinds."),
+    ("akita", 3,
+     "Reserved and moderate, but big and strong. Room to move keeps it calm and settled."),
+    ("norwegian-elkhound", 3,
+     "Built to track game over hills. A yard and real walks keep the hunter contented."),
+    ("rottweiler", 3,
+     "Powerful and steady, not hyper. Daily work plus a yard hits the sweet spot."),
+    ("corgi", 3,
+     "A herding dog in a footstool costume. Do not mistake the short legs for low needs."),
+    ("leonberger", 3,
+     "A gentle giant that still likes to move. Not a farm, but definitely not a studio."),
+    ("newfoundland", 3,
+     "Happiest with water and space, mellow enough without them. Give it a yard and a hose."),
+    ("beagle", 3,
+     "The nose writes checks the living room can't cash. A yard and long sniffy walks help a lot."),
+    # Tier 4 - Needs Room to Run
+    ("saluki", 4,
+     "Calm on the rug, unrecognizable outside. It needs a big, secure space to truly open up."),
+    ("vizsla", 4,
+     "The velcro athlete. Skip a day of real exercise and it will let you know, at length."),
+    ("irish-wolfhound", 4,
+     "Placid indoors, but it needs genuine room to stretch out that enormous stride."),
+    ("dalmatian", 4,
+     "Bred to run under carriages all day. A jog is a warm-up, not the main event."),
+    ("borzoi", 4,
+     "Serene on the rug, electric on a trail. It needs somewhere safe to hit full speed."),
+    ("weimaraner", 4,
+     "The Gray Ghost runs on purpose and attention. Short-change either one and it unravels."),
+    ("jack-russell-terrier", 4,
+     "The clearest proof that size lies. Ten pounds of engine that needs miles, not minutes."),
+    ("doberman", 4,
+     "Athletic, sharp, and quick to get bored. It wants a real outlet, mental and physical."),
+    ("pointer", 4,
+     "Wired to quarter a field for hours. A lap around the block barely registers."),
+    ("poodle", 4,
+     "The haircut hides a serious athlete. It needs running and problems to solve, not just grooming."),
+    ("portuguese-water-dog", 4,
+     "Bred to work all day off a fishing boat. Land or water, it needs a real outing."),
+    ("samoyed", 4,
+     "A sled dog with a smile. All that coat came attached to an engine that wants to pull."),
+    ("finnish-lapphund", 4,
+     "A herder built to cover ground in the cold. A gentle walk alone won't cut it."),
+    ("bloodhound", 4,
+     "The nose needs mileage as badly as the legs do. Give it room and a long trail."),
+    ("otterhound", 4,
+     "Big, boisterous, and built for all-day swims and searches. It has to move to be happy."),
+    # Tier 5 - Needs Acreage or a Job
+    ("border-collie", 5,
+     "The dog that defined 'needs a job.' Leave it idle and it invents work you won't enjoy."),
+    ("german-shepherd", 5,
+     "Capable of almost anything, which means it needs to do something. Idle is the real enemy."),
+    ("australian-shepherd", 5,
+     "A herding brain that never clocks out. It wants livestock, or a very convincing substitute."),
+    ("siberian-husky", 5,
+     "Built to run a hundred miles across snow. Your fenced yard is treated as a mild suggestion."),
+    ("alaskan-malamute", 5,
+     "Freight-hauling stamina with an escape artist's imagination. It needs land and a purpose."),
+    ("great-pyrenees", 5,
+     "A livestock guardian wired to patrol a perimeter. Give it acreage or it annexes the neighborhood."),
 ]
 
 
@@ -327,6 +468,46 @@ HEAD_STYLE = """  <style>
     .sources a { color: #C05621; text-decoration: none; }
     .sources a:hover { text-decoration: underline; }
 
+    /* Space-needs tier headers and roam meter */
+    .tier-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 26px 0 4px;
+    }
+    .tier-badge {
+      width: 2.3rem;
+      height: 2.3rem;
+      flex-shrink: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+    }
+    .tier-badge.t1 { background: #E4CFA0; color: #4A2E0A; }
+    .tier-badge.t2 { background: #C8A870; color: #3D2B1F; }
+    .tier-badge.t3 { background: #C05621; color: #FFF8EC; }
+    .tier-badge.t4 { background: #9E4418; color: #FFF8EC; }
+    .tier-badge.t5 { background: #5C3D11; color: #FAF0DC; }
+    .tier-name { font-size: 1.25rem; color: #5C3D11; letter-spacing: 0.02em; }
+    .tier-desc {
+      font-size: 0.85rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .roam-meter { display: flex; gap: 4px; flex-shrink: 0; align-items: center; }
+    .roam-meter .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #E0C090;
+    }
+    .roam-meter .dot.on { background: #C05621; }
+
     footer {
       background: #5C3D11;
       color: #A07840;
@@ -497,6 +678,146 @@ def build_fastest():
 """
 
 
+def roam_meter(tier: int) -> str:
+    dots = "".join(
+        f'<span class="dot{" on" if i < tier else ""}"></span>' for i in range(5)
+    )
+    return f'<div class="roam-meter" title="Tier {tier} of 5">{dots}</div>'
+
+
+def build_space():
+    # Group breed rows under their tier header, couch to acreage.
+    blocks = []
+    for tnum, label, tdesc in TIERS:
+        header = f"""    <div class="tier-head">
+      <div class="tier-badge t{tnum}">{tnum}</div>
+      <div>
+        <div class="tier-name">{label}</div>
+        <div class="tier-desc">{tdesc}</div>
+      </div>
+    </div>"""
+        rows = []
+        for slug, tier, comment in SPACE:
+            if tier != tnum:
+                continue
+            name = NAME_BY_SLUG[slug]
+            rows.append(f"""    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/{slug}.html">{name}</a>
+        <div class="rank-comment">{comment}</div>
+      </div>
+      {roam_meter(tier)}
+    </div>""")
+        blocks.append(header + "\n" + "\n".join(rows))
+    rows_html = "\n".join(blocks)
+
+    # JSON-LD ItemList in display order (least space to most).
+    items = []
+    for i, (slug, tier, comment) in enumerate(SPACE, start=1):
+        items.append(f"""    {{
+      "@type": "ListItem",
+      "position": {i},
+      "name": "{NAME_BY_SLUG[slug]}",
+      "url": "{DOMAIN}/deep-dives/{slug}.html"
+    }}""")
+    itemlist = ",\n".join(items)
+
+    desc = ("All 53 dog breeds in our Deep Dives, ranked by how much living space "
+            "they actually need, from couch potato to needs-a-farm.")
+    url = SPACE_URL
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Much Room Does a Dog Need? Ranked by Space Requirements &middot; The Bark Facts</title>
+{HEAD_STYLE}
+  <meta name="description" content="{desc}" />
+  <link rel="canonical" href="{url}" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:site_name" content="The Bark Facts" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Much Room Does a Dog Need? Ranked by Space Requirements" />
+  <meta property="og:description" content="{desc}" />
+  <meta property="og:url" content="{url}" />
+  <meta property="og:image" content="{DOMAIN}/images/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Much Room Does a Dog Need? Ranked by Space Requirements" />
+  <meta name="twitter:description" content="{desc}" />
+  <meta name="twitter:image" content="{DOMAIN}/images/og-cover.jpg" />
+  <script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Dog Breeds Ranked by Space Requirements",
+  "description": "{desc}",
+  "url": "{url}",
+  "numberOfItems": {len(SPACE)},
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+{itemlist}
+  ]
+}}
+  </script>
+  <script type="application/ld+json">
+{{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{ "@type": "ListItem", "position": 1, "name": "Home", "item": "{DOMAIN}/" }},
+    {{ "@type": "ListItem", "position": 2, "name": "Breed Rankings", "item": "{HUB_URL}" }},
+    {{ "@type": "ListItem", "position": 3, "name": "Space Needs", "item": "{url}" }}
+  ]
+}}
+  </script>
+{FAVICON}
+</head>
+<body>
+
+{HEADER}
+{nav('rankings')}
+
+<div class="main">
+
+  <div class="page-heading">
+    <h1>How Much Room Does a Dog Need?</h1>
+    <p>Every breed in our Deep Dives, ranked by the space it actually needs<br>to be a good version of itself. Couch potato to needs-a-farm.</p>
+  </div>
+
+  <div class="note">
+    Here's what most people get backwards: the room a dog needs has almost
+    nothing to do with how big it is. A <strong>Great Dane</strong> is happy being
+    a very large rug, while a ten-pound <strong>Jack Russell</strong> will
+    dismantle your house if it doesn't get real miles. So we ranked by drive and
+    purpose, not by weight, in five tiers from couch to acreage.
+  </div>
+
+  <div class="rank-list">
+{rows_html}
+  </div>
+
+  <div class="sources">
+    Tier placement is an editorial call, not a hard metric. We weighed each
+    breed's energy level, what it was originally bred to do, and how it behaves
+    when under-stimulated, leaning on
+    <a href="https://www.akc.org/dog-breeds/" rel="nofollow noopener" target="_blank">AKC breed standards</a>
+    and apartment-living breed guides like
+    <a href="https://www.zillow.com/learn/best-dogs-for-apartments/" rel="nofollow noopener" target="_blank">Zillow's</a>.
+    Individual dogs vary. A lazy Border Collie and a hyper Bulldog both exist, they're just not the way to bet.
+  </div>
+
+  <div class="breadcrumb"><a href="index.html">&#8592; All Breed Rankings</a></div>
+
+</div>
+
+{FOOTER}
+
+</body>
+</html>
+"""
+
+
 def build_landing():
     desc = ("The Bark Facts breed rankings: our Deep Dive breeds sorted by the "
             "numbers and by our honest read of them. Starting with top speed.")
@@ -552,7 +873,7 @@ def build_landing():
 
   <div class="page-heading">
     <h1>Breed Rankings</h1>
-    <p>We line up the breeds in our Deep Dives by the numbers, and by our honest<br>read of them. One list so far. More on the way.</p>
+    <p>We line up the breeds in our Deep Dives by the numbers, and by our honest<br>read of them. Two lists so far. More on the way.</p>
   </div>
 
   <div class="rank-grid">
@@ -560,6 +881,13 @@ def build_landing():
       <div>
         <div class="rank-card-name">Fastest Dog Breeds</div>
         <div class="rank-card-teaser">Every breed we cover, ranked from flat-out fastest to proudly slowest.</div>
+      </div>
+      <span class="rank-card-arrow">&#8594;</span>
+    </a>
+    <a class="rank-card" href="space-needs">
+      <div>
+        <div class="rank-card-name">Space Needs</div>
+        <div class="rank-card-teaser">How much room each breed really needs, from couch potato to needs-a-farm. Size lies.</div>
       </div>
       <span class="rank-card-arrow">&#8594;</span>
     </a>
@@ -578,12 +906,26 @@ def build_landing():
 """
 
 
+def _check_coverage():
+    """Every ranking must cover exactly the breeds that have a Deep Dive."""
+    fastest_slugs = {slug for _, slug, *_ in FASTEST}
+    space_slugs = {slug for slug, *_ in SPACE}
+    missing = fastest_slugs - space_slugs
+    extra = space_slugs - fastest_slugs
+    if missing or extra:
+        raise SystemExit(f"SPACE coverage mismatch. missing={missing} extra={extra}")
+    if len(SPACE) != len(fastest_slugs):
+        raise SystemExit(f"SPACE has duplicates: {len(SPACE)} rows, {len(fastest_slugs)} breeds")
+
+
 def main():
+    _check_coverage()
     OUT_DIR.mkdir(exist_ok=True)
     (OUT_DIR / "fastest-dog-breeds.html").write_text(build_fastest(), encoding="utf-8")
+    (OUT_DIR / "space-needs.html").write_text(build_space(), encoding="utf-8")
     (OUT_DIR / "index.html").write_text(build_landing(), encoding="utf-8")
-    print(f"Wrote rankings/index.html and rankings/fastest-dog-breeds.html "
-          f"({len(FASTEST)} breeds ranked)")
+    print(f"Wrote rankings/index.html, rankings/fastest-dog-breeds.html, and "
+          f"rankings/space-needs.html ({len(FASTEST)} breeds each)")
 
 
 if __name__ == "__main__":

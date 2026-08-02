@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Much Room Does a Dog Need? Ranked by Space Requirements &middot; The Bark Facts</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #FAF0DC;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #3D2B1F;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #5C3D11;
+      color: #FAF0DC;
+      text-align: center;
+      padding: 18px 24px 14px;
+    }
+    header .site-brand {
+      font-size: 4rem;
+      letter-spacing: 0.04em;
+      font-weight: normal;
+    }
+    header .subtitle {
+      font-size: 0.85rem;
+      color: #D4B483;
+      margin-top: 4px;
+      font-style: italic;
+    }
+
+    .site-nav {
+      background: #4A2E0A;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      padding: 0 12px;
+      flex-wrap: wrap;
+    }
+    .site-nav a {
+      color: #C8A87A;
+      text-decoration: none;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.82rem;
+      padding: 9px 20px;
+      display: inline-block;
+      letter-spacing: 0.03em;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: #FAF0DC;
+      border-bottom-color: #C05621;
+    }
+
+    .main {
+      flex: 1;
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 36px 20px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .page-heading { text-align: center; }
+    .page-heading h1 {
+      font-size: 2.1rem;
+      font-weight: normal;
+      color: #5C3D11;
+      letter-spacing: 0.02em;
+    }
+    .page-heading p {
+      font-size: 0.95rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    .note {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-left: 6px solid #C05621;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #3D2B1F;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+    }
+    .note strong { color: #5C3D11; }
+
+    .rank-list { display: flex; flex-direction: column; gap: 10px; }
+
+    .rank-row {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .rank-row:hover {
+      border-color: #C05621;
+      box-shadow: 0 3px 12px rgba(192,86,33,0.18);
+    }
+    .rank-row.champ { border-color: #C05621; }
+
+    .rank-num {
+      font-size: 1.5rem;
+      color: #C05621;
+      min-width: 2.4rem;
+      text-align: center;
+      flex-shrink: 0;
+    }
+    .rank-body { flex: 1; min-width: 0; }
+    .rank-name {
+      font-size: 1.2rem;
+      color: #5C3D11;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+    .rank-name:hover { color: #C05621; border-bottom-color: #C05621; }
+    .rank-comment {
+      font-size: 0.9rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    .rank-speed { text-align: right; flex-shrink: 0; min-width: 5rem; }
+    .rank-mph { font-size: 1.35rem; color: #5C3D11; white-space: nowrap; }
+    .rank-mph .unit { font-size: 0.68rem; color: #9A6B3A; }
+    .rank-mph .est { color: #C05621; }
+    .rank-kmh { font-size: 0.75rem; color: #9A6B3A; margin-top: 2px; white-space: nowrap; }
+
+    .rank-grid { display: flex; flex-direction: column; gap: 12px; }
+    .rank-card {
+      background: #FFF8EC;
+      border: 2px solid #E0C090;
+      border-radius: 10px;
+      padding: 20px 24px;
+      text-decoration: none;
+      color: #3D2B1F;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(92,61,17,0.10);
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .rank-card:hover {
+      border-color: #C05621;
+      box-shadow: 0 3px 12px rgba(192,86,33,0.18);
+    }
+    .rank-card-name { font-size: 1.2rem; color: #5C3D11; }
+    .rank-card-teaser { font-size: 0.8rem; color: #9A6B3A; font-style: italic; margin-top: 3px; }
+    .rank-card-arrow { color: #C05621; font-size: 1.1rem; }
+    .rank-soon {
+      font-size: 0.85rem;
+      color: #9A6B3A;
+      font-style: italic;
+      text-align: center;
+      padding: 4px 0 0;
+    }
+
+    .breadcrumb { font-size: 0.82rem; }
+    .breadcrumb a { color: #C05621; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .sources {
+      font-size: 0.78rem;
+      color: #9A6B3A;
+      line-height: 1.6;
+      border-top: 1px solid #E0C090;
+      padding-top: 14px;
+    }
+    .sources a { color: #C05621; text-decoration: none; }
+    .sources a:hover { text-decoration: underline; }
+
+    /* Space-needs tier headers and roam meter */
+    .tier-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 26px 0 4px;
+    }
+    .tier-badge {
+      width: 2.3rem;
+      height: 2.3rem;
+      flex-shrink: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+    }
+    .tier-badge.t1 { background: #E4CFA0; color: #4A2E0A; }
+    .tier-badge.t2 { background: #C8A870; color: #3D2B1F; }
+    .tier-badge.t3 { background: #C05621; color: #FFF8EC; }
+    .tier-badge.t4 { background: #9E4418; color: #FFF8EC; }
+    .tier-badge.t5 { background: #5C3D11; color: #FAF0DC; }
+    .tier-name { font-size: 1.25rem; color: #5C3D11; letter-spacing: 0.02em; }
+    .tier-desc {
+      font-size: 0.85rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .roam-meter { display: flex; gap: 4px; flex-shrink: 0; align-items: center; }
+    .roam-meter .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #E0C090;
+    }
+    .roam-meter .dot.on { background: #C05621; }
+
+    footer {
+      background: #5C3D11;
+      color: #A07840;
+      text-align: center;
+      font-size: 0.78rem;
+      padding: 10px;
+    }
+
+    @media (max-width: 520px) {
+      .rank-row { padding: 14px 14px; gap: 10px; }
+      .rank-num { font-size: 1.25rem; min-width: 1.9rem; }
+      .rank-mph { font-size: 1.15rem; }
+      .rank-speed { min-width: 4.4rem; }
+    }
+  </style>
+  <meta name="description" content="All 53 dog breeds in our Deep Dives, ranked by how much living space they actually need, from couch potato to needs-a-farm." />
+  <link rel="canonical" href="https://thebarkfacts.com/rankings/space-needs" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:site_name" content="The Bark Facts" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="How Much Room Does a Dog Need? Ranked by Space Requirements" />
+  <meta property="og:description" content="All 53 dog breeds in our Deep Dives, ranked by how much living space they actually need, from couch potato to needs-a-farm." />
+  <meta property="og:url" content="https://thebarkfacts.com/rankings/space-needs" />
+  <meta property="og:image" content="https://thebarkfacts.com/images/og-cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How Much Room Does a Dog Need? Ranked by Space Requirements" />
+  <meta name="twitter:description" content="All 53 dog breeds in our Deep Dives, ranked by how much living space they actually need, from couch potato to needs-a-farm." />
+  <meta name="twitter:image" content="https://thebarkfacts.com/images/og-cover.jpg" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Dog Breeds Ranked by Space Requirements",
+  "description": "All 53 dog breeds in our Deep Dives, ranked by how much living space they actually need, from couch potato to needs-a-farm.",
+  "url": "https://thebarkfacts.com/rankings/space-needs",
+  "numberOfItems": 53,
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Great Dane",
+      "url": "https://thebarkfacts.com/deep-dives/great-dane.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Mastiff",
+      "url": "https://thebarkfacts.com/deep-dives/mastiff.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Chow Chow",
+      "url": "https://thebarkfacts.com/deep-dives/chow-chow.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Bulldog",
+      "url": "https://thebarkfacts.com/deep-dives/bulldog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Basset Hound",
+      "url": "https://thebarkfacts.com/deep-dives/basset-hound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Japanese Chin",
+      "url": "https://thebarkfacts.com/deep-dives/japanese-chin.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "name": "English Toy Spaniel",
+      "url": "https://thebarkfacts.com/deep-dives/english-toy-spaniel.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "name": "Lhasa Apso",
+      "url": "https://thebarkfacts.com/deep-dives/lhasa-apso.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "name": "Pug",
+      "url": "https://thebarkfacts.com/deep-dives/pug.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "name": "Pekingese",
+      "url": "https://thebarkfacts.com/deep-dives/pekingese.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "name": "Greyhound",
+      "url": "https://thebarkfacts.com/deep-dives/greyhound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "name": "Whippet",
+      "url": "https://thebarkfacts.com/deep-dives/whippet.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "name": "Chihuahua",
+      "url": "https://thebarkfacts.com/deep-dives/chihuahua.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "name": "Bichon Frise",
+      "url": "https://thebarkfacts.com/deep-dives/bichon-frise.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "name": "Brussels Griffon",
+      "url": "https://thebarkfacts.com/deep-dives/brussels-griffon.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "name": "Skye Terrier",
+      "url": "https://thebarkfacts.com/deep-dives/skye-terrier.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "name": "Shiba Inu",
+      "url": "https://thebarkfacts.com/deep-dives/shiba-inu.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "name": "Papillon",
+      "url": "https://thebarkfacts.com/deep-dives/papillon.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "name": "Dachshund",
+      "url": "https://thebarkfacts.com/deep-dives/dachshund.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "name": "Saint Bernard",
+      "url": "https://thebarkfacts.com/deep-dives/saint-bernard.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "name": "Boxer",
+      "url": "https://thebarkfacts.com/deep-dives/boxer.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "name": "Irish Terrier",
+      "url": "https://thebarkfacts.com/deep-dives/irish-terrier.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "name": "Bull Terrier",
+      "url": "https://thebarkfacts.com/deep-dives/bull-terrier.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "name": "Kerry Blue Terrier",
+      "url": "https://thebarkfacts.com/deep-dives/kerry-blue-terrier.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "name": "Basenji",
+      "url": "https://thebarkfacts.com/deep-dives/basenji.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "name": "Akita",
+      "url": "https://thebarkfacts.com/deep-dives/akita.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "name": "Norwegian Elkhound",
+      "url": "https://thebarkfacts.com/deep-dives/norwegian-elkhound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "name": "Rottweiler",
+      "url": "https://thebarkfacts.com/deep-dives/rottweiler.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "name": "Corgi",
+      "url": "https://thebarkfacts.com/deep-dives/corgi.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "name": "Leonberger",
+      "url": "https://thebarkfacts.com/deep-dives/leonberger.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "name": "Newfoundland",
+      "url": "https://thebarkfacts.com/deep-dives/newfoundland.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "name": "Beagle",
+      "url": "https://thebarkfacts.com/deep-dives/beagle.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "name": "Saluki",
+      "url": "https://thebarkfacts.com/deep-dives/saluki.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "name": "Vizsla",
+      "url": "https://thebarkfacts.com/deep-dives/vizsla.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "name": "Irish Wolfhound",
+      "url": "https://thebarkfacts.com/deep-dives/irish-wolfhound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "name": "Dalmatian",
+      "url": "https://thebarkfacts.com/deep-dives/dalmatian.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "name": "Borzoi",
+      "url": "https://thebarkfacts.com/deep-dives/borzoi.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 38,
+      "name": "Weimaraner",
+      "url": "https://thebarkfacts.com/deep-dives/weimaraner.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 39,
+      "name": "Jack Russell Terrier",
+      "url": "https://thebarkfacts.com/deep-dives/jack-russell-terrier.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 40,
+      "name": "Doberman",
+      "url": "https://thebarkfacts.com/deep-dives/doberman.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 41,
+      "name": "Pointer",
+      "url": "https://thebarkfacts.com/deep-dives/pointer.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 42,
+      "name": "Standard Poodle",
+      "url": "https://thebarkfacts.com/deep-dives/poodle.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 43,
+      "name": "Portuguese Water Dog",
+      "url": "https://thebarkfacts.com/deep-dives/portuguese-water-dog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 44,
+      "name": "Samoyed",
+      "url": "https://thebarkfacts.com/deep-dives/samoyed.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 45,
+      "name": "Finnish Lapphund",
+      "url": "https://thebarkfacts.com/deep-dives/finnish-lapphund.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 46,
+      "name": "Bloodhound",
+      "url": "https://thebarkfacts.com/deep-dives/bloodhound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 47,
+      "name": "Otterhound",
+      "url": "https://thebarkfacts.com/deep-dives/otterhound.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 48,
+      "name": "Border Collie",
+      "url": "https://thebarkfacts.com/deep-dives/border-collie.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 49,
+      "name": "German Shepherd",
+      "url": "https://thebarkfacts.com/deep-dives/german-shepherd.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 50,
+      "name": "Australian Shepherd",
+      "url": "https://thebarkfacts.com/deep-dives/australian-shepherd.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 51,
+      "name": "Siberian Husky",
+      "url": "https://thebarkfacts.com/deep-dives/siberian-husky.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 52,
+      "name": "Alaskan Malamute",
+      "url": "https://thebarkfacts.com/deep-dives/alaskan-malamute.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 53,
+      "name": "Great Pyrenees",
+      "url": "https://thebarkfacts.com/deep-dives/great-pyrenees.html"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thebarkfacts.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Breed Rankings", "item": "https://thebarkfacts.com/rankings/" },
+    { "@type": "ListItem", "position": 3, "name": "Space Needs", "item": "https://thebarkfacts.com/rankings/space-needs" }
+  ]
+}
+  </script>
+  <!-- FAVICON:BEGIN (generated by add_favicon_links.py) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#5C3D11" />
+  <!-- FAVICON:END -->
+</head>
+<body>
+
+<header>
+  <div class="site-brand">The Bark Facts</div>
+  <div class="subtitle">Real facts and honest takes on the dogs we love.</div>
+</header>
+<nav class="site-nav">
+  <a href="../index.html">Home</a>
+  <a href="../breeds/index.html">Browse Facts</a>
+  <a href="../deep-dives/index.html">Breeds</a>
+  <a href="index.html" class="active">Breed Rankings</a>
+  <a href="../about.html">About</a>
+</nav>
+
+<div class="main">
+
+  <div class="page-heading">
+    <h1>How Much Room Does a Dog Need?</h1>
+    <p>Every breed in our Deep Dives, ranked by the space it actually needs<br>to be a good version of itself. Couch potato to needs-a-farm.</p>
+  </div>
+
+  <div class="note">
+    Here's what most people get backwards: the room a dog needs has almost
+    nothing to do with how big it is. A <strong>Great Dane</strong> is happy being
+    a very large rug, while a ten-pound <strong>Jack Russell</strong> will
+    dismantle your house if it doesn't get real miles. So we ranked by drive and
+    purpose, not by weight, in five tiers from couch to acreage.
+  </div>
+
+  <div class="rank-list">
+    <div class="tier-head">
+      <div class="tier-badge t1">1</div>
+      <div>
+        <div class="tier-name">Couch Potato</div>
+        <div class="tier-desc">Genuinely happiest horizontal indoors. Minimal exercise, minimal square footage, zero guilt.</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/great-dane.html">Great Dane</a>
+        <div class="rank-comment">A giant that mostly wants to be a rug. Enormous body, small appetite for exercise.</div>
+      </div>
+      <div class="roam-meter" title="Tier 1 of 5"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/mastiff.html">Mastiff</a>
+        <div class="rank-comment">Two hundred pounds of preferring not to. A couple of slow laps and it's done for the day.</div>
+      </div>
+      <div class="roam-meter" title="Tier 1 of 5"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/chow-chow.html">Chow Chow</a>
+        <div class="rank-comment">Aloof, dignified, and about as interested in a run as a house cat.</div>
+      </div>
+      <div class="roam-meter" title="Tier 1 of 5"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/bulldog.html">Bulldog</a>
+        <div class="rank-comment">Built to overheat, not to roam. The couch isn't laziness, it's basically a medical plan.</div>
+      </div>
+      <div class="roam-meter" title="Tier 1 of 5"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/basset-hound.html">Basset Hound</a>
+        <div class="rank-comment">Powered by naps between sniffs. A short amble around the block counts as a full workout.</div>
+      </div>
+      <div class="roam-meter" title="Tier 1 of 5"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/japanese-chin.html">Japanese Chin</a>
+        <div class="rank-comment">Bred to warm a lap in a palace. It has never once questioned the job description.</div>
+      </div>
+      <div class="roam-meter" title="Tier 1 of 5"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/english-toy-spaniel.html">English Toy Spaniel</a>
+        <div class="rank-comment">A lap is the entire habitat. Anything bigger is just surplus real estate.</div>
+      </div>
+      <div class="roam-meter" title="Tier 1 of 5"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/lhasa-apso.html">Lhasa Apso</a>
+        <div class="rank-comment">Patrolled temple halls for centuries. Your hallway is more territory than it knows what to do with.</div>
+      </div>
+      <div class="roam-meter" title="Tier 1 of 5"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/pug.html">Pug</a>
+        <div class="rank-comment">The spirit is willing, the airway is not. Keep it short, shady, and close to the sofa.</div>
+      </div>
+      <div class="roam-meter" title="Tier 1 of 5"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/pekingese.html">Pekingese</a>
+        <div class="rank-comment">Bred for palace floors at a palace pace. A studio apartment is a generous estate.</div>
+      </div>
+      <div class="roam-meter" title="Tier 1 of 5"><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="tier-head">
+      <div class="tier-badge t2">2</div>
+      <div>
+        <div class="tier-name">Apartment-Fine with Daily Walks</div>
+        <div class="tier-desc">Low to moderate energy. A regular walk and a bit of company, and they're content just about anywhere.</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/greyhound.html">Greyhound</a>
+        <div class="rank-comment">The famous twist. Forty-five miles an hour in short bursts, then eighteen hours flat on the couch. A walk or two covers it.</div>
+      </div>
+      <div class="roam-meter" title="Tier 2 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/whippet.html">Whippet</a>
+        <div class="rank-comment">The same deal as the Greyhound in a smaller wrapper. Sprints hard, then melts into the cushions.</div>
+      </div>
+      <div class="roam-meter" title="Tier 2 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/chihuahua.html">Chihuahua</a>
+        <div class="rank-comment">Tiny legs, tiny range. One lap of the block and it has logged its mileage.</div>
+      </div>
+      <div class="roam-meter" title="Tier 2 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/bichon-frise.html">Bichon Frise</a>
+        <div class="rank-comment">Cheerful zoomies, very small radius. A daily walk soaks up whatever's left.</div>
+      </div>
+      <div class="roam-meter" title="Tier 2 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/brussels-griffon.html">Brussels Griffon</a>
+        <div class="rank-comment">Wants your attention far more than your acreage. Walks plus company are plenty.</div>
+      </div>
+      <div class="roam-meter" title="Tier 2 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/skye-terrier.html">Skye Terrier</a>
+        <div class="rank-comment">Long, low, and unhurried. Content indoors as long as the daily walk stays on the schedule.</div>
+      </div>
+      <div class="roam-meter" title="Tier 2 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/shiba-inu.html">Shiba Inu</a>
+        <div class="rank-comment">Clean, independent, and fine in an apartment, right up until you trust it off leash.</div>
+      </div>
+      <div class="roam-meter" title="Tier 2 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/papillon.html">Papillon</a>
+        <div class="rank-comment">Small enough for a flat, sharp enough that the walk needs to include some thinking.</div>
+      </div>
+      <div class="roam-meter" title="Tier 2 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/dachshund.html">Dachshund</a>
+        <div class="rank-comment">A hunter in a hallway-sized body. Regular walks yes, big leaps and long stairs no.</div>
+      </div>
+      <div class="roam-meter" title="Tier 2 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/saint-bernard.html">Saint Bernard</a>
+        <div class="rank-comment">A mellow mountain of a dog. Daily strolls suit it fine, though it will need the floor space to sprawl.</div>
+      </div>
+      <div class="roam-meter" title="Tier 2 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="tier-head">
+      <div class="tier-badge t3">3</div>
+      <div>
+        <div class="tier-name">Needs a Yard, Not a Farm</div>
+        <div class="tier-desc">Moderate energy that wants daily outdoor access. Not demanding, but not a studio dog either.</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/boxer.html">Boxer</a>
+        <div class="rank-comment">Goofy and springy well into middle age. It needs somewhere to burn that off every single day.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/irish-terrier.html">Irish Terrier</a>
+        <div class="rank-comment">A bold little furnace of energy. A yard keeps the mischief pointed outdoors.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/bull-terrier.html">Bull Terrier</a>
+        <div class="rank-comment">Muscle with a sense of humor. Under-exercise it and the furniture picks up the tab.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/kerry-blue-terrier.html">Kerry Blue Terrier</a>
+        <div class="rank-comment">A working terrier under the show coat. It wants a job, or at minimum a proper romp.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/basenji.html">Basenji</a>
+        <div class="rank-comment">Cat-clean, fence-climbing, and bored easily. A secure yard is what saves your blinds.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/akita.html">Akita</a>
+        <div class="rank-comment">Reserved and moderate, but big and strong. Room to move keeps it calm and settled.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/norwegian-elkhound.html">Norwegian Elkhound</a>
+        <div class="rank-comment">Built to track game over hills. A yard and real walks keep the hunter contented.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/rottweiler.html">Rottweiler</a>
+        <div class="rank-comment">Powerful and steady, not hyper. Daily work plus a yard hits the sweet spot.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/corgi.html">Corgi</a>
+        <div class="rank-comment">A herding dog in a footstool costume. Do not mistake the short legs for low needs.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/leonberger.html">Leonberger</a>
+        <div class="rank-comment">A gentle giant that still likes to move. Not a farm, but definitely not a studio.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/newfoundland.html">Newfoundland</a>
+        <div class="rank-comment">Happiest with water and space, mellow enough without them. Give it a yard and a hose.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/beagle.html">Beagle</a>
+        <div class="rank-comment">The nose writes checks the living room can't cash. A yard and long sniffy walks help a lot.</div>
+      </div>
+      <div class="roam-meter" title="Tier 3 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+    </div>
+    <div class="tier-head">
+      <div class="tier-badge t4">4</div>
+      <div>
+        <div class="tier-name">Needs Room to Run</div>
+        <div class="tier-desc">High drive that doesn't shrink with body size. A walk isn't the exercise, it's the appetizer.</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/saluki.html">Saluki</a>
+        <div class="rank-comment">Calm on the rug, unrecognizable outside. It needs a big, secure space to truly open up.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/vizsla.html">Vizsla</a>
+        <div class="rank-comment">The velcro athlete. Skip a day of real exercise and it will let you know, at length.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/irish-wolfhound.html">Irish Wolfhound</a>
+        <div class="rank-comment">Placid indoors, but it needs genuine room to stretch out that enormous stride.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/dalmatian.html">Dalmatian</a>
+        <div class="rank-comment">Bred to run under carriages all day. A jog is a warm-up, not the main event.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/borzoi.html">Borzoi</a>
+        <div class="rank-comment">Serene on the rug, electric on a trail. It needs somewhere safe to hit full speed.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/weimaraner.html">Weimaraner</a>
+        <div class="rank-comment">The Gray Ghost runs on purpose and attention. Short-change either one and it unravels.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/jack-russell-terrier.html">Jack Russell Terrier</a>
+        <div class="rank-comment">The clearest proof that size lies. Ten pounds of engine that needs miles, not minutes.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/doberman.html">Doberman</a>
+        <div class="rank-comment">Athletic, sharp, and quick to get bored. It wants a real outlet, mental and physical.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/pointer.html">Pointer</a>
+        <div class="rank-comment">Wired to quarter a field for hours. A lap around the block barely registers.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/poodle.html">Standard Poodle</a>
+        <div class="rank-comment">The haircut hides a serious athlete. It needs running and problems to solve, not just grooming.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/portuguese-water-dog.html">Portuguese Water Dog</a>
+        <div class="rank-comment">Bred to work all day off a fishing boat. Land or water, it needs a real outing.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/samoyed.html">Samoyed</a>
+        <div class="rank-comment">A sled dog with a smile. All that coat came attached to an engine that wants to pull.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/finnish-lapphund.html">Finnish Lapphund</a>
+        <div class="rank-comment">A herder built to cover ground in the cold. A gentle walk alone won't cut it.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/bloodhound.html">Bloodhound</a>
+        <div class="rank-comment">The nose needs mileage as badly as the legs do. Give it room and a long trail.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/otterhound.html">Otterhound</a>
+        <div class="rank-comment">Big, boisterous, and built for all-day swims and searches. It has to move to be happy.</div>
+      </div>
+      <div class="roam-meter" title="Tier 4 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot"></span></div>
+    </div>
+    <div class="tier-head">
+      <div class="tier-badge t5">5</div>
+      <div>
+        <div class="tier-name">Needs Acreage or a Job</div>
+        <div class="tier-desc">Bred for open land or real work. Without a genuine outlet, no amount of walking is ever enough.</div>
+      </div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/border-collie.html">Border Collie</a>
+        <div class="rank-comment">The dog that defined 'needs a job.' Leave it idle and it invents work you won't enjoy.</div>
+      </div>
+      <div class="roam-meter" title="Tier 5 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/german-shepherd.html">German Shepherd</a>
+        <div class="rank-comment">Capable of almost anything, which means it needs to do something. Idle is the real enemy.</div>
+      </div>
+      <div class="roam-meter" title="Tier 5 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/australian-shepherd.html">Australian Shepherd</a>
+        <div class="rank-comment">A herding brain that never clocks out. It wants livestock, or a very convincing substitute.</div>
+      </div>
+      <div class="roam-meter" title="Tier 5 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/siberian-husky.html">Siberian Husky</a>
+        <div class="rank-comment">Built to run a hundred miles across snow. Your fenced yard is treated as a mild suggestion.</div>
+      </div>
+      <div class="roam-meter" title="Tier 5 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/alaskan-malamute.html">Alaskan Malamute</a>
+        <div class="rank-comment">Freight-hauling stamina with an escape artist's imagination. It needs land and a purpose.</div>
+      </div>
+      <div class="roam-meter" title="Tier 5 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div>
+    </div>
+    <div class="rank-row">
+      <div class="rank-body">
+        <a class="rank-name" href="../deep-dives/great-pyrenees.html">Great Pyrenees</a>
+        <div class="rank-comment">A livestock guardian wired to patrol a perimeter. Give it acreage or it annexes the neighborhood.</div>
+      </div>
+      <div class="roam-meter" title="Tier 5 of 5"><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span><span class="dot on"></span></div>
+    </div>
+  </div>
+
+  <div class="sources">
+    Tier placement is an editorial call, not a hard metric. We weighed each
+    breed's energy level, what it was originally bred to do, and how it behaves
+    when under-stimulated, leaning on
+    <a href="https://www.akc.org/dog-breeds/" rel="nofollow noopener" target="_blank">AKC breed standards</a>
+    and apartment-living breed guides like
+    <a href="https://www.zillow.com/learn/best-dogs-for-apartments/" rel="nofollow noopener" target="_blank">Zillow's</a>.
+    Individual dogs vary. A lazy Border Collie and a hyper Bulldog both exist, they're just not the way to bet.
+  </div>
+
+  <div class="breadcrumb"><a href="index.html">&#8592; All Breed Rankings</a></div>
+
+</div>
+
+<footer>The Bark Facts &middot; Real facts and honest takes on the dogs we love.</footer>
+
+</body>
+</html>

@@ -189,6 +189,46 @@
     .sources a { color: #C05621; text-decoration: none; }
     .sources a:hover { text-decoration: underline; }
 
+    /* Space-needs tier headers and roam meter */
+    .tier-head {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 26px 0 4px;
+    }
+    .tier-badge {
+      width: 2.3rem;
+      height: 2.3rem;
+      flex-shrink: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+    }
+    .tier-badge.t1 { background: #E4CFA0; color: #4A2E0A; }
+    .tier-badge.t2 { background: #C8A870; color: #3D2B1F; }
+    .tier-badge.t3 { background: #C05621; color: #FFF8EC; }
+    .tier-badge.t4 { background: #9E4418; color: #FFF8EC; }
+    .tier-badge.t5 { background: #5C3D11; color: #FAF0DC; }
+    .tier-name { font-size: 1.25rem; color: #5C3D11; letter-spacing: 0.02em; }
+    .tier-desc {
+      font-size: 0.85rem;
+      color: #9A6B3A;
+      font-style: italic;
+      margin-top: 2px;
+      line-height: 1.4;
+    }
+
+    .roam-meter { display: flex; gap: 4px; flex-shrink: 0; align-items: center; }
+    .roam-meter .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #E0C090;
+    }
+    .roam-meter .dot.on { background: #C05621; }
+
     footer {
       background: #5C3D11;
       color: #A07840;
